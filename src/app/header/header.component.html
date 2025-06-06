@@ -44,7 +44,10 @@
 <header class="main-header" [class.scrolled]="isScrolled">
     <div class="header-container">
         <div class="logo">
-            <a href="#" routerLink="/">Synocti</a>
+            <a href="#" routerLink="/">
+                <img style="width: 15%; margin-right: 0.5em;" src="favicon.ico" alt="SyNocti Logo" class="logo-icon">
+                SyNocti
+            </a>
         </div>
 
         <!-- Desktop navigation -->
@@ -92,12 +95,14 @@
                 </ul>
             </div>
 
-            <button class="theme-toggle" (click)="toggleTheme()" aria-label="Toggle theme">
-                <i class="fas" [class.fa-sun]="isDarkTheme" [class.fa-moon]="!isDarkTheme"></i>
+            <button class="theme-toggle icon-btn" (click)="toggleTheme()" aria-label="Toggle theme">
+                <i class="fas" [class.fa-sun]="isDarkTheme" [class.fa-moon]="!isDarkTheme"
+                    style="width: 1.5em; height: 1.5em; font-size: 1.5em; display: inline-flex; align-items: center; justify-content: center;"></i>
             </button>
 
-            <button class="mobile-menu-toggle" (click)="toggleMenu()" aria-label="Menu">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-menu-toggle icon-btn" (click)="toggleMenu()" aria-label="Menu">
+                <i class="fas fa-bars"
+                    style="width: 1.5em; height: 1.5em; font-size: 1.5em; display: inline-flex; align-items: center; justify-content: center;"></i>
             </button>
         </div>
     </div>
