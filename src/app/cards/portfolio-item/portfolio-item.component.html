@@ -1,0 +1,10 @@
+<div class="portfolio-item">
+  <div class="portfolio-image" [style.background-image]="'url(assets/images/' + project.id + '.PNG)'">
+  </div>
+  <div class="portfolio-overlay">
+    <h3>{{project.title}}</h3>
+    <p>{{project.type}}</p>
+    <a [href]="project.link" target="_blank" rel="noopener" class="view-project"><i
+        class="fas fa-external-link-alt"></i>{{ 'portfolio.visitWebsite' | translate }}</a>
+  </div>
+</div>

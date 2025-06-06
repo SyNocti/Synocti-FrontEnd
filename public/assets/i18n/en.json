@@ -1,0 +1,769 @@
+{
+    "header": {
+        "home": "Home",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "aboutUs": "About Us",
+        "ourStory": "Our Story",
+        "meetTheTeam": "Meet the Team",
+        "contact": "Contact",
+        "getQuote": "Get a Quote"
+    },
+    "home": {
+        "hero": {
+            "title": "We Build High-Performance Custom Websites for Businesses and Individuals",
+            "subtitle": "Transforming digital ideas into exceptional web experiences with cutting-edge technology and pixel-perfect design.",
+            "seeOurWork": "See Our Work"
+        },
+        "services": {
+            "title": "Our Services",
+            "subtitle": "Comprehensive web solutions tailored to your business needs"
+        },
+        "about": {
+            "title": "Why Choose Us",
+            "subtitle": "We combine technical expertise with creative excellence",
+            "description": "At Synocti, we're passionate about creating websites that not only look stunning but also drive real business results. Our team of experts brings together the perfect balance of technical knowledge and creative vision.",
+            "features": {
+                "performance": "Fast Performance",
+                "responsive": "Responsive Design",
+                "secure": "Secure Code",
+                "support": "Dedicated Support"
+            }
+        },
+        "portfolio": {
+            "title": "Our Latest Work",
+            "subtitle": "Browse through our recent projects",
+            "seeMore": "See More Projects"
+        },
+        "testimonials": {
+            "title": "What Our Clients Say",
+            "subtitle": "Real feedback from the businesses and individuals we’ve helped succeed",
+            "items": {
+                "first": {
+                    "quote": "WebDev Co. transformed our online presence. Our new website has dramatically increased leads and customer engagement.",
+                    "authorName": "John Smith",
+                    "authorTitle": "CEO, Example Company"
+                },
+                "second": {
+                    "quote": "I was impressed by how quickly and efficiently the team delivered our complex e-commerce platform. The attention to detail was exceptional.",
+                    "authorName": "Sarah Johnson",
+                    "authorTitle": "Marketing Director, Shop Brands"
+                },
+                "third": {
+                    "quote": "The website not only looks fantastic but performs incredibly well. The SEO work has put us on the first page of Google.",
+                    "authorName": "Michael Chen",
+                    "authorTitle": "Founder, Tech Solutions"
+                }
+            }
+        },
+        "process": {
+            "title": "Our Process",
+            "subtitle": "A proven approach to delivering outstanding results",
+            "steps": {
+                "discovery": {
+                    "title": "Discovery",
+                    "description": "We learn about you, your business, goals and target audience."
+                },
+                "design": {
+                    "title": "Design",
+                    "description": "We design a layout that matches your vision and goals."
+                },
+                "development": {
+                    "title": "Development",
+                    "description": "We build your website with clean, efficient code."
+                },
+                "launch": {
+                    "title": "Launch",
+                    "description": "We deploy your site and provide ongoing support."
+                }
+            }
+        },
+        "cta": {
+            "title": "Let's Build Something Great Together",
+            "subtitle": "Ready to take your web presence to the next level ?",
+            "button": "Request a Free Quote"
+        }
+    },
+    "common": {
+        "learnMore": "Learn More"
+    },
+    "footer": {
+        "tagline": "Crafting digital experiences that transform businesses and individuals",
+        "company": {
+            "title": "Company",
+            "story": "Our Story",
+            "team": "Our Team",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "address": "278 Roy Street, Longueuil"
+        },
+        "copyright": "© {{year}} Synocti. All rights reserved.",
+        "legal": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookie Policy"
+        }
+    },
+    "services": {
+        "hero": {
+            "title": "Our Services",
+            "subtitle": "Professional web solutions tailored to your needs"
+        },
+        "intro": {
+            "title": "Web Development Services",
+            "description": "We offer a range of web development services designed to help businesses of all sizes establish a strong online presence. From simple static websites to complex dynamic web applications, we have the expertise to bring your vision to life."
+        },
+        "pricing": {
+            "perMonth": "per month",
+            "oneTimeSetup": "One-time setup starting from"
+        },
+        "servicesList": {
+            "singlePage": {
+                "title": "Single Page Website",
+                "description": "A sleek, fast-loading one-page website that delivers your message clearly and effectively.",
+                "features": [
+                    "Optimized for fast loading and smooth scrolling",
+                    "Clean, modern layout tailored to your brand",
+                    "Responsive design for all devices",
+                    "Strategic call-to-action placements"
+                ]
+            },
+            "multiPage": {
+                "title": "Multi Page Website",
+                "description": "Professional websites with multiple pages for structured, detailed content and navigation.",
+                "features": [
+                    "Custom page structure",
+                    "Navigation menu designed for usability",
+                    "SEO-friendly URLs and content structure",
+                    "Content layout tailored to each page's goal"
+                ]
+            },
+            "dynamicSite": {
+                "title": "Dynamic Website",
+                "description": "Websites with editable content and advanced features like user interaction, forms, or data displays.",
+                "features": [
+                    "Admin panel to manage text, images and sections",
+                    "Real-time content updates without developer help",
+                    "Custom forms or product listings with database storage",
+                    "Role-based user access control"
+                ]
+            },
+            "clientPortal": {
+                "title": "Client Portal",
+                "description": "Secure, custom-built portal that allows clients or staff to manage data and easily request our help."
+            }
+        },
+        "comparison": {
+            "title": "Service Comparison",
+            "subtitle": "Compare our web development options to find the one that best fits your business needs",
+            "headers": {
+                "feature": "Feature",
+                "singlePage": "Single Page",
+                "multiPage": "Multi-Page",
+                "dynamic": "Dynamic Site"
+            },
+            "notSure": "Not sure which service is right for you?",
+            "contact": "Contact us for a consultation",
+            "features": {
+                "clientPortal": {
+                    "name": "Client Portal Access",
+                    "tooltip": "Access to our support and content management portal"
+                },
+                "responsiveDesign": {
+                    "name": "Responsive Design",
+                    "tooltip": "Adapts to all screen sizes and devices"
+                },
+                "seoOptimization": {
+                    "name": "SEO Optimization",
+                    "tooltip": "Basic search engine optimization included"
+                },
+                "domainSetup": {
+                    "name": "Hosting & Domain Setup",
+                    "tooltip": "We help you set up your domain and hosting"
+                },
+                "multiplePages": {
+                    "name": "Multiple Pages",
+                    "tooltip": "Separate pages for different content sections"
+                },
+                "enhancedUX": {
+                    "name": "Enhanced User Experience",
+                    "tooltip": "Improved navigation and user interaction"
+                },
+                "contentManagement": {
+                    "name": "Content Management System",
+                    "tooltip": "Edit website content without coding knowledge"
+                },
+                "customForms": {
+                    "name": "Custom Forms",
+                    "tooltip": "Integrated forms for user input and data collection"
+                }
+            }
+        },
+        "portal": {
+            "title": "Client Portal",
+            "description": "Every client gets access to our secure client portal. It's your go-to place for support, updates, and (if your website is dynamic) content management tools to keep your site up-to-date without technical hassle.",
+            "features": {
+                "title": "Key Portal Features",
+                "support": {
+                    "title": "Support Ticket System",
+                    "description": "Easily send questions, request bug fixes or report issues to our responsive team."
+                },
+                "notifications": {
+                    "title": "Project Notifications",
+                    "description": "Receive updates and important messages regarding your project status or website changes."
+                },
+                "content": {
+                    "title": "Content Editor (Dynamic Sites Only)",
+                    "description": "If your website includes dynamic content, you'll get tools to manage your products, services, team, or other website data easily through our admin interface."
+                }
+            },
+            "video": {
+                "alt": "Client Portal Preview",
+                "caption": "See how our portal makes managing your website easier"
+            }
+        },
+        "cta": {
+            "title": "Ready to Get Started?",
+            "subtitle": "Let's discuss how we can help your business succeed online.",
+            "contact": "Contact Us"
+        }
+    },
+    "portfolio": {
+        "hero": {
+            "title": "Our Portfolio",
+            "subtitle": "Showcasing our best work"
+        },
+        "visitWebsite": "Visit Website"
+    },
+    "story": {
+        "hero": {
+            "title": "Our Story",
+            "subtitle": "A journey of passion, innovation, and digital excellence"
+        },
+        "origin": {
+            "title": "How It All Started",
+            "text": [
+                "We're two computer science students who decided to take initiative. While still working toward our degrees, we found it difficult to gain hands-on experience in the tech industry. So, instead of waiting for an opportunity, we created one.",
+                "In early 2025, we launched our web development business to sharpen our skills, build real-world projects, and help others bring their ideas to life. We're passionate about clean, functional design and enjoy solving problems through code. We believe that even as students, we have something valuable to offer.",
+                "Our goal is to grow alongside our clients, delivering quality work while expanding our knowledge and expertise. Whether it's a personal portfolio or a fully dynamic web platform, we’re committed to learning, improving, and making a difference with every project we take on."
+            ],
+            "imageAlt": "Our Founders"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To empower both businesses and individuals with smart, user-friendly digital solutions that help them grow, communicate better, and succeed online. We build websites that are easy to manage, purposeful, and made to truly serve the needs of our clients."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To become a trusted digital partner for people and organizations of all sizes, recognized for combining thoughtful design, solid technology, and reliable support to bring their online goals to life."
+        },
+        "values": {
+            "title": "Our Values",
+            "subtitle": "The principles that guide everything we do",
+            "excellence": {
+                "title": "Excellence",
+                "description": "We strive for excellence in every line of code and pixel of design."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "description": "We embrace new technologies and approaches to solve complex problems."
+            },
+            "integrity": {
+                "title": "Integrity",
+                "description": "We build relationships based on honesty, transparency, and ethical practices."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "description": "We believe in the power of teamwork and partnership with our clients."
+            }
+        },
+        "cta": {
+            "title": "Ready to Work Together?",
+            "subtitle": "Let's create something amazing for you.",
+            "contact": "Get in Touch",
+            "services": "Our Services"
+        }
+    },
+    "team": {
+        "hero": {
+            "title": "Meet Our Team",
+            "subtitle": "Small in size, big on talent and dedication"
+        },
+        "intro": {
+            "title": "Our Talented Team",
+            "description": "While we may be small, our combined experience and passion allow us to deliver exceptional results. Our close-knit team means you get direct access to decision-makers and experts throughout your project."
+        },
+        "members": {
+            "hugo": {
+                "name": "Hugo Levacher",
+                "role": "Co-Founder & Developer",
+                "bio": "Passionate about crafting efficient and innovative web solutions, Hugo combines strong technical skills with a fresh perspective to build modern, user-friendly websites."
+            },
+            "henri": {
+                "name": "Henri Saumure",
+                "role": "Co-Founder & Developer",
+                "bio": "Dedicated to turning ideas into reality through clean and scalable code, Henri brings creativity and problem-solving skills to every web development project."
+            }
+        }
+    },
+    "contact": {
+        "hero": {
+            "title": "Get In Touch",
+            "subtitle": "Have a question or project in mind? We'd love to hear from you."
+        },
+        "info": {
+            "title": "Contact Information",
+            "subtitle": "Reach out to us using any of the following methods and we'll get back to you as soon as possible.",
+            "email": {
+                "label": "Email"
+            },
+            "phone": {
+                "label": "Phone"
+            },
+            "address": {
+                "label": "Address",
+                "value": "278 Roy Street, Longueuil"
+            },
+            "hours": {
+                "label": "Business Hours",
+                "value": "Monday - Friday: 9am - 5pm"
+            }
+        },
+        "form": {
+            "title": "Send Us a Message",
+            "success": "Thank you! Your message has been sent successfully.",
+            "error": "Something went wrong. Please try again later.",
+            "fullName": {
+                "label": "Full Name",
+                "placeholder": "John Doe",
+                "required": "Please enter your name",
+                "minlength": "Name must be at least 2 characters"
+            },
+            "email": {
+                "label": "Email Address",
+                "placeholder": "johndoe@example.com",
+                "required": "Please enter your email",
+                "invalid": "Please enter a valid email address"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "(555) 123-4567",
+                "invalid": "Please enter a valid phone number"
+            },
+            "contactMethod": {
+                "label": "Preferred Contact Method",
+                "options": {
+                    "email": "Email",
+                    "phone": "Phone"
+                }
+            },
+            "subject": {
+                "label": "Subject",
+                "placeholder": "How can we help you?"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Tell us more about your project or question...",
+                "required": "Please enter your message",
+                "minlength": "Message must be at least 10 characters"
+            },
+            "submit": "Send Message",
+            "sending": "Sending..."
+        },
+        "map": {
+            "title": "Find Us"
+        }
+    },
+    "quote": {
+        "hero": {
+            "title": "Request a Quote",
+            "subtitle": "Tell us about your project and get a free estimate"
+        },
+        "howItWorks": {
+            "title": "How It Works",
+            "description": "Getting a quote for your project is simple. Fill out the form with details about your project requirements, and our team will review it and get back to you with a tailored proposal.",
+            "steps": {
+                "step1": {
+                    "title": "Submit Your Request",
+                    "description": "Fill out the form with your project details"
+                },
+                "step2": {
+                    "title": "Project Analysis",
+                    "description": "Our team reviews your requirements"
+                },
+                "step3": {
+                    "title": "Get Your Proposal",
+                    "description": "Receive a tailored quote within 48 hours"
+                },
+                "step4": {
+                    "title": "Project Kickoff",
+                    "description": "Discuss details and start your project"
+                }
+            }
+        },
+        "form": {
+            "title": "Request a Free Quote",
+            "success": "Thank you! Your quote request has been received. We'll get back to you within 48 hours.",
+            "error": "Something went wrong. Please try again later.",
+            "fullName": {
+                "label": "Full Name",
+                "placeholder": "John Doe",
+                "required": "Please enter your name",
+                "minlength": "Name must be at least 2 characters"
+            },
+            "email": {
+                "label": "Email Address",
+                "placeholder": "johndoe@example.com",
+                "required": "Please enter your email",
+                "invalid": "Please enter a valid email address"
+            },
+            "company": {
+                "label": "Company",
+                "placeholder": "Your Company (optional)"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "(555) 123-4567",
+                "invalid": "Please enter a valid phone number"
+            },
+            "projectType": {
+                "label": "Project Type",
+                "required": "Please select a project type"
+            },
+            "budgetRange": {
+                "label": "Budget Range",
+                "placeholder": "Select budget range",
+                "required": "Please select a budget range"
+            },
+            "description": {
+                "label": "Project Description",
+                "placeholder": "Please describe your project, goals, and any specific requirements...",
+                "required": "Please describe your project",
+                "minlength": "Description must be at least 30 characters"
+            },
+            "contactMethod": {
+                "label": "Preferred Contact Method"
+            },
+            "file": {
+                "label": "Attachment (optional)",
+                "chooseFile": "Choose a file",
+                "hint": "Max size: 5MB. Allowed formats: PDF, DOC, DOCX, JPG, PNG",
+                "sizeError": "File size should not exceed 5MB",
+                "typeError": "Only PDF, Word documents, and images (JPEG, PNG) are allowed"
+            },
+            "submit": "Submit Quote Request",
+            "submitting": "Submitting..."
+        },
+        "projectTypes": {
+            "other": "Other"
+        },
+        "budgetRanges": {
+            "lessThan500": "Less than $500",
+            "500To1k": "$500 - $1,000",
+            "1kTo2k": "$1,000 - $2,000",
+            "2kPlus": "More than $2,000"
+        },
+        "contactMethods": {
+            "email": "Email",
+            "phone": "Phone",
+            "videoConference": "Video Conference"
+        },
+        "faqs": {
+            "title": "Frequently Asked Questions",
+            "timeline": {
+                "title": "How long does it take to complete a project?",
+                "content": "Project timelines vary based on complexity. Typically, a simple website takes 2-3 weeks, while more complex applications can take as long as 2 months"
+            },
+            "maintenance": {
+                "title": "Do you offer maintenance after project completion?",
+                "content": "Yes, basic maintenance is included in the monthly fee to ensure your project remains secure and up-to-date. However, additional edits or changes are billed separately."
+            },
+            "information": {
+                "title": "What information do you need for an accurate quote?",
+                "content": "The more details you can provide about your project goals, functionality requirements, design preferences, and timeline, the more accurate our quote will be."
+            },
+            "payments": {
+                "title": "How do payments work?",
+                "content": "We typically require a 30% deposit to begin work, with the remaining balance paid at the end of the project or in milestones for larger projects."
+            }
+        }
+    },
+    "notFound": {
+        "hero": {
+            "title": "404",
+            "subtitle": "Page Not Found"
+        },
+        "content": {
+            "title": "Oops! We can't find that page",
+            "message": "The page you're looking for might have been removed, had its name changed, or is temporarily unavailable."
+        },
+        "buttons": {
+            "home": "Go to Homepage",
+            "contact": "Contact Us"
+        }
+    },
+    "legal": {
+        "lastUpdated": "Last Updated",
+        "documents": {
+            "privacy": {
+                "title": "Privacy Policy",
+                "lastUpdated": "May 23, 2025",
+                "sections": [
+                    {
+                        "heading": "Introduction",
+                        "content": [
+                            "This Privacy Policy explains how Synocti (\"we,\" \"our,\" or \"us\") collects, uses, and discloses your information when you use our website, services, and products.",
+                            "By using our services, you agree to the collection and use of information in accordance with this policy."
+                        ]
+                    },
+                    {
+                        "heading": "Information We Collect",
+                        "content": [
+                            "We only collect personal information that you voluntarily provide to us when using our contact forms. This information is used solely for the purpose of responding to your inquiries and improving our services.",
+                            "• Personal Data: When you fill out a contact form, we may ask you to provide certain personally identifiable information (\"Personal Data\"). This may include:",
+                            "- Your full name",
+                            "- Email address",
+                            "- Phone number (if provided)",
+                            "- The content of your message or inquiry",
+                            "• No Automatic Data Collection: We do not collect usage data, cookies, or track your browsing behavior on our website."
+                        ]
+                    },
+                    {
+                        "heading": "How We Use Your Information",
+                        "content": [
+                            "We only use the personal information you provide through our contact forms for the following purpose:",
+                            "• To respond to your inquiries or requests submitted through the website"
+                        ]
+                    },
+                    {
+                        "heading": "Data Retention",
+                        "content": [
+                            "We retain the information you provide through our contact forms and support tickets only for as long as necessary to respond to your inquiry or resolve your issue.",
+                            "Once a support request or ticket is resolved, the data is moved to an archive for record-keeping and reference purposes. Archived data is securely stored and not actively used."
+                        ]
+                    },
+                    {
+                        "heading": "Data Transfer",
+                        "content": [
+                            "We do not transfer your data to any third parties or to locations outside of our organization.",
+                            "All information submitted through our website, including any personal data, is processed and stored securely within our internal systems.",
+                            "We are committed to maintaining your privacy and ensuring that your information remains protected and within our control at all times."
+                        ]
+                    },
+                    {
+                        "heading": "Your Rights",
+                        "content": [
+                            "Since we only collect personal information that you voluntarily submit through our contact forms, your rights regarding this information include:",
+                            "• The right to access the information you submitted to us",
+                            "• The right to request correction of any inaccurate contact information",
+                            "• The right to request deletion of your information after your inquiry or support ticket is resolved",
+                            "• The right to withdraw your request or inquiry at any time",
+                            "We do not use your data for marketing, automated decision-making, or data profiling.",
+                            "To exercise any of these rights, please contact us using the details provided at the end of this Privacy Policy."
+                        ]
+                    },
+                    {
+                        "heading": "Changes to This Privacy Policy",
+                        "content": [
+                            "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date.",
+                            "You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
+                        ]
+                    },
+                    {
+                        "heading": "Legal Compliance",
+                        "content": [
+                            "While we are committed to protecting your privacy, there are circumstances where we may be required to disclose your personal information:",
+                            "• If required to comply with a legal obligation, court order, or government request",
+                            "• To protect and defend our legal rights or property",
+                            "• To prevent or investigate possible wrongdoing in connection with the service",
+                            "• To protect the safety of users or the public",
+                            "In such cases, we will only disclose the minimum necessary information to comply with our legal obligations."
+                        ]
+                    },
+                    {
+                        "heading": "Contact Us",
+                        "content": [
+                            "If you have any questions about this Privacy Policy, please contact us:",
+                            "• By email: contact@synocti.ca",
+                            "• By phone: (438) 493-5557"
+                        ]
+                    }
+                ]
+            },
+            "terms": {
+                "title": "Terms of Service",
+                "lastUpdated": "May 23, 2025",
+                "sections": [
+                    {
+                        "heading": "Acceptance of Terms",
+                        "content": [
+                            "By accessing or using the website of Synocti (\"Company\", \"we\", \"our\", or \"us\"), you agree to be bound by these Terms of Use (\"Terms\"). If you do not agree with any part of these Terms, you may not access or use our website or services.",
+                            "These Terms apply to all visitors, users, and others who access the website."
+                        ]
+                    },
+                    {
+                        "heading": "Use of the Website",
+                        "content": [
+                            "You may use our website only for lawful purposes and in accordance with these Terms. You agree not to use the website:",
+                            "• In any way that violates applicable local, national, or international laws or regulations.",
+                            "• To exploit, harm, or attempt to exploit or harm minors in any way.",
+                            "• To transmit or procure the sending of any advertising or promotional material without our prior written consent.",
+                            "• To impersonate or attempt to impersonate Synocti, a Synocti employee, another user, or any other person or entity."
+                        ]
+                    },
+                    {
+                        "heading": "Intellectual Property Rights",
+                        "content": [
+                            "All content on this website, including but not limited to text, graphics, logos, icons, images, audio clips, video, software, and data compilations is the exclusive property of Synocti or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
+                            "You may not copy, reproduce, distribute, modify, or create derivative works of any part of this website or its content without express written permission from Synocti."
+                        ]
+                    },
+                    {
+                        "heading": "Disclaimer of Warranties",
+                        "content": [
+                            "This website is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. We do not guarantee that the website or any content, service, or feature will be error-free, uninterrupted, or secure, or that any defects will be corrected.",
+                            "To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement."
+                        ]
+                    },
+                    {
+                        "heading": "Limitation of Liability",
+                        "content": [
+                            "To the maximum extent permitted by law, Synocti and its officers, employees, contractors, or agents shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your access to or use of the website or any services, even if we were advised of the possibility of such damages.",
+                            "This includes, without limitation, any loss of profits, data, goodwill, or other intangible losses."
+                        ]
+                    },
+                    {
+                        "heading": "Third-Party Links and Services",
+                        "content": [
+                            "Our website may contain links to third-party websites or services that are not owned or controlled by Synocti.",
+                            "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. You acknowledge and agree that Synocti is not liable, directly or indirectly, for any damage or loss caused by your use of any such content or services."
+                        ]
+                    },
+                    {
+                        "heading": "Changes to the Terms",
+                        "content": [
+                            "We may update these Terms from time to time to reflect changes in our services, practices, or legal requirements. The latest version will always be posted on this page with the 'Last Updated' date.",
+                            "By continuing to use the website after changes are posted, you agree to be bound by the updated Terms."
+                        ]
+                    },
+                    {
+                        "heading": "Indemnification",
+                        "content": [
+                            "You agree to defend, indemnify, and hold harmless Synocti and its employees, contractors, officers, and agents from and against any claims, liabilities, damages, losses, and expenses, including legal fees, arising out of your violation of these Terms or your use of the website."
+                        ]
+                    },
+                    {
+                        "heading": "Governing Law",
+                        "content": [
+                            "These Terms shall be governed by and construed in accordance with the laws of the Province of Quebec and the federal laws of Canada applicable therein, without regard to conflict of law principles.",
+                            "Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Montreal, Quebec."
+                        ]
+                    },
+                    {
+                        "heading": "User Accounts",
+                        "content": [
+                            "Certain features of our Services, including access to our client portal, require you to create an account. You agree to provide accurate, current, and complete information during the registration process and to update such information as necessary.",
+                            "You are solely responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security.",
+                            "We reserve the right to suspend or terminate your account at any time if we reasonably believe that you have violated these Terms or are otherwise engaging in unlawful or fraudulent activity."
+                        ]
+                    },
+                    {
+                        "heading": "Billing and Payments",
+                        "content": [
+                            "Access to certain Services may require payment. While our pricing model may vary by service or project, you will always be informed of applicable charges before incurring them.",
+                            "By agreeing to use a paid Service, you authorize us to charge your selected payment method for all fees associated with that service.",
+                            "We reserve the right to change our pricing or billing terms at any time with prior notice. Continued use of the Services after the effective date of any such changes constitutes your acceptance of the new pricing.",
+                            "Failure to make timely payments may result in suspension or termination of your access to Services, including the client portal.",
+                            "All fees are non-refundable unless otherwise stated in a written agreement or as required by applicable law."
+                        ]
+                    },
+                    {
+                        "heading": "Contact Us",
+                        "content": [
+                            "If you have any questions about these Terms, you may contact us at:",
+                            "• By email: contact@synocti.ca",
+                            "• By phone: (438) 493-5557"
+                        ]
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "Cookie Policy",
+                "lastUpdated": "May 23, 2025",
+                "sections": [
+                    {
+                        "heading": "What Are Cookies",
+                        "content": [
+                            "Cookies are small pieces of text sent to your web browser by a website you visit. A cookie file is stored in your web browser and allows the website to remember your preferences and enhance your user experience.",
+                            "Cookies can be \"persistent\" or \"session\" cookies. Persistent cookies remain on your device when you go offline, while session cookies are deleted as soon as you close your web browser."
+                        ]
+                    },
+                    {
+                        "heading": "How We Use Cookies",
+                        "content": [
+                            "We use a limited number of cookies to improve your experience on our website. Specifically, we use cookies to:",
+                            "• Remember your selected website theme (light or dark mode)",
+                            "• Remember your chosen language preference (french or english)",
+                            "We do not use cookies for analytics, advertising, or tracking purposes."
+                        ]
+                    },
+                    {
+                        "heading": "Types of Cookies We Use",
+                        "content": [
+                            "Functionality cookies: These cookies allow our website to remember choices you make, such as theme and language. Their purpose is to enhance your personal experience and prevent you from having to reselect settings on each visit.",
+                            "We do not use essential, analytics, or advertising cookies."
+                        ]
+                    },
+                    {
+                        "heading": "Third-Party Cookies",
+                        "content": [
+                            "We do not use any third-party cookies. No cookie data is shared with or collected by third-party services."
+                        ]
+                    },
+                    {
+                        "heading": "What Are Your Choices Regarding Cookies",
+                        "content": [
+                            "If you prefer to avoid the use of cookies, you can disable them in your browser settings. You can also delete any cookies already stored in your browser.",
+                            "Please note that if you disable cookies, your selected theme and language preferences may not be remembered, which could affect your browsing experience."
+                        ]
+                    },
+                    {
+                        "heading": "Changes to This Cookie Policy",
+                        "content": [
+                            "We may update our Cookie Policy from time to time. Any changes will be posted on this page with an updated \"Last Updated\" date.",
+                            "We recommend reviewing this policy periodically to stay informed about how we use cookies."
+                        ]
+                    },
+                    {
+                        "heading": "Contact Us",
+                        "content": [
+                            "If you have any questions about our Cookie Policy, please contact us:",
+                            "• By email: contact@synocti.ca",
+                            "• By phone: (438) 493-5557"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "tempProjectData": {
+        "choculaterie": {
+            "title": "Choculaterie",
+            "type": "Dynamic Website",
+            "description": "A community-driven site where users can share Minecraft schematics, follow creators, and engage through likes and profiles."
+        },
+        "hugoPortfolio": {
+            "title": "Personnal Portfolio",
+            "type": "Single Page Website",
+            "description": "A clean, single-page portfolio designed to showcase Hugo's skills, projects, and contact details with smooth scrolling and modern visual elements."
+        },
+        "henriPortfolio": {
+            "title": "Personnal Portfolio",
+            "type": "Single Page Website",
+            "description": "A responsive portfolio site built to highlight the Henri's work, background, and education with a minimalist design and intuitive layout."
+        }
+    }
+}

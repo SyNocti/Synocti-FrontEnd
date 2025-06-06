@@ -1,0 +1,14 @@
+<div class="testimonial-item">
+    <div class="testimonial-content">
+        <i class="fas fa-quote-left"></i>
+        <p>"{{ testimonial.quoteKey | translate }}"</p>
+    </div>
+    <div class="testimonial-author">
+        <div class="author-image"
+            [style.background-image]="testimonial.authorImage ? 'url(' + testimonial.authorImage + ')' : 'none'"></div>
+        <div class="author-info">
+            <h4>{{ testimonial.authorTitleKey | translate }}</h4>
+            <p>{{ testimonial.authorTitleKey | translate }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,440 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Services Introduction */
+.services-intro {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.services-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.services-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Service Cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 0rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    min-width: 150px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* Price Header (replaces service-image) */
+.price-header {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    position: relative;
+}
+
+.price-amount {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.period {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.setup-price {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* Comparison Section */
+.comparison-section {
+    padding-bottom: 5rem;
+}
+
+.comparison-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.comparison-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.comparison-intro p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 3rem;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.comparison-table th:first-child {
+    width: 30%;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.feature-name {
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.feature-name:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info-icon {
+    margin-left: 0.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.info-icon:hover {
+    transform: scale(1.2);
+}
+
+.check-icon {
+    color: var(--success-color);
+    font-size: 1.2rem;
+}
+
+.x-icon {
+    color: var(--danger-color);
+    font-size: 1.2rem;
+}
+
+.comparison-cta {
+    margin-top: 2rem;
+}
+
+.comparison-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Client Portal Section */
+.portal-section {
+    padding: 5rem 0;
+}
+
+.portal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.portal-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.portal-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.portal-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.portal-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portal-features li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.portal-features li i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+}
+
+.portal-features h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.portal-features p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.portal-video {
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.video-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.video-container:hover img {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.video-container:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: var(--primary-dark);
+}
+
+.video-caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+}
+
+.cta-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .portal-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .services-intro h2,
+    .comparison-intro h2,
+    .portal-text h2,
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1rem;
+    }
+
+    .portal-features li i {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-content {
+        padding: 1.5rem;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem;
+    }
+
+    .portal-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .portal-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .price-header {
+        padding: 2rem 1rem;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .setup-price {
+        font-size: 0.9rem;
+    }
+}
+
+/* Remove old service-image and service-icon styles */
+.service-image,
+.service-icon {
+    display: none;
+}

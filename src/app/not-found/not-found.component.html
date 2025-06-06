@@ -1,0 +1,30 @@
+<main class="not-found-page">
+    <!-- Hero Section -->
+    <app-hero-section 
+        [title]="'notFound.hero.title' | translate" 
+        [subtitle]="'notFound.hero.subtitle' | translate">
+    </app-hero-section>
+
+    <app-section-separator type="curve-1"></app-section-separator>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="not-found-content text-center" data-aos="fade-up">
+                <div class="not-found-icon">
+                    <i class="fas fa-map-signs"></i>
+                </div>
+                <h2>{{ 'notFound.content.title' | translate }}</h2>
+                <p>
+                    {{ 'notFound.content.message' | translate }}
+                </p>
+
+                <div class="navigation-options">
+                    <a routerLink="/" class="btn-primary">{{ 'notFound.buttons.home' | translate }}</a>
+                    <a routerLink="/contact" class="btn-outline">{{ 'notFound.buttons.contact' | translate }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+</main>

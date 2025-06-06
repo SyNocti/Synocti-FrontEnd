@@ -1,0 +1,109 @@
+/* Import utilities */
+@import './utilities.css';
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+    transition: color var(--transition-duration) ease, background-color var(--transition-duration) ease;
+    z-index: 0;
+}
+
+/* CSS Variables */
+:root {
+    /* Main colors */
+    --primary-color: #392982;
+    --primary-dark: #2d1b69;
+    --primary-light: #4936a0;
+    --primary-contrast: #000000;
+    --primary-hero: #6c5cc0;
+
+    /* Text colors */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --text-color: #333333;
+    --text-secondary: #666666;
+
+    /* Background colors */
+    --background-color: #f4f6f8;
+    --background-alt: #e8ebef;
+    --surface-color: #fdfdfd;
+    --hover-color: #f5f5f5;
+    --border-color: #e0e0e0;
+
+    /* Other */
+    --background-image: url('/assets/images/background-light.svg');
+    --transition-duration: 0.5s;
+}
+
+/* Dark theme */
+:root[data-theme="dark"] {
+    /* Main colors */
+    --primary-color: #7289da;
+    --primary-dark: #5b6fc2;
+    --primary-light: #8ea1e1;
+    --primary-contrast: #ffffff;
+    --primary-hero: #4553a4;
+    /* Text colors */
+    --text-color: #e0e0e0;
+    --text-secondary: #a0a0a0;
+
+    /* Background colors */
+    --background-color: #121212;
+    --background-alt: #2a2a3a;
+    --surface-color: #1e1e2e;
+    --hover-color: #2a2a3a;
+    --border-color: #333344;
+
+    /* Other */
+    --background-image: url('/assets/images/background-dark.svg');
+}
+
+/* Background effects */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    transition: opacity var(--transition-duration) ease-in-out;
+    z-index: -10;
+    pointer-events: none;
+}
+
+/* When light theme is active, adjust background */
+body[data-theme="light"]::before {
+    opacity: 0.05;
+}
+
+/* When dark theme is active, adjust background */
+body[data-theme="dark"]::before {
+    opacity: 0.1;
+}
+
+/* Main content area */
+.content {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Remove duplicate styles from app.component.css since they're now in styles.css */

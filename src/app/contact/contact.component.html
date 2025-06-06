@@ -1,0 +1,176 @@
+<main class="contact-page">
+    <!-- Hero Section -->
+    <app-hero-section [title]="'contact.hero.title' | translate"
+        [subtitle]="'contact.hero.subtitle' | translate"></app-hero-section>
+    <app-section-separator type="curve-1"></app-section-separator>
+
+    <!-- Contact Information and Form -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info" data-aos="fade-up">
+                    <h2>{{ 'contact.info.title' | translate }}</h2>
+                    <p>
+                        {{ 'contact.info.subtitle' | translate }}
+                    </p>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <h3>{{ 'contact.info.email.label' | translate }}</h3>
+                            <a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <h3>{{ 'contact.info.phone.label' | translate }}</h3>
+                            <a href="tel:{{contactInfo.phone}}">{{contactInfo.phone}}</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="details">
+                            <h3>{{ 'contact.info.address.label' | translate }}</h3>
+                            <span>{{ contactInfo.address | translate }}</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="details">
+                            <h3>{{ 'contact.info.hours.label' | translate }}</h3>
+                            <span>{{ contactInfo.hours | translate }}</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <app-social-icon link="#" icon="fab fa-linkedin"></app-social-icon>
+                        <app-social-icon link="#" icon="fab fa-facebook-f"></app-social-icon>
+                        <app-social-icon link="#" icon="fab fa-twitter"></app-social-icon>
+                        <app-social-icon link="#" icon="fab fa-instagram"></app-social-icon>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-up" data-aos-delay="200">
+                    <h2>{{ 'contact.form.title' | translate }}</h2>
+
+                    <!-- Success Message -->
+                    <div class="alert alert-success" *ngIf="success">
+                        <i class="fas fa-check-circle"></i> {{ 'contact.form.success' | translate }}
+                    </div>
+
+                    <!-- Error Message -->
+                    <div class="alert alert-error" *ngIf="error">
+                        <i class="fas fa-times-circle"></i> {{ 'contact.form.error' | translate }}
+                    </div>
+
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">{{ 'contact.form.fullName.label' | translate }} <span
+                                    class="required">*</span></label>
+                            <input type="text" id="fullName" formControlName="fullName"
+                                [placeholder]="'contact.form.fullName.placeholder' | translate"
+                                [ngClass]="{'invalid': submitted && f['fullName'].errors}">
+                            <div class="error-message" *ngIf="submitted && f['fullName'].errors">
+                                <span *ngIf="f['fullName'].errors['required']">{{ 'contact.form.fullName.required' |
+                                    translate }}</span>
+                                <span *ngIf="f['fullName'].errors['minlength']">{{ 'contact.form.fullName.minlength' |
+                                    translate }}</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">{{ 'contact.form.email.label' | translate }} <span
+                                    class="required">*</span></label>
+                            <input type="email" id="email" formControlName="email"
+                                [placeholder]="'contact.form.email.placeholder' | translate"
+                                [ngClass]="{'invalid': submitted && f['email'].errors}">
+                            <div class="error-message" *ngIf="submitted && f['email'].errors">
+                                <span *ngIf="f['email'].errors['required']">{{ 'contact.form.email.required' | translate
+                                    }}</span>
+                                <span *ngIf="f['email'].errors['email']">{{ 'contact.form.email.invalid' | translate
+                                    }}</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">{{ 'contact.form.phone.label' | translate }}</label>
+                            <input type="tel" id="phone" formControlName="phone"
+                                [placeholder]="'contact.form.phone.placeholder' | translate"
+                                [ngClass]="{'invalid': submitted && f['phone'].errors}">
+                            <div class="error-message" *ngIf="submitted && f['phone'].errors?.['pattern']">
+                                {{ 'contact.form.phone.invalid' | translate }}
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMethod">{{ 'contact.form.contactMethod.label' | translate }}</label>
+                            <select id="contactMethod" formControlName="contactMethod">
+                                <option value="email">{{ 'contact.form.contactMethod.options.email' | translate }}
+                                </option>
+                                <option value="phone">{{ 'contact.form.contactMethod.options.phone' | translate }}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">{{ 'contact.form.subject.label' | translate }}</label>
+                            <input type="text" id="subject" formControlName="subject"
+                                [placeholder]="'contact.form.subject.placeholder' | translate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">{{ 'contact.form.message.label' | translate }} <span
+                                    class="required">*</span></label>
+                            <textarea id="message" formControlName="message" rows="6"
+                                [placeholder]="'contact.form.message.placeholder' | translate"
+                                [ngClass]="{'invalid': submitted && f['message'].errors}"></textarea>
+                            <div class="error-message" *ngIf="submitted && f['message'].errors">
+                                <span *ngIf="f['message'].errors['required']">{{ 'contact.form.message.required' |
+                                    translate }}</span>
+                                <span *ngIf="f['message'].errors['minlength']">{{ 'contact.form.message.minlength' |
+                                    translate }}</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" [disabled]="loading">
+                            <span *ngIf="!loading">{{ 'contact.form.submit' | translate }}</span>
+                            <span *ngIf="loading"><i class="fas fa-spinner fa-spin"></i> {{ 'contact.form.sending' |
+                                translate }}</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+
+    <!-- Map Section -->
+    <section class="section section-dark map-section">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">{{ 'contact.map.title' | translate }}</h2>
+            <div class="map-container" data-aos="fade-up" data-aos-delay="100">
+                <!-- Replace with your actual Google Maps embed code -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4627419307326!2d-73.4896566!3d45.500762699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc90528e2848663%3A0xcedacd94c031a8fc!2s278%20Rue%20Roy%2C%20Longueuil%2C%20QC%20J4R%201V1!5e0!3m2!1sfr!2sca!4v1748195454218!5m2!1sfr!2sca"
+                    frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <app-section-separator type="line"></app-section-separator>
+</main>

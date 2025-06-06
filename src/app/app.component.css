@@ -1,0 +1,13 @@
+/* Just keep theme toggle button styling */
+.theme-toggle {
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  margin-right: 1rem;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}

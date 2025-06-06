@@ -1,0 +1,33 @@
+<main class="portfolio-page">
+    <!-- Hero Section -->
+    <app-hero-section [title]="'portfolio.hero.title' | translate" [subtitle]="'portfolio.hero.subtitle' | translate">
+    </app-hero-section>
+
+    <app-section-separator type="curve-1"></app-section-separator>
+
+    <!-- Portfolio Projects -->
+    <section class="section section-light">
+        <div class="container">
+            <!-- Portfolio Projects with alternating layout -->
+            <div class="portfolio-projects">
+                <ng-container *ngFor="let project of projects; let i = index">
+                    <div class="project-row" [class.reverse]="i % 2 !== 0">
+                        <div class="project-visual" data-aos="fade-up" data-aos-delay="100">
+                            <app-portfolio-item [project]="project"></app-portfolio-item>
+                        </div>
+                        <div class="project-details" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="project-client">{{project.client}}</h3>
+                            <span class="project-year">{{project.annee}}</span>
+                            <p class="project-description">{{project.description}}</p>
+                            <a class="project-link" [href]="project.link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i> {{ 'portfolio.visitWebsite' | translate }}
+                            </a>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+</main>

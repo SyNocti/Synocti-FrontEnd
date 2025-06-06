@@ -1,0 +1,40 @@
+<main class="legal-page">
+    <!-- Hero Section -->
+    <app-hero-section [title]="activeDocument.titleKey | translate" [subtitle]="getSubtitle()"></app-hero-section>
+    <app-section-separator type="curve-1"></app-section-separator>
+
+    <!-- Legal Content Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="legal-container">
+                <!-- Document Selector -->
+                <div class="document-selector" data-aos="fade-up">
+                    <button [class.active]="activeDocumentType === 'privacy'" (click)="setActiveDocument('privacy')">
+                        {{ 'legal.documents.privacy.title' | translate }}
+                    </button>
+                    <button [class.active]="activeDocumentType === 'terms'" (click)="setActiveDocument('terms')">
+                        {{ 'legal.documents.terms.title' | translate }}
+                    </button>
+                    <button [class.active]="activeDocumentType === 'cookies'" (click)="setActiveDocument('cookies')">
+                        {{ 'legal.documents.cookies.title' | translate }}
+                    </button>
+                </div>
+
+                <!-- Document Content -->
+                <div class="legal-content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="legal-sections">
+                        <ng-container *ngIf="activeDocument.sectionsKey | translate as sections">
+                            <div *ngFor="let section of sections; let i = index" class="legal-section"
+                                [id]="'section-' + i">
+                                <h2>{{ section.heading }}</h2>
+                                <p *ngFor="let paragraph of section.content">{{ paragraph }}</p>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+</main>

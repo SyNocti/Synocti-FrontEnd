@@ -1,0 +1,164 @@
+<main class="services-page">
+    <!-- Hero Section -->
+    <app-hero-section [title]="'services.hero.title' | translate" [subtitle]="'services.hero.subtitle' | translate">
+    </app-hero-section>
+
+    <app-section-separator type="curve-1"></app-section-separator>
+
+    <!-- Services Introduction -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="services-intro text-center" data-aos="fade-up">
+                <h2>{{ 'services.intro.title' | translate }}</h2>
+                <p class="services-description">
+                    {{ 'services.intro.description' | translate }}
+                </p>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="services-grid">
+                <div *ngFor="let service of services; let i = index" [id]="service.id" [attr.data-aos]="'fade-up'"
+                    [attr.data-aos-delay]="i * 100">
+                    <app-pricing-card [title]="service.titleKey" [description]="service.descriptionKey"
+                        [featuresKey]="service.featuresKey" [monthlyPrice]="service.monthlyPrice"
+                        [setupPrice]="service.setupPrice" [serviceId]="service.id">
+                    </app-pricing-card>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+
+    <!-- Service Comparison -->
+    <section class="section section-dark comparison-section">
+        <div class="container">
+            <div class="comparison-intro text-center" data-aos="fade-up">
+                <h2>{{ 'services.comparison.title' | translate }}</h2>
+                <p>{{ 'services.comparison.subtitle' | translate }}</p>
+            </div>
+
+            <div class="comparison-table-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>{{ 'services.comparison.headers.feature' | translate }}</th>
+                            <th>{{ 'services.comparison.headers.singlePage' | translate }}</th>
+                            <th>{{ 'services.comparison.headers.multiPage' | translate }}</th>
+                            <th>{{ 'services.comparison.headers.dynamic' | translate }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let feature of comparisonFeatures">
+                            <td class="feature-name">
+                                {{ feature.nameKey | translate }}
+                                <span class="tooltip" *ngIf="feature.tooltipKey">{{ feature.tooltipKey | translate
+                                    }}</span>
+                                <i *ngIf="feature.scrollTo" class="fas fa-info-circle info-icon"
+                                    (click)="scrollToSection(feature.scrollTo)"></i>
+                            </td>
+                            <td>
+                                <ng-container *ngIf="feature.singlePage === true">
+                                    <i class="fas fa-check check-icon"></i>
+                                </ng-container>
+                                <ng-container *ngIf="feature.singlePage === false">
+                                    <i class="fas fa-times x-icon"></i>
+                                </ng-container>
+                            </td>
+                            <td>
+                                <ng-container *ngIf="feature.multiPage === true">
+                                    <i class="fas fa-check check-icon"></i>
+                                </ng-container>
+                                <ng-container *ngIf="feature.multiPage === false">
+                                    <i class="fas fa-times x-icon"></i>
+                                </ng-container>
+                            </td>
+                            <td>
+                                <ng-container *ngIf="feature.dynamicSite === true">
+                                    <i class="fas fa-check check-icon"></i>
+                                </ng-container>
+                                <ng-container *ngIf="feature.dynamicSite === false">
+                                    <i class="fas fa-times x-icon"></i>
+                                </ng-container>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="comparison-cta text-center" data-aos="fade-up">
+                <p>{{ 'services.comparison.notSure' | translate }}</p>
+                <a routerLink="/contact" class="btn-outline">{{ 'services.comparison.contact' | translate }}</a>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+
+    <!-- Client Portal Section -->
+    <section id="client-portal" class="section section-light portal-section">
+        <div class="container">
+            <div class="portal-content" data-aos="fade-up">
+                <div class="portal-text">
+                    <h2>{{ 'services.portal.title' | translate }}</h2>
+                    <p>
+                        {{ 'services.portal.description' | translate }}
+                    </p>
+                    <h3>{{ 'services.portal.features.title' | translate }}</h3>
+                    <ul class="portal-features">
+                        <li>
+                            <i class="fas fa-ticket-alt"></i>
+                            <div>
+                                <h4>{{ 'services.portal.features.support.title' | translate }}</h4>
+                                <p>{{ 'services.portal.features.support.description' | translate }}</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>{{ 'services.portal.features.notifications.title' | translate }}</h4>
+                                <p>{{ 'services.portal.features.notifications.description' | translate }}</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-edit"></i>
+                            <div>
+                                <h4>{{ 'services.portal.features.content.title' | translate }}</h4>
+                                <p>{{ 'services.portal.features.content.description' | translate }}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="portal-video" data-aos="fade-left" data-aos-delay="200">
+                    <div class="video-container">
+                        <img src="assets/images/services/portal-preview.jpg"
+                            alt="{{ 'services.portal.video.alt' | translate }}">
+                        <div class="play-button" (click)="openVideo()">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <p class="video-caption">{{ 'services.portal.video.caption' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+
+    <!-- CTA Section -->
+    <section class="section section-dark cta-section">
+        <div class="container">
+            <div class="cta-container text-center" data-aos="fade-up">
+                <h2>{{ 'services.cta.title' | translate }}</h2>
+                <p>{{ 'services.cta.subtitle' | translate }}</p>
+                <div class="cta-buttons">
+                    <a routerLink="/quote" class="btn-primary">{{ 'header.getQuote' | translate }}</a>
+                    <a routerLink="/contact" class="btn-outline">{{ 'services.cta.contact' | translate }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-section-separator type="line"></app-section-separator>
+</main>
