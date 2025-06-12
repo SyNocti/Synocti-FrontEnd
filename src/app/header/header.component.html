@@ -10,15 +10,18 @@
     <nav class="drawer-nav">
         <!-- In the drawer (mobile menu) -->
         <ul class="nav-list">
-            <li><a href="#" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{
+            <li><a href="#" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                    (click)="closeMenu()">{{
                     'header.home' | translate }}</a>
             </li>
 
             <!-- Change from dropdown to regular link -->
-            <li><a href="#" routerLink="/services" routerLinkActive="active">{{ 'header.services' | translate }}</a>
+            <li><a href="#" routerLink="/services" routerLinkActive="active" (click)="closeMenu()">{{ 'header.services'
+                    | translate }}</a>
             </li>
 
-            <li><a href="#" routerLink="/portfolio" routerLinkActive="active">{{ 'header.portfolio' | translate }}</a>
+            <li><a href="#" routerLink="/portfolio" routerLinkActive="active" (click)="closeMenu()">{{
+                    'header.portfolio' | translate }}</a>
             </li>
 
             <li class="dropdown">
@@ -26,16 +29,20 @@
                     {{ 'header.aboutUs' | translate }} <i class="fas fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown-menu" [class.show]="activeDropdown === 'about'">
-                    <li><a href="#" routerLink="/story">{{ 'header.ourStory' | translate }}</a></li>
-                    <li><a href="#" routerLink="/team">{{ 'header.meetTheTeam' | translate }}</a></li>
+                    <li><a href="#" routerLink="/story" (click)="closeMenu()">{{ 'header.ourStory' | translate }}</a>
+                    </li>
+                    <li><a href="#" routerLink="/team" (click)="closeMenu()">{{ 'header.meetTheTeam' | translate }}</a>
+                    </li>
                 </ul>
             </li>
 
-            <li><a href="#" routerLink="/contact" routerLinkActive="active">{{ 'header.contact' | translate }}</a></li>
+            <li><a href="#" routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">{{ 'header.contact' |
+                    translate }}</a></li>
         </ul>
 
         <div class="drawer-actions">
-            <a href="#" routerLink="/quote" class="cta-button">{{ 'header.getQuote' | translate }}</a>
+            <a href="#" routerLink="/quote" class="cta-button" (click)="closeMenu()">{{ 'header.getQuote' | translate
+                }}</a>
         </div>
     </nav>
 </aside>

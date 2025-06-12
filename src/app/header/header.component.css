@@ -22,9 +22,13 @@
     margin: 0 auto;
     padding: 0 2rem;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
+}
+
+.logo {
+    justify-self: start;
 }
 
 .logo a {
@@ -42,6 +46,7 @@
 }
 
 .main-nav {
+    justify-self: center;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -329,6 +334,7 @@
 
 /* Right controls styles */
 .right-controls {
+    justify-self: end;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -367,7 +373,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1145px) {
     .main-nav {
         display: none;
     }
@@ -378,6 +384,9 @@
 
     .header-container {
         padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     body {
@@ -398,7 +407,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1145px) {
 
     .mobile-menu-toggle,
     .drawer {
@@ -408,14 +417,7 @@
     .main-nav {
         display: flex;
     }
-}
 
-/* Update dropdown behavior rules */
-
-/* Desktop dropdown behavior - HOVER ONLY */
-@media (min-width: 769px) {
-
-    /* Always show dropdown on hover for desktop */
     .nav-list:not(.drawer .nav-list) .dropdown:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;

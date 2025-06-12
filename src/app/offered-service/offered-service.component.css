@@ -277,6 +277,9 @@
 
 .portal-video {
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .video-container {
@@ -285,13 +288,18 @@
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .video-container img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     transition: transform 0.5s ease;
+    object-fit: cover;
 }
 
 .video-container:hover img {
@@ -363,6 +371,17 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    
+    .portal-video {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .video-container {
+        max-width: 100%;
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -389,6 +408,24 @@
 
     .price {
         font-size: 3rem;
+    }
+    
+    .portal-section {
+        padding: 3rem 0;
+        overflow: hidden;
+    }
+    
+    .portal-video {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .video-container {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
     }
 }
 
@@ -430,6 +467,31 @@
 
     .setup-price {
         font-size: 0.9rem;
+    }
+    
+    .portal-section {
+        padding: 2rem 0;
+        overflow: hidden;
+    }
+    
+    .portal-video {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .video-container {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 6px;
+        margin: 0;
+    }
+    
+    .video-container img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 }
 
