@@ -39,7 +39,7 @@ export class TeamComponent {
       bioKey: 'team.members.henri.bio',
       image: 'assets/images/team/henri.jpg',
       socials: [
-        { link: '#', icon: 'fab fa-linkedin' },
+        { link: 'https://www.linkedin.com/in/henri-saumure-79967636b/', icon: 'fab fa-linkedin' },
         { link: 'https://github.com/HenriSaumure', icon: 'fab fa-github' },
         { link: 'https://saumure.com/', icon: 'fas fa-briefcase' },
       ]
