@@ -96,7 +96,7 @@
 
 .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 150%;
     left: -0.5rem;
     background: var(--surface-color);
     border-radius: 8px;
@@ -111,6 +111,8 @@
     padding: 0;
     z-index: 20;
     border: 1px solid var(--border-color);
+    overflow: hidden;
+    /* Add this to hide content outside container */
 }
 
 .dropdown:hover .dropdown-menu,
@@ -140,17 +142,27 @@
     height: auto !important;
 }
 
+.dropdown-menu a::after {
+    bottom: 1px;
+    /* Move the underline up so it's visible within the container */
+}
+
 .dropdown-menu a {
     color: var(--text-color) !important;
     display: block;
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
-    border-radius: 4px;
-    margin: 0 0.5rem;
+    border-radius: 0;
+    /* Remove border radius */
+    margin: 0;
+    /* Remove the horizontal margins */
+    width: 100%;
+    /* Ensure it takes full width */
 }
 
 .dropdown-menu a:hover {
     background-color: var(--hover-color);
+    width: 100%;
 }
 
 .header-actions {
