@@ -26,7 +26,7 @@ export class TeamComponent {
       nameKey: 'team.members.hugo.name',
       roleKey: 'team.members.hugo.role',
       bioKey: 'team.members.hugo.bio',
-      image: 'assets/images/team/hugo.jpg',
+      image: 'assets/images/hugo.png',
       socials: [
         { link: 'https://www.linkedin.com/in/hugolevacher/', icon: 'fab fa-linkedin' },
         { link: 'https://github.com/hugolevacher', icon: 'fab fa-github' },
@@ -37,7 +37,7 @@ export class TeamComponent {
       nameKey: 'team.members.henri.name',
       roleKey: 'team.members.henri.role',
       bioKey: 'team.members.henri.bio',
-      image: 'assets/images/team/henri.jpg',
+      image: 'assets/images/henri.jpg',
       socials: [
         { link: 'https://www.linkedin.com/in/henri-saumure-79967636b/', icon: 'fab fa-linkedin' },
         { link: 'https://github.com/HenriSaumure', icon: 'fab fa-github' },
