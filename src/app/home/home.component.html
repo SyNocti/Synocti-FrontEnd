@@ -15,10 +15,8 @@
   </div>
 </section>
 
-<app-section-separator type="line" />
-
 <!-- Services Preview -->
-<section class="section section-light">
+<section class="section">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <h2>{{ 'home.services.title' | translate }}</h2>
@@ -32,10 +30,8 @@
   </div>
 </section>
 
-<app-section-separator type="line" />
-
 <!-- About Section -->
-<section class="section section-dark">
+<section class="section">
   <div class="container">
     <div class="about-content">
       <div class="section-header" data-aos="fade-up">
@@ -67,10 +63,8 @@
   </div>
 </section>
 
-<app-section-separator type="line" />
-
 <!-- Portfolio Section -->
-<section class="section section-light" *ngIf="portfolioItems.length > 0">
+<section class="section" *ngIf="portfolioItems.length > 0">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <h2>{{ 'home.portfolio.title' | translate }}</h2>
@@ -87,37 +81,8 @@
   </div>
 </section>
 
-<app-section-separator type="line" *ngIf="portfolioItems.length > 0" />
-
-<!-- Testimonials Section -->
-<section class="section section-dark" *ngIf="testimonials && testimonials.length">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <h2>{{ 'home.testimonials.title' | translate }}</h2>
-      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.testimonials.subtitle' | translate }}</p>
-    </div>
-
-    <div data-aos="fade-up" data-aos-delay="200">
-      <app-carousel [items]="testimonials" [showIndicators]="true" [autoPlay]="true">
-        <ng-template #carouselItemTemplate let-testimonial>
-          <app-testimonial-item [testimonial]="testimonial"></app-testimonial-item>
-        </ng-template>
-      </app-carousel>
-    </div>
-
-    <div class="client-logos">
-      <div class="logo" data-aos="fade-up" data-aos-delay="0"></div>
-      <div class="logo" data-aos="fade-up" data-aos-delay="100"></div>
-      <div class="logo" data-aos="fade-up" data-aos-delay="200"></div>
-      <div class="logo" data-aos="fade-up" data-aos-delay="300"></div>
-    </div>
-  </div>
-</section>
-
-<app-section-separator type="line" *ngIf="testimonials && testimonials.length" />
-
 <!-- Process Section -->
-<section class="section section-light">
+<section class="section">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <h2>{{ 'home.process.title' | translate }}</h2>
@@ -154,8 +119,6 @@
     </div>
   </div>
 </section>
-
-<app-section-separator type="line" />
 
 <!-- CTA Section -->
 <section class="cta-section">

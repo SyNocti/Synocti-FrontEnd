@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { ServiceCard } from '../cards/service-card/service-card.component';
-import { TestimonialItem } from '../cards/testimonial-item/testimonial-item.component';
 import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
@@ -34,34 +33,9 @@ export class HomeDataService {
     }
   ];
 
-  private testimonials: TestimonialItem[] = [
-    {
-      quoteKey: 'home.testimonials.items.first.quote',
-      authorNameKey: 'home.testimonials.items.first.authorName',
-      authorTitleKey: 'home.testimonials.items.first.authorTitle',
-      authorImage: '/assets/images/testimonials/person1.jpg'
-    },
-    {
-      quoteKey: 'home.testimonials.items.second.quote',
-      authorNameKey: 'home.testimonials.items.second.authorName',
-      authorTitleKey: 'home.testimonials.items.second.authorTitle',
-      authorImage: '/assets/images/testimonials/person2.jpg'
-    },
-    {
-      quoteKey: 'home.testimonials.items.third.quote',
-      authorNameKey: 'home.testimonials.items.third.authorName',
-      authorTitleKey: 'home.testimonials.items.third.authorTitle',
-      authorImage: '/assets/images/testimonials/person3.jpg'
-    }
-  ];
-
   constructor() { }
 
   getServiceCards(): ServiceCard[] {
     return this.serviceCards;
-  }
-
-  getTestimonials(): TestimonialItem[] {
-    return this.testimonials;
   }
 }
