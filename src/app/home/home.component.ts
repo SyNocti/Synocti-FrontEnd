@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ServiceCardComponent, ServiceCard } from '../cards/service-card/service-card.component';
 import { PortfolioItemComponent } from '../cards/portfolio-item/portfolio-item.component';
 import { HomeDataService } from '../services/home-data.service';
-import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { Project } from '../models/project';
 import { ProjectsService } from '../services/projects.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -17,7 +16,6 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     ServiceCardComponent,
     PortfolioItemComponent,
-    SectionSeparatorComponent,
     TranslateModule
   ],
   templateUrl: './home.component.html',

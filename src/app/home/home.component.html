@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="hero-image" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
-      <div class="hero-graphic"></div>
+      <img src="assets/images/moon.svg" alt="Crescent Moon" class="moon-graphic" />
     </div>
   </div>
 </section>
@@ -26,6 +26,24 @@
       <app-service-card *ngFor="let service of serviceCards; let i = index" [service]="service"
         [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="150 * (i + 1)">
       </app-service-card>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="section" *ngIf="portfolioItems.length > 0">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>{{ 'home.portfolio.title' | translate }}</h2>
+      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.portfolio.subtitle' | translate }}</p>
+    </div>
+    <div class="grid grid-2 mb-3">
+      <app-portfolio-item *ngFor="let project of portfolioItems; let i = index" [project]="project"
+        [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="200 * (i + 1)">
+      </app-portfolio-item>
+    </div>
+    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+      <a routerLink="/portfolio" class="btn btn-outline">{{ 'home.portfolio.seeMore' | translate }}</a>
     </div>
   </div>
 </section>
@@ -59,24 +77,6 @@
           <span>{{ 'home.about.features.support' | translate }}</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Section -->
-<section class="section" *ngIf="portfolioItems.length > 0">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <h2>{{ 'home.portfolio.title' | translate }}</h2>
-      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.portfolio.subtitle' | translate }}</p>
-    </div>
-    <div class="grid grid-2 mb-3">
-      <app-portfolio-item *ngFor="let project of portfolioItems; let i = index" [project]="project"
-        [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="200 * (i + 1)">
-      </app-portfolio-item>
-    </div>
-    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-      <a routerLink="/portfolio" class="btn btn-outline">{{ 'home.portfolio.seeMore' | translate }}</a>
     </div>
   </div>
 </section>
@@ -132,5 +132,3 @@
     </div>
   </div>
 </section>
-
-<app-section-separator type="line" />

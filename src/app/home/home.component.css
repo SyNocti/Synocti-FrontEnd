@@ -39,28 +39,18 @@ section {
     padding: 5rem 0;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle at 10% 20%, rgba(57, 41, 130, 0.05) 0%, rgba(57, 41, 130, 0.02) 50%);
-    z-index: -1;
-    pointer-events: none;
-}
-
 .hero-section .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    position: relative;
-    z-index: 2;
 }
 
 .hero-content {
-    max-width: 600px;
-    position: relative;
-    z-index: 2;
+    width: 600px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
 }
 
 .hero-content h1 {
@@ -85,33 +75,17 @@ section {
 
 .hero-cta a {
     cursor: pointer;
-    /* Explicitly set cursor */
 }
 
 .hero-image {
-    position: relative;
-    z-index: 1;
+    width: 500px;
 }
 
-.hero-graphic {
-    width: 400px;
-    height: 400px;
-    background-color: rgba(57, 41, 130, 0.05);
-    border-radius: 50%;
-    position: relative;
-    pointer-events: none;
-}
-
-.hero-graphic::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
-    border-radius: 50%;
-    border: 1px solid rgba(57, 41, 130, 0.1);
-    pointer-events: none;
+.moon-graphic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.2;
 }
 
 /* Services Section */
@@ -247,13 +221,6 @@ p {
     z-index: 1;
 }
 
-/* Ensure testimonial stays centered */
-.testimonials-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .hero-content h1 {
@@ -302,14 +269,5 @@ p {
 
     .newsletter-form {
         flex-direction: column;
-    }
-
-    .testimonials-carousel {
-        padding: 0 3rem;
-    }
-
-    .carousel-arrow {
-        width: 40px;
-        height: 40px;
     }
 }
