@@ -221,9 +221,11 @@
     background-color: var(--background-color-30);
     backdrop-filter: blur(8px);
     border-radius: 8px;
-    padding: 2rem;
     box-shadow: 0 4px 20px var(--shadow);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card:hover {

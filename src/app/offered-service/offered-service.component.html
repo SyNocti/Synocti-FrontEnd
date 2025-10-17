@@ -15,8 +15,7 @@
                 <div *ngFor="let service of services; let i = index" [id]="service.id" [attr.data-aos]="'fade-up'"
                     [attr.data-aos-delay]="i * 100">
                     <app-pricing-card [title]="service.titleKey" [description]="service.descriptionKey"
-                        [featuresKey]="service.featuresKey" [monthlyPrice]="service.monthlyPrice"
-                        [setupPrice]="service.setupPrice" [serviceId]="service.id">
+                        [featuresKey]="service.featuresKey" [serviceId]="service.id">
                     </app-pricing-card>
                 </div>
             </div>

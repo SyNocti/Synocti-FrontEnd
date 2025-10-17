@@ -14,7 +14,5 @@ export class PricingCardComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() featuresKey: string = '';
-  @Input() monthlyPrice: string = '';
-  @Input() setupPrice: string = '';
   @Input() serviceId: string = '';
 }

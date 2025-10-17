@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { OfferedServiceDataService, Service, ComparisonFeature } from '../services/offered-service-data.service';
+import { OfferedServiceDataService, Service } from '../services/offered-service-data.service';
 import { PricingCardComponent } from '../cards/pricing-card/pricing-card.component';
 import { TranslateModule } from '@ngx-translate/core';
 
