@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HeroSectionComponent } from '../shared/hero-section/hero-section.component';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { OfferedServiceDataService, Service, ComparisonFeature } from '../services/offered-service-data.service';
 import { PricingCardComponent } from '../cards/pricing-card/pricing-card.component';
@@ -13,7 +12,6 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     RouterModule,
-    HeroSectionComponent,
     SectionSeparatorComponent,
     PricingCardComponent,
     TranslateModule
@@ -24,7 +22,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class OfferedServiceComponent implements OnInit {
   services: Service[] = [];
   comparisonFeatures: ComparisonFeature[] = [];
-  
+
   constructor(private serviceDataService: OfferedServiceDataService) { }
 
   ngOnInit(): void {

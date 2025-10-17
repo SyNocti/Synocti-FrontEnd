@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { ProjectsService } from '../services/projects.service';
 import { Project } from '../models/project';
 import { PortfolioItemComponent } from '../cards/portfolio-item/portfolio-item.component';
-import { HeroSectionComponent } from '../shared/hero-section/hero-section.component';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -16,7 +15,6 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     RouterModule,
     PortfolioItemComponent,
-    HeroSectionComponent,
     SectionSeparatorComponent,
     TranslateModule
   ],

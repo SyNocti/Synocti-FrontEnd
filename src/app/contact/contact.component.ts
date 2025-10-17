@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { FormsService } from '../services/forms.service';
-import { HeroSectionComponent } from '../shared/hero-section/hero-section.component';
 import { SocialIconComponent } from '../shared/social-icon/social-icon.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ContactForm } from '../models/contactForm';
@@ -15,7 +14,6 @@ import { ContactForm } from '../models/contactForm';
     CommonModule,
     ReactiveFormsModule,
     SectionSeparatorComponent,
-    HeroSectionComponent,
     SocialIconComponent,
     TranslateModule
   ],

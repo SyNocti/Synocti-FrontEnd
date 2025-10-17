@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
-import { HeroSectionComponent } from '../shared/hero-section/hero-section.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -12,7 +11,6 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     RouterModule,
     SectionSeparatorComponent,
-    HeroSectionComponent,
     TranslateModule
   ],
   templateUrl: './story.component.html',

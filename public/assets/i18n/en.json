@@ -107,10 +107,6 @@
         }
     },
     "services": {
-        "hero": {
-            "title": "Our Services",
-            "subtitle": "Professional web solutions tailored to your needs"
-        },
         "intro": {
             "title": "Web Development Services",
             "description": "We offer a range of web development services designed to help businesses of all sizes establish a strong online presence. From simple static websites to complex dynamic web applications, we have the expertise to bring your vision to life."
@@ -231,17 +227,9 @@
         }
     },
     "portfolio": {
-        "hero": {
-            "title": "Our Portfolio",
-            "subtitle": "Showcasing our best work"
-        },
         "visitWebsite": "Visit Website"
     },
     "story": {
-        "hero": {
-            "title": "Our Story",
-            "subtitle": "A journey of passion, innovation, and digital excellence"
-        },
         "origin": {
             "title": "How It All Started",
             "text": [
@@ -287,10 +275,6 @@
         }
     },
     "team": {
-        "hero": {
-            "title": "Meet Our Team",
-            "subtitle": "Small in size, big on talent and dedication"
-        },
         "intro": {
             "title": "Our Talented Team",
             "description": "While we may be small, our combined experience and passion allow us to deliver exceptional results. Our close-knit team means you get direct access to decision-makers and experts throughout your project."
@@ -309,10 +293,6 @@
         }
     },
     "contact": {
-        "hero": {
-            "title": "Get In Touch",
-            "subtitle": "Have a question or project in mind? We'd love to hear from you."
-        },
         "info": {
             "title": "Contact Information",
             "subtitle": "Reach out to us using any of the following methods and we'll get back to you as soon as possible.",
@@ -373,10 +353,6 @@
         }
     },
     "notFound": {
-        "hero": {
-            "title": "404",
-            "subtitle": "Page Not Found"
-        },
         "content": {
             "title": "Oops! We can't find that page",
             "message": "The page you're looking for might have been removed, had its name changed, or is temporarily unavailable."

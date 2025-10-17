@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HeroSectionComponent } from '../shared/hero-section/hero-section.component';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { SocialIconComponent } from '../shared/social-icon/social-icon.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,7 +11,6 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     RouterModule,
-    HeroSectionComponent,
     SectionSeparatorComponent,
     SocialIconComponent,
     TranslateModule

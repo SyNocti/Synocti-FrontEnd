@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { LegalDataService, LegalDocumentType, LegalDocument } from '../services/legal-data.service';
-import { HeroSectionComponent } from '../shared/hero-section/hero-section.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -13,7 +12,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     CommonModule,
     RouterModule,
     SectionSeparatorComponent,
-    HeroSectionComponent,
     TranslateModule
   ],
   templateUrl: './legal.component.html',

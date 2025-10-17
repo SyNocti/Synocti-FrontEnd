@@ -107,10 +107,6 @@
         }
     },
     "services": {
-        "hero": {
-            "title": "Nos services",
-            "subtitle": "Solutions web professionnelles adaptées à vos besoins"
-        },
         "intro": {
             "title": "Services de développement web",
             "description": "Nous proposons une gamme de services de développement web conçus pour aider les entreprises de toutes tailles à établir une forte présence en ligne. Des sites web statiques simples aux applications web dynamiques complexes, nous avons l'expertise pour donner vie à votre vision."
@@ -231,17 +227,9 @@
         }
     },
     "portfolio": {
-        "hero": {
-            "title": "Notre portfolio",
-            "subtitle": "Présentation de nos meilleurs projets"
-        },
         "visitWebsite": "Visiter le site"
     },
     "story": {
-        "hero": {
-            "title": "Notre Histoire",
-            "subtitle": "Un parcours de passion, d'innovation et d'excellence numérique"
-        },
         "origin": {
             "title": "Comment Tout a Commencé",
             "text": [
@@ -287,10 +275,6 @@
         }
     },
     "team": {
-        "hero": {
-            "title": "Rencontrez Notre Équipe",
-            "subtitle": "Petite en taille, grande en talent et dévouement"
-        },
         "intro": {
             "title": "Notre Équipe Talentueuse",
             "description": "Bien que notre équipe soit petite, notre expérience collective et notre passion nous permettent de livrer des résultats exceptionnels. Notre équipe soudée signifie que vous avez un accès direct aux décideurs et aux experts tout au long de votre projet."
@@ -309,10 +293,6 @@
         }
     },
     "contact": {
-        "hero": {
-            "title": "Contactez-nous",
-            "subtitle": "Vous avez une question ou un projet en tête ? Nous serions ravis de vous entendre."
-        },
         "info": {
             "title": "Informations de contact",
             "subtitle": "Contactez-nous en utilisant l'une des méthodes suivantes et nous vous répondrons dans les plus brefs délais.",
@@ -373,10 +353,6 @@
         }
     },
     "notFound": {
-        "hero": {
-            "title": "404",
-            "subtitle": "Page Non Trouvée"
-        },
         "content": {
             "title": "Oups ! Nous ne pouvons pas trouver cette page",
             "message": "La page que vous recherchez a peut-être été supprimée, son nom a été modifié, ou elle est temporairement indisponible."
