@@ -23,69 +23,6 @@
         </div>
     </section>
 
-    <!-- Service Comparison -->
-    <section class="section comparison-section">
-        <div class="container">
-            <div class="comparison-intro text-center" data-aos="fade-up">
-                <h2>{{ 'services.comparison.title' | translate }}</h2>
-                <p>{{ 'services.comparison.subtitle' | translate }}</p>
-            </div>
-
-            <div class="comparison-table-wrapper" data-aos="fade-up" data-aos-delay="100">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>{{ 'services.comparison.headers.feature' | translate }}</th>
-                            <th>{{ 'services.comparison.headers.singlePage' | translate }}</th>
-                            <th>{{ 'services.comparison.headers.multiPage' | translate }}</th>
-                            <th>{{ 'services.comparison.headers.dynamic' | translate }}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let feature of comparisonFeatures">
-                            <td class="feature-name">
-                                {{ feature.nameKey | translate }}
-                                <span class="tooltip" *ngIf="feature.tooltipKey">{{ feature.tooltipKey | translate
-                                    }}</span>
-                                <i *ngIf="feature.scrollTo" class="fas fa-info-circle info-icon"
-                                    (click)="scrollToSection(feature.scrollTo)"></i>
-                            </td>
-                            <td>
-                                <ng-container *ngIf="feature.singlePage === true">
-                                    <i class="fas fa-check check-icon"></i>
-                                </ng-container>
-                                <ng-container *ngIf="feature.singlePage === false">
-                                    <i class="fas fa-times x-icon"></i>
-                                </ng-container>
-                            </td>
-                            <td>
-                                <ng-container *ngIf="feature.multiPage === true">
-                                    <i class="fas fa-check check-icon"></i>
-                                </ng-container>
-                                <ng-container *ngIf="feature.multiPage === false">
-                                    <i class="fas fa-times x-icon"></i>
-                                </ng-container>
-                            </td>
-                            <td>
-                                <ng-container *ngIf="feature.dynamicSite === true">
-                                    <i class="fas fa-check check-icon"></i>
-                                </ng-container>
-                                <ng-container *ngIf="feature.dynamicSite === false">
-                                    <i class="fas fa-times x-icon"></i>
-                                </ng-container>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="comparison-cta text-center" data-aos="fade-up">
-                <p>{{ 'services.comparison.notSure' | translate }}</p>
-                <a routerLink="/contact" class="btn btn-outline">{{ 'services.comparison.contact' | translate }}</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Client Portal Section -->
     <section id="client-portal" class="section portal-section">
         <div class="container">

@@ -63,121 +63,6 @@
     font-weight: 500;
 }
 
-/* Comparison Section */
-.comparison-section {
-    padding-bottom: 5rem;
-}
-
-.comparison-intro {
-    max-width: 800px;
-    margin: 0 auto 3rem;
-}
-
-.comparison-intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-}
-
-.comparison-intro p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-}
-
-.comparison-table-wrapper {
-    overflow-x: auto;
-    margin-bottom: 3rem;
-}
-
-.comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--surface-color);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.comparison-table th,
-.comparison-table td {
-    padding: 1.2rem 1.5rem;
-    text-align: left;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.comparison-table th {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.comparison-table th:first-child {
-    width: 30%;
-}
-
-.comparison-table tr:last-child td {
-    border-bottom: none;
-}
-
-.feature-name {
-    font-weight: 500;
-    color: var(--text-color);
-    position: relative;
-}
-
-.tooltip {
-    position: absolute;
-    bottom: 70%;
-    left: 0;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 100;
-    pointer-events: none;
-}
-
-.feature-name:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-}
-
-.info-icon {
-    margin-left: 0.5rem;
-    color: var(--primary-color);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.info-icon:hover {
-    transform: scale(1.2);
-}
-
-.check-icon {
-    color: var(--success-color);
-    font-size: 1.2rem;
-}
-
-.x-icon {
-    color: var(--danger-color);
-    font-size: 1.2rem;
-}
-
-.comparison-cta {
-    margin-top: 2rem;
-}
-
-.comparison-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
 /* Client Portal Section */
 .portal-section {
     padding: 5rem 0;
@@ -353,7 +238,6 @@
 @media (max-width: 768px) {
 
     .services-intro h2,
-    .comparison-intro h2,
     .portal-text h2,
     .cta-container h2 {
         font-size: 2rem;
@@ -361,11 +245,6 @@
 
     .services-grid {
         grid-template-columns: 1fr;
-    }
-
-    .comparison-table th,
-    .comparison-table td {
-        padding: 1rem;
     }
 
     .portal-features li i {
@@ -398,15 +277,6 @@
 @media (max-width: 576px) {
     .service-content {
         padding: 1.5rem;
-    }
-
-    .comparison-table {
-        font-size: 0.9rem;
-    }
-
-    .comparison-table th,
-    .comparison-table td {
-        padding: 0.75rem;
     }
 
     .portal-text h2 {

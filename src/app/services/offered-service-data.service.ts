@@ -49,66 +49,6 @@ export class OfferedServiceDataService {
     }
   ];
 
-  private comparisonFeatures: ComparisonFeature[] = [
-    {
-      nameKey: 'services.comparison.features.clientPortal.name',
-      singlePage: true,
-      multiPage: true,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.clientPortal.tooltip',
-      scrollTo: 'client-portal'
-    },
-    {
-      nameKey: 'services.comparison.features.responsiveDesign.name',
-      singlePage: true,
-      multiPage: true,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.responsiveDesign.tooltip'
-    },
-    {
-      nameKey: 'services.comparison.features.seoOptimization.name',
-      singlePage: true,
-      multiPage: true,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.seoOptimization.tooltip'
-    },
-    {
-      nameKey: 'services.comparison.features.domainSetup.name',
-      singlePage: true,
-      multiPage: true,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.domainSetup.tooltip'
-    },
-    {
-      nameKey: 'services.comparison.features.multiplePages.name',
-      singlePage: false,
-      multiPage: true,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.multiplePages.tooltip'
-    },
-    {
-      nameKey: 'services.comparison.features.enhancedUX.name',
-      singlePage: false,
-      multiPage: true,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.enhancedUX.tooltip'
-    },
-    {
-      nameKey: 'services.comparison.features.contentManagement.name',
-      singlePage: false,
-      multiPage: false,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.contentManagement.tooltip'
-    },
-    {
-      nameKey: 'services.comparison.features.customForms.name',
-      singlePage: false,
-      multiPage: false,
-      dynamicSite: true,
-      tooltipKey: 'services.comparison.features.customForms.tooltip'
-    },
-  ];
-
   constructor() { }
 
   getServices(): Service[] {
@@ -117,9 +57,5 @@ export class OfferedServiceDataService {
 
   getServiceById(id: string): Service | undefined {
     return this.services.find(service => service.id === id);
-  }
-
-  getComparisonFeatures(): ComparisonFeature[] {
-    return this.comparisonFeatures;
   }
 }

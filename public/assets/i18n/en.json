@@ -151,52 +151,6 @@
                 "description": "Secure, custom-built portal that allows clients or staff to manage data and easily request our help."
             }
         },
-        "comparison": {
-            "title": "Service Comparison",
-            "subtitle": "Compare our web development options to find the one that best fits your business needs",
-            "headers": {
-                "feature": "Feature",
-                "singlePage": "Single Page",
-                "multiPage": "Multi-Page",
-                "dynamic": "Dynamic Site"
-            },
-            "notSure": "Not sure which service is right for you?",
-            "contact": "Contact us for a consultation",
-            "features": {
-                "clientPortal": {
-                    "name": "Client Portal Access",
-                    "tooltip": "Access to our support and content management portal"
-                },
-                "responsiveDesign": {
-                    "name": "Responsive Design",
-                    "tooltip": "Adapts to all screen sizes and devices"
-                },
-                "seoOptimization": {
-                    "name": "SEO Optimization",
-                    "tooltip": "Basic search engine optimization included"
-                },
-                "domainSetup": {
-                    "name": "Hosting & Domain Setup",
-                    "tooltip": "We help you set up your domain and hosting"
-                },
-                "multiplePages": {
-                    "name": "Multiple Pages",
-                    "tooltip": "Separate pages for different content sections"
-                },
-                "enhancedUX": {
-                    "name": "Enhanced User Experience",
-                    "tooltip": "Improved navigation and user interaction"
-                },
-                "contentManagement": {
-                    "name": "Content Management System",
-                    "tooltip": "Edit website content without coding knowledge"
-                },
-                "customForms": {
-                    "name": "Custom Forms",
-                    "tooltip": "Integrated forms for user input and data collection"
-                }
-            }
-        },
         "portal": {
             "title": "Client Portal",
             "description": "Every client gets access to our secure client portal. It's your go-to place for support, updates, and (if your website is dynamic) content management tools to keep your site up-to-date without technical hassle.",

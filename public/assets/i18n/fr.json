@@ -151,52 +151,6 @@
                 "description": "Un portail sécurisé et personnalisé pour gérer les données et facilement demander notre aide."
             }
         },
-        "comparison": {
-            "title": "Comparaison des Services",
-            "subtitle": "Comparez nos options de développement web pour trouver celle qui convient le mieux aux besoins de votre entreprise",
-            "headers": {
-                "feature": "Fonctionnalité",
-                "singlePage": "Page Unique",
-                "multiPage": "Multi-Pages",
-                "dynamic": "Site Dynamique"
-            },
-            "notSure": "Vous ne savez pas quel service vous convient ?",
-            "contact": "Contactez-nous pour une consultation",
-            "features": {
-                "clientPortal": {
-                    "name": "Accès au portail client",
-                    "tooltip": "Accès à notre portail de support et de gestion de contenu"
-                },
-                "responsiveDesign": {
-                    "name": "Design réactif",
-                    "tooltip": "S'adapte à toutes les tailles d'écran et appareils"
-                },
-                "seoOptimization": {
-                    "name": "Optimisation SEO",
-                    "tooltip": "Optimisation de base pour les moteurs de recherche incluse"
-                },
-                "domainSetup": {
-                    "name": "Hébergement et configuration de domaine",
-                    "tooltip": "Nous vous aidons à configurer votre domaine et votre hébergement"
-                },
-                "multiplePages": {
-                    "name": "Plusieurs pages",
-                    "tooltip": "Pages séparées pour différentes sections de contenu"
-                },
-                "enhancedUX": {
-                    "name": "Expérience utilisateur améliorée",
-                    "tooltip": "Navigation et interaction utilisateur améliorées"
-                },
-                "contentManagement": {
-                    "name": "Système de gestion de contenu",
-                    "tooltip": "Modifier le contenu du site sans connaissance en codage"
-                },
-                "customForms": {
-                    "name": "Formulaires personnalisés",
-                    "tooltip": "Formulaires personnalisés pour la collecte de données"
-                }
-            }
-        },
         "portal": {
             "title": "Portail client",
             "description": "Chaque client a accès à notre portail sécurisé. C’est votre point central pour le support, les mises à jour, et (si vous avez un site web dynamique) des outils pour gérer facilement le contenu de votre site sans connaissances techniques.",

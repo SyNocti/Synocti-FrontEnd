@@ -19,13 +19,11 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class OfferedServiceComponent implements OnInit {
   services: Service[] = [];
-  comparisonFeatures: ComparisonFeature[] = [];
 
   constructor(private serviceDataService: OfferedServiceDataService) { }
 
   ngOnInit(): void {
     this.services = this.serviceDataService.getServices();
-    this.comparisonFeatures = this.serviceDataService.getComparisonFeatures();
   }
 
   scrollToSection(sectionId: string): void {
