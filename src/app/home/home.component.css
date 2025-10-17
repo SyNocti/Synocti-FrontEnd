@@ -58,6 +58,10 @@ section {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--text-color);
+    background: linear-gradient(90deg, var(--text-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-content p {
