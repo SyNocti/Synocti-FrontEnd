@@ -96,8 +96,7 @@
             "contact": "Contact"
         },
         "contact": {
-            "title": "Contact Us",
-            "address": "278 Roy Street, Longueuil"
+            "title": "Contact Us"
         },
         "copyright": "© {{year}} Synocti. All rights reserved.",
         "legal": {
@@ -321,10 +320,6 @@
             },
             "phone": {
                 "label": "Phone"
-            },
-            "address": {
-                "label": "Address",
-                "value": "278 Roy Street, Longueuil"
             },
             "hours": {
                 "label": "Business Hours",

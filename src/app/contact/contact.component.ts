@@ -32,7 +32,6 @@ export class ContactComponent implements OnInit {
   contactInfo = {
     email: 'contact@synocti.ca',
     phone: '(438) 493-5557',
-    address: 'contact.info.address.value',
     hours: 'contact.info.hours.value'
   };
 
