@@ -173,7 +173,7 @@
 }
 
 .theme-toggle:hover {
-    background-color: var();
+    background-color: #6161615b;
 }
 
 .theme-toggle i {
@@ -186,7 +186,13 @@
     border: none;
     color: var(--text-color);
     cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s;
     padding: 0.5rem;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: #6161615b;
 }
 
 .mobile-menu-toggle i {
