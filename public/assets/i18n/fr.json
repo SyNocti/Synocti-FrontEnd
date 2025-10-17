@@ -6,8 +6,7 @@
         "aboutUs": "À propos",
         "ourStory": "Notre histoire",
         "meetTheTeam": "Notre équipe",
-        "contact": "Contact",
-        "getQuote": "Demander un devis"
+        "contact": "Contact"
     },
     "home": {
         "hero": {
@@ -375,120 +374,6 @@
         },
         "map": {
             "title": "Nous trouver"
-        }
-    },
-    "quote": {
-        "hero": {
-            "title": "Demander un devis",
-            "subtitle": "Parlez-nous de votre projet et obtenez une estimation gratuite"
-        },
-        "howItWorks": {
-            "title": "Comment ça marche",
-            "description": "Obtenir un devis pour votre projet est simple. Remplissez le formulaire avec les détails de vos besoins, et notre équipe l'examinera pour vous proposer une offre personnalisée.",
-            "steps": {
-                "step1": {
-                    "title": "Soumettez votre demande",
-                    "description": "Remplissez le formulaire avec les détails de votre projet"
-                },
-                "step2": {
-                    "title": "Analyse du projet",
-                    "description": "Notre équipe examine vos besoins"
-                },
-                "step3": {
-                    "title": "Recevez votre proposition",
-                    "description": "Obtenez un devis personnalisé sous 48 heures"
-                },
-                "step4": {
-                    "title": "Lancement du projet",
-                    "description": "Discutez des détails et démarrez votre projet"
-                }
-            }
-        },
-        "form": {
-            "title": "Demander un devis gratuit",
-            "success": "Merci ! Votre demande de devis a été reçue. Nous vous répondrons sous 48 heures.",
-            "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
-            "fullName": {
-                "label": "Nom complet",
-                "placeholder": "Jean Dupont",
-                "required": "Veuillez entrer votre nom",
-                "minlength": "Le nom doit comporter au moins 2 caractères"
-            },
-            "email": {
-                "label": "Adresse e-mail",
-                "placeholder": "jeandupont@exemple.com",
-                "required": "Veuillez entrer votre email",
-                "invalid": "Veuillez entrer une adresse email valide"
-            },
-            "company": {
-                "label": "Entreprise",
-                "placeholder": "Votre Entreprise (optionnel)"
-            },
-            "phone": {
-                "label": "Numéro de téléphone",
-                "placeholder": "(555) 123-4567",
-                "invalid": "Veuillez entrer un numéro de téléphone valide"
-            },
-            "projectType": {
-                "label": "Type de projet",
-                "required": "Veuillez sélectionner un type de projet"
-            },
-            "budgetRange": {
-                "label": "Fourchette de budget",
-                "placeholder": "Sélectionner une fourchette de budget",
-                "required": "Veuillez sélectionner une fourchette de budget"
-            },
-            "description": {
-                "label": "Description du projet",
-                "placeholder": "Décrivez votre projet, vos objectifs et toutes exigences spécifiques...",
-                "required": "Veuillez décrire votre projet",
-                "minlength": "La description doit comporter au moins 30 caractères"
-            },
-            "contactMethod": {
-                "label": "Méthode de contact préférée"
-            },
-            "file": {
-                "label": "Pièce jointe (optionnel)",
-                "chooseFile": "Choisir un fichier",
-                "hint": "Taille max : 5Mo. Formats autorisés : PDF, DOC, DOCX, JPG, PNG",
-                "sizeError": "La taille du fichier ne doit pas dépasser 5Mo",
-                "typeError": "Seuls les documents PDF, Word et les images (JPEG, PNG) sont autorisés"
-            },
-            "submit": "Envoyer la demande de devis",
-            "submitting": "Envoi en cours..."
-        },
-        "projectTypes": {
-            "other": "Autre"
-        },
-        "budgetRanges": {
-            "lessThan500": "Moins de 500$",
-            "500To1k": "500$ - 1 000$",
-            "1kTo2k": "1 000$ - 2 000$",
-            "2kPlus": "Plus de 2 000$"
-        },
-        "contactMethods": {
-            "email": "Email",
-            "phone": "Téléphone",
-            "videoConference": "Visioconférence"
-        },
-        "faqs": {
-            "title": "Questions fréquemment posées",
-            "timeline": {
-                "title": "Combien de temps faut-il pour réaliser un projet ?",
-                "content": "Les délais varient selon la complexité. Généralement, un site web simple prend 2-4 semaines, tandis que des applications plus complexes peuvent prendre jusqu'à 2 mois."
-            },
-            "maintenance": {
-                "title": "Offrez-vous une maintenance après la réalisation du projet ?",
-                "content": "Oui, la maintenance de base est incluse dans le tarif mensuel afin de garantir que votre projet reste sécurisé et à jour. Cependant, les modifications ou ajustements supplémentaires sont facturés séparément."
-            },
-            "information": {
-                "title": "Quelles informations sont nécessaires pour un devis précis ?",
-                "content": "Plus vous pouvez fournir de détails sur les objectifs, les fonctionnalités requises, les préférences de design et le calendrier, plus notre devis sera précis."
-            },
-            "payments": {
-                "title": "Comment fonctionnent les paiements ?",
-                "content": "Nous demandons généralement un acompte de 30 % pour commencer le travail, le solde restant étant payé à la fin du projet ou par étapes pour les projets plus importants."
-            }
         }
     },
     "notFound": {

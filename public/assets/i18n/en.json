@@ -6,8 +6,7 @@
         "aboutUs": "About Us",
         "ourStory": "Our Story",
         "meetTheTeam": "Meet the Team",
-        "contact": "Contact",
-        "getQuote": "Get a Quote"
+        "contact": "Contact"
     },
     "home": {
         "hero": {
@@ -375,120 +374,6 @@
         },
         "map": {
             "title": "Find Us"
-        }
-    },
-    "quote": {
-        "hero": {
-            "title": "Request a Quote",
-            "subtitle": "Tell us about your project and get a free estimate"
-        },
-        "howItWorks": {
-            "title": "How It Works",
-            "description": "Getting a quote for your project is simple. Fill out the form with details about your project requirements, and our team will review it and get back to you with a tailored proposal.",
-            "steps": {
-                "step1": {
-                    "title": "Submit Your Request",
-                    "description": "Fill out the form with your project details"
-                },
-                "step2": {
-                    "title": "Project Analysis",
-                    "description": "Our team reviews your requirements"
-                },
-                "step3": {
-                    "title": "Get Your Proposal",
-                    "description": "Receive a tailored quote within 48 hours"
-                },
-                "step4": {
-                    "title": "Project Kickoff",
-                    "description": "Discuss details and start your project"
-                }
-            }
-        },
-        "form": {
-            "title": "Request a Free Quote",
-            "success": "Thank you! Your quote request has been received. We'll get back to you within 48 hours.",
-            "error": "Something went wrong. Please try again later.",
-            "fullName": {
-                "label": "Full Name",
-                "placeholder": "John Doe",
-                "required": "Please enter your name",
-                "minlength": "Name must be at least 2 characters"
-            },
-            "email": {
-                "label": "Email Address",
-                "placeholder": "johndoe@example.com",
-                "required": "Please enter your email",
-                "invalid": "Please enter a valid email address"
-            },
-            "company": {
-                "label": "Company",
-                "placeholder": "Your Company (optional)"
-            },
-            "phone": {
-                "label": "Phone Number",
-                "placeholder": "(555) 123-4567",
-                "invalid": "Please enter a valid phone number"
-            },
-            "projectType": {
-                "label": "Project Type",
-                "required": "Please select a project type"
-            },
-            "budgetRange": {
-                "label": "Budget Range",
-                "placeholder": "Select budget range",
-                "required": "Please select a budget range"
-            },
-            "description": {
-                "label": "Project Description",
-                "placeholder": "Please describe your project, goals, and any specific requirements...",
-                "required": "Please describe your project",
-                "minlength": "Description must be at least 30 characters"
-            },
-            "contactMethod": {
-                "label": "Preferred Contact Method"
-            },
-            "file": {
-                "label": "Attachment (optional)",
-                "chooseFile": "Choose a file",
-                "hint": "Max size: 5MB. Allowed formats: PDF, DOC, DOCX, JPG, PNG",
-                "sizeError": "File size should not exceed 5MB",
-                "typeError": "Only PDF, Word documents, and images (JPEG, PNG) are allowed"
-            },
-            "submit": "Submit Quote Request",
-            "submitting": "Submitting..."
-        },
-        "projectTypes": {
-            "other": "Other"
-        },
-        "budgetRanges": {
-            "lessThan500": "Less than $500",
-            "500To1k": "$500 - $1,000",
-            "1kTo2k": "$1,000 - $2,000",
-            "2kPlus": "More than $2,000"
-        },
-        "contactMethods": {
-            "email": "Email",
-            "phone": "Phone",
-            "videoConference": "Video Conference"
-        },
-        "faqs": {
-            "title": "Frequently Asked Questions",
-            "timeline": {
-                "title": "How long does it take to complete a project?",
-                "content": "Project timelines vary based on complexity. Typically, a simple website takes 2-3 weeks, while more complex applications can take as long as 2 months"
-            },
-            "maintenance": {
-                "title": "Do you offer maintenance after project completion?",
-                "content": "Yes, basic maintenance is included in the monthly fee to ensure your project remains secure and up-to-date. However, additional edits or changes are billed separately."
-            },
-            "information": {
-                "title": "What information do you need for an accurate quote?",
-                "content": "The more details you can provide about your project goals, functionality requirements, design preferences, and timeline, the more accurate our quote will be."
-            },
-            "payments": {
-                "title": "How do payments work?",
-                "content": "We typically require a 30% deposit to begin work, with the remaining balance paid at the end of the project or in milestones for larger projects."
-            }
         }
     },
     "notFound": {

@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-import { QuoteComponent } from './quote/quote.component';
 import { OfferedServiceComponent } from './offered-service/offered-service.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { StoryComponent } from './story/story.component';
@@ -17,7 +16,6 @@ export const routes: Routes = [
     { path: "story", component: StoryComponent },
     { path: "team", component: TeamComponent },
     { path: "contact", component: ContactComponent },
-    { path: "quote", component: QuoteComponent },
     { path: "legal/:document", component: LegalComponent },
 
     { path: "**", component: NotFoundComponent } //Has to be the last route
