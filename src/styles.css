@@ -23,25 +23,33 @@ body {
 /* CSS Variables */
 :root {
     --primary-color: #2A7FFF;
+    --primary-color-10: rgba(42, 127, 255, 0.1);
     --secondary-color: #0066CC;
     --accent-color: #FFB400;
 
     --text-color: #000000;
     --text-opposite: #FFFFFF;
 
+    --shadow: rgba(0, 0, 0, 0.1);
+
     --background-color: #FFFFFF;
+    --background-color-70: rgba(255, 255, 255, 0.7);
 }
 
 /* Dark theme */
 :root[data-theme="dark"] {
     --primary-color: #2A7FFF;
+    --primary-color-10: rgba(42, 127, 255, 0.1);
     --secondary-color: #3399FF;
     --accent-color: #FFD65C;
 
     --text-color: #FFFFFF;
     --text-opposite: #000000;
 
-    --background-color: #000000;
+    --shadow: rgba(255, 255, 255, 0.1);
+
+    --background-color: #1f1f1f;
+    --background-color-70: rgba(31, 31, 31, 0.7);
 }
 
 /* Main content area */
