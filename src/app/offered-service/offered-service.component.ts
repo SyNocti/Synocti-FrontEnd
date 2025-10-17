@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { OfferedServiceDataService, Service, ComparisonFeature } from '../services/offered-service-data.service';
 import { PricingCardComponent } from '../cards/pricing-card/pricing-card.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,7 +11,6 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     RouterModule,
-    SectionSeparatorComponent,
     PricingCardComponent,
     TranslateModule
   ],
