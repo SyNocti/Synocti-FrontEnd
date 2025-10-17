@@ -218,16 +218,17 @@
 
 /* Cards and panels */
 .card {
-    background-color: var(--background-color);
+    background-color: var(--background-color-30);
+    backdrop-filter: blur(8px);
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px var(--shadow);
 }
 
 /* Section headers */

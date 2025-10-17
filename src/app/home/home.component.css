@@ -202,16 +202,6 @@ p {
     color: white;
 }
 
-.cta-section .primary-btn {
-    background-color: white;
-    color: var(--primary-color);
-}
-
-.cta-section .primary-btn:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: var(--primary-dark);
-}
-
 /* Content Styles */
 .content {
     min-height: 100vh;
@@ -254,9 +244,20 @@ p {
         padding: 6rem 0 4rem;
     }
 
+    .hero-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+    }
+
     .hero-content {
         text-align: center;
         margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero-cta {
@@ -269,9 +270,5 @@ p {
 
     .section-header h2 {
         font-size: 2rem;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
     }
 }

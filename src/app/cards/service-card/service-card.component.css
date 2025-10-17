@@ -17,13 +17,13 @@
   margin-bottom: 1.5rem;
 }
 
-.service-card h3 {
+h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 
-.service-card p {
+p {
   margin-bottom: 1.5rem;
   color: var(--text-secondary);
 }
