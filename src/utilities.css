@@ -12,29 +12,9 @@
     position: relative;
 }
 
-.section-light {
-    background-color: var(--background-color);
-}
-
-.section-dark {
-    background-color: var(--surface-color);
-}
-
 /* Typography */
 .text-center {
     text-align: center;
-}
-
-.text-primary {
-    color: var(--primary-color);
-}
-
-.text-light {
-    color: var(--text-light);
-}
-
-.text-secondary {
-    color: var(--text-secondary);
 }
 
 .heading-large {
@@ -82,17 +62,18 @@
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: var(--text-opposite);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-dark);
+    background: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow);
 }
 
 .btn-outline {
@@ -102,19 +83,22 @@
 }
 
 .btn-outline:hover {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    background-color: var(--secondary-color);
+    color: var(--text-opposite);
     transform: translateY(-2px);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 4px 8px var(--shadow);
 }
 
 .btn-light {
-    background-color: white;
-    color: var(--primary-color);
+    background-color: var(--text-color);
+    color: var(--text-opposite);
 }
 
 .btn-light:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: var(--primary-dark);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow);
 }
 
 /* Flex utilities */

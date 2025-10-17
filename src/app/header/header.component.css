@@ -159,23 +159,6 @@
     align-items: center;
 }
 
-.cta-button {
-    background: var(--primary-color);
-    color: var(--text-opposite);
-    padding: 0.75rem 1.25rem;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all 0.3s;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-.cta-button:hover {
-    background: var(--secondary-color);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px var(--shadow);
-}
-
 .theme-toggle {
     background: transparent;
     border: none;
