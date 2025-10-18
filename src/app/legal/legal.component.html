@@ -6,13 +6,16 @@
             <div class="legal-container">
                 <!-- Document Selector -->
                 <div class="document-selector" data-aos="fade-up">
-                    <button [class.active]="activeDocumentType === 'privacy'" (click)="setActiveDocument('privacy')">
+                    <button class="btn btn-outline" [class.active]="activeDocumentType === 'privacy'"
+                        (click)="setActiveDocument('privacy')">
                         {{ 'legal.documents.privacy.title' | translate }}
                     </button>
-                    <button [class.active]="activeDocumentType === 'terms'" (click)="setActiveDocument('terms')">
+                    <button class="btn btn-outline" [class.active]="activeDocumentType === 'terms'"
+                        (click)="setActiveDocument('terms')">
                         {{ 'legal.documents.terms.title' | translate }}
                     </button>
-                    <button [class.active]="activeDocumentType === 'cookies'" (click)="setActiveDocument('cookies')">
+                    <button class="btn btn-outline" [class.active]="activeDocumentType === 'cookies'"
+                        (click)="setActiveDocument('cookies')">
                         {{ 'legal.documents.cookies.title' | translate }}
                     </button>
                 </div>
@@ -32,6 +35,4 @@
             </div>
         </div>
     </section>
-
-    <app-section-separator type="line"></app-section-separator>
 </main>
