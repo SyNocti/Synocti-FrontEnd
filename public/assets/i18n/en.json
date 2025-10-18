@@ -224,13 +224,11 @@
         "members": {
             "hugo": {
                 "name": "Hugo Levacher",
-                "role": "Co-Founder & Developer",
-                "bio": "Passionate about crafting efficient and innovative web solutions, Hugo combines strong technical skills with a fresh perspective to build modern, user-friendly websites."
+                "role": "Co-Founder & Developer"
             },
             "henri": {
                 "name": "Henri Saumure",
-                "role": "Co-Founder & Developer",
-                "bio": "Dedicated to turning ideas into reality through clean and scalable code, Henri brings creativity and problem-solving skills to every web development project."
+                "role": "Co-Founder & Developer"
             }
         }
     },

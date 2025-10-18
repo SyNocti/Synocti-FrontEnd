@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { SocialIconComponent } from '../shared/social-icon/social-icon.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -11,7 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     RouterModule,
-    SectionSeparatorComponent,
     SocialIconComponent,
     TranslateModule
   ],
@@ -23,7 +21,6 @@ export class TeamComponent {
     {
       nameKey: 'team.members.hugo.name',
       roleKey: 'team.members.hugo.role',
-      bioKey: 'team.members.hugo.bio',
       image: 'assets/images/hugo.png',
       socials: [
         { link: 'https://www.linkedin.com/in/hugolevacher/', icon: 'fab fa-linkedin' },
@@ -34,7 +31,6 @@ export class TeamComponent {
     {
       nameKey: 'team.members.henri.name',
       roleKey: 'team.members.henri.role',
-      bioKey: 'team.members.henri.bio',
       image: 'assets/images/henri.jpg',
       socials: [
         { link: 'https://www.linkedin.com/in/henri-saumure-79967636b/', icon: 'fab fa-linkedin' },

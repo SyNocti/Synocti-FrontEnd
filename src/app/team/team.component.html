@@ -1,7 +1,5 @@
 <main class="team-page">
 
-    <app-section-separator type="curve-1"></app-section-separator>
-
     <!-- Team Introduction -->
     <section class="section section-light">
         <div class="container">
@@ -16,26 +14,23 @@
             <div class="team-members">
                 <div *ngFor="let member of teamMembers; let i = index" class="team-member" [attr.data-aos]="'fade-up'"
                     [attr.data-aos-delay]="i * 100">
-                    <div class="member-card">
+                    <div class="card member-card">
                         <div class="member-image">
                             <img [src]="member.image" [alt]="member.nameKey | translate">
+                            <div class="hover-overlay">
+                                <div class="member-social">
+                                    <app-social-icon *ngFor="let social of member.socials" [link]="social.link"
+                                        [icon]="social.icon"></app-social-icon>
+                                </div>
+                            </div>
                         </div>
                         <div class="member-info">
                             <h3>{{ member.nameKey | translate }}</h3>
                             <p class="member-role">{{ member.roleKey | translate }}</p>
-                        </div>
-                        <div class="hover-content">
-                            <p class="member-bio">{{ member.bioKey | translate }}</p>
-                            <div class="member-social">
-                                <app-social-icon *ngFor="let social of member.socials" [link]="social.link"
-                                    [icon]="social.icon"></app-social-icon>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <app-section-separator type="line"></app-section-separator>
 </main>
