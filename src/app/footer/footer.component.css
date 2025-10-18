@@ -1,10 +1,8 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
 .footer {
-    background-color: var(--surface-color);
     color: var(--text-color);
     padding: 4rem 0 0 0;
-    border-top: 1px solid var(--border-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -20,8 +18,8 @@
 .footer-section h3 {
     font-size: 1.5rem;
     margin-bottom: 1.25rem;
-    color: var(--primary-color);
     font-weight: 700;
+    color: var(--primary-color);
 }
 
 .footer-section h4 {
@@ -46,7 +44,7 @@
 .footer-section p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 .footer-section ul {
@@ -60,10 +58,9 @@
 }
 
 .footer-section ul li a {
-    color: var(--text-secondary);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
-    /* Added transform transition */
     display: inline-block;
     position: relative;
 }
@@ -87,8 +84,6 @@
 .footer-bottom {
     margin-top: 3rem;
     padding: 1.5rem 0;
-    background-color: var(--background-alt);
-    border-top: 1px solid var(--border-color);
     transition: background-color 0.3s ease;
 }
 
@@ -99,7 +94,7 @@
 }
 
 .footer-bottom p {
-    color: var(--text-secondary);
+    color: var(--text-color);
     font-size: 0.9rem;
 }
 
@@ -109,7 +104,7 @@
 }
 
 .footer-legal a {
-    color: var(--text-secondary);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s ease;

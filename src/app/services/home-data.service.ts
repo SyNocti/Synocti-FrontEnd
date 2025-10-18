@@ -8,27 +8,27 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeDataService {
   private serviceCards: ServiceCard[] = [
     {
-      icon: 'fa-file-alt',
-      titleKey: 'services.servicesList.singlePage.title',
-      descriptionKey: 'services.servicesList.singlePage.description',
+      icon: 'fa-globe',
+      titleKey: 'services.servicesList.web.title',
+      descriptionKey: 'services.servicesList.web.description',
       link: '/services'
     },
     {
-      icon: 'fa-layer-group',
-      titleKey: 'services.servicesList.multiPage.title',
-      descriptionKey: 'services.servicesList.multiPage.description',
+      icon: 'fa-mobile-alt',
+      titleKey: 'services.servicesList.mobile.title',
+      descriptionKey: 'services.servicesList.mobile.description',
       link: '/services'
     },
     {
-      icon: 'fa-sync-alt',
-      titleKey: 'services.servicesList.dynamicSite.title',
-      descriptionKey: 'services.servicesList.dynamicSite.description',
+      icon: 'fa-desktop',
+      titleKey: 'services.servicesList.desktop.title',
+      descriptionKey: 'services.servicesList.desktop.description',
       link: '/services'
     },
     {
-      icon: 'fa-user-shield',
-      titleKey: 'services.servicesList.clientPortal.title',
-      descriptionKey: 'services.servicesList.clientPortal.description',
+      icon: 'fa-server',
+      titleKey: 'services.servicesList.hosting.title',
+      descriptionKey: 'services.servicesList.hosting.description',
       link: '/services'
     }
   ];
