@@ -65,24 +65,16 @@
 .project-description {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 /* Project Link Styling */
 .project-link {
-    color: var(--primary-color);
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    width: fit-content;
 }
 
 .project-link i {
     margin-right: 0.5rem;
-}
-
-.project-link:hover {
-    color: var(--primary-contrast);
-    transform: translateY(-3px);
 }
 
 /* Responsive design */

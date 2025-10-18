@@ -15,7 +15,6 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     RouterModule,
     PortfolioItemComponent,
-    SectionSeparatorComponent,
     TranslateModule
   ],
   templateUrl: './portfolio.component.html',

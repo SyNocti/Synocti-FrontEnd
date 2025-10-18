@@ -1,9 +1,7 @@
 <main class="portfolio-page">
 
-    <app-section-separator type="curve-1"></app-section-separator>
-
     <!-- Portfolio Projects -->
-    <section class="section section-light">
+    <section class="section">
         <div class="container">
             <!-- Portfolio Projects with alternating layout -->
             <div class="portfolio-projects">
@@ -16,7 +14,7 @@
                             <h3 class="project-client">{{project.client}}</h3>
                             <span class="project-year">{{project.annee}}</span>
                             <p class="project-description">{{project.description}}</p>
-                            <a class="project-link" [href]="project.link" target="_blank" rel="noopener">
+                            <a class="project-link btn btn-light" [href]="project.link" target="_blank" rel="noopener">
                                 <i class="fas fa-external-link-alt"></i> {{ 'portfolio.visitWebsite' | translate }}
                             </a>
                         </div>
@@ -25,6 +23,4 @@
             </div>
         </div>
     </section>
-
-    <app-section-separator type="line"></app-section-separator>
 </main>
