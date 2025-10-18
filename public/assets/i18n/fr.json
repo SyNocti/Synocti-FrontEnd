@@ -157,35 +157,9 @@
                 ]
             }
         },
-        "process": {
-            "title": "Notre Processus de Travail",
-            "subtitle": "Une approche structurée pour garantir des résultats exceptionnels",
-            "steps": {
-                "discovery": {
-                    "title": "Découverte",
-                    "description": "Nous analysons vos besoins, objectifs et contraintes pour définir la portée du projet."
-                },
-                "planning": {
-                    "title": "Planification",
-                    "description": "Nous créons une feuille de route détaillée avec les étapes, les délais et les livrables."
-                },
-                "design": {
-                    "title": "Conception",
-                    "description": "Nous concevons l'interface et l'expérience utilisateur en accord avec votre vision."
-                },
-                "development": {
-                    "title": "Développement",
-                    "description": "Nous construisons votre solution avec un code propre, testé et performant."
-                },
-                "testing": {
-                    "title": "Tests",
-                    "description": "Nous effectuons des tests rigoureux pour garantir qualité et fiabilité."
-                },
-                "launch": {
-                    "title": "Lancement",
-                    "description": "Nous déployons votre solution et fournissons un support continu."
-                }
-            }
+        "technologies": {
+            "title": "Technologies que nous utilisons",
+            "subtitle": "Des outils modernes et éprouvés pour créer des solutions performantes"
         },
         "cta": {
             "title": "Prêt à commencer ?",

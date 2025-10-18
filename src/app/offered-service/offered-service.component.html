@@ -15,76 +15,29 @@
                 <div *ngFor="let service of services; let i = index" [id]="service.id" [attr.data-aos]="'fade-up'"
                     [attr.data-aos-delay]="i * 100">
                     <app-pricing-card [title]="service.titleKey" [description]="service.descriptionKey"
-                        [featuresKey]="service.featuresKey" [serviceId]="service.id">
+                        [featuresKey]="service.featuresKey" [serviceId]="service.id" [icon]="service.icon">
                     </app-pricing-card>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Process Section -->
-    <section class="section process-section">
+    <!-- Technologies Marquee Section -->
+    <section class="section technologies-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <h2>{{ 'services.process.title' | translate }}</h2>
-                <p>{{ 'services.process.subtitle' | translate }}</p>
+                <h2>{{ 'services.technologies.title' | translate }}</h2>
+                <p>{{ 'services.technologies.subtitle' | translate }}</p>
             </div>
-
-            <div class="process-steps">
-                <div class="process-step" data-aos="fade-up" data-aos-delay="0">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>{{ 'services.process.steps.discovery.title' | translate }}</h3>
-                    <p>{{ 'services.process.steps.discovery.description' | translate }}</p>
+        </div>
+        <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <om-marquee [animationDuration]="'30s'" [pauseOnHover]="true" [marqueeGap]="'0rem'"
+                styleClass="custom-marquee">
+                <div *ngFor="let tech of technologies" #OmMarqueeContent>
+                    <app-technology-card [name]="tech.name" [logo]="tech.logo" [category]="tech.category">
+                    </app-technology-card>
                 </div>
-
-                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3>{{ 'services.process.steps.planning.title' | translate }}</h3>
-                    <p>{{ 'services.process.steps.planning.description' | translate }}</p>
-                </div>
-
-                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">
-                        <i class="fas fa-pencil-ruler"></i>
-                    </div>
-                    <h3>{{ 'services.process.steps.design.title' | translate }}</h3>
-                    <p>{{ 'services.process.steps.design.description' | translate }}</p>
-                </div>
-
-                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>{{ 'services.process.steps.development.title' | translate }}</h3>
-                    <p>{{ 'services.process.steps.development.description' | translate }}</p>
-                </div>
-
-                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
-                    <div class="step-number">5</div>
-                    <div class="step-icon">
-                        <i class="fas fa-vial"></i>
-                    </div>
-                    <h3>{{ 'services.process.steps.testing.title' | translate }}</h3>
-                    <p>{{ 'services.process.steps.testing.description' | translate }}</p>
-                </div>
-
-                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
-                    <div class="step-number">6</div>
-                    <div class="step-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>{{ 'services.process.steps.launch.title' | translate }}</h3>
-                    <p>{{ 'services.process.steps.launch.description' | translate }}</p>
-                </div>
-            </div>
+            </om-marquee>
         </div>
     </section>
 

@@ -8,9 +8,21 @@
     padding: 2rem;
 }
 
+.title-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
 .card-content h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
     color: var(--text-color);
 }
 
@@ -23,7 +35,7 @@
 .feature-list {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 1.5rem 0;
+    margin: 0;
     flex-grow: 1;
 }
 
@@ -40,13 +52,6 @@
     margin-top: 0.25rem;
 }
 
-.card-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .price {
@@ -55,19 +60,15 @@
 }
 
 @media (max-width: 576px) {
-    .price-header {
-        padding: 2rem 1rem;
-    }
-
-    .price {
-        font-size: 2.5rem;
-    }
-
-    .setup-price {
-        font-size: 0.9rem;
-    }
-
     .card-content {
         padding: 1.5rem;
+    }
+
+    .service-icon {
+        font-size: 1.5rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.3rem;
     }
 }

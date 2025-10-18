@@ -157,35 +157,9 @@
                 ]
             }
         },
-        "process": {
-            "title": "Our Work Process",
-            "subtitle": "A structured approach to ensure exceptional results",
-            "steps": {
-                "discovery": {
-                    "title": "Discovery",
-                    "description": "We analyze your needs, goals, and constraints to define the project scope."
-                },
-                "planning": {
-                    "title": "Planning",
-                    "description": "We create a detailed roadmap with milestones, timelines, and deliverables."
-                },
-                "design": {
-                    "title": "Design",
-                    "description": "We design the interface and user experience aligned with your vision."
-                },
-                "development": {
-                    "title": "Development",
-                    "description": "We build your solution with clean, tested, and performant code."
-                },
-                "testing": {
-                    "title": "Testing",
-                    "description": "We conduct rigorous testing to ensure quality and reliability."
-                },
-                "launch": {
-                    "title": "Launch",
-                    "description": "We deploy your solution and provide ongoing support."
-                }
-            }
+        "technologies": {
+            "title": "Technologies We Use",
+            "subtitle": "Modern and proven tools to build high-performance solutions"
         },
         "cta": {
             "title": "Ready to Get Started?",

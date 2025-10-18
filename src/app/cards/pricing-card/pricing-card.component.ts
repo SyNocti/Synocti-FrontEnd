@@ -15,4 +15,5 @@ export class PricingCardComponent {
   @Input() description: string = '';
   @Input() featuresKey: string = '';
   @Input() serviceId: string = '';
+  @Input() icon: string = '';
 }

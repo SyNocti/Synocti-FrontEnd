@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { OfferedServiceDataService, Service } from '../services/offered-service-data.service';
+import { OfferedServiceDataService, Service, Technology } from '../services/offered-service-data.service';
 import { PricingCardComponent } from '../cards/pricing-card/pricing-card.component';
+import { TechnologyCardComponent } from '../cards/technology-card/technology-card.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
 
 @Component({
   selector: 'app-offered-service',
@@ -12,18 +14,22 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     RouterModule,
     PricingCardComponent,
-    TranslateModule
+    TechnologyCardComponent,
+    TranslateModule,
+    NgxMarqueeComponent
   ],
   templateUrl: './offered-service.component.html',
   styleUrl: './offered-service.component.css'
 })
 export class OfferedServiceComponent implements OnInit {
   services: Service[] = [];
+  technologies: Technology[] = [];
 
   constructor(private serviceDataService: OfferedServiceDataService) { }
 
   ngOnInit(): void {
     this.services = this.serviceDataService.getServices();
+    this.technologies = this.serviceDataService.getTechnologies();
   }
 
   scrollToSection(sectionId: string): void {
@@ -31,9 +37,5 @@ export class OfferedServiceComponent implements OnInit {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
-
-  openVideo(): void {
-    // Video opening functionality
   }
 }
