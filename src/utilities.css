@@ -101,6 +101,19 @@
     box-shadow: 0 4px 8px var(--shadow);
 }
 
+.btn-light-outline {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.btn-light-outline:hover {
+    background-color: var(--text-color);
+    color: var(--text-opposite);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
 /* Flex utilities */
 .flex {
     display: flex;

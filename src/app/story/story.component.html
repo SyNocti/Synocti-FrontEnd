@@ -1,9 +1,6 @@
 <main class="story-page">
-
-    <app-section-separator type="curve-1"></app-section-separator>
-
     <!-- Origin Story Section -->
-    <section class="section section-light">
+    <section class="section">
         <div class="container">
             <div class="story-content" data-aos="fade-up">
                 <div class="story-text">
@@ -17,19 +14,17 @@
         </div>
     </section>
 
-    <app-section-separator type="line"></app-section-separator>
-
     <!-- Our Mission & Vision Section -->
-    <section class="section section-dark mission-section">
+    <section class="section mission-section">
         <div class="container">
             <div class="mission-vision-container" data-aos="fade-up">
-                <div class="mission-box">
+                <div class="mission-box card">
                     <h2>{{ 'story.mission.title' | translate }}</h2>
                     <p>
                         {{ 'story.mission.description' | translate }}
                     </p>
                 </div>
-                <div class="vision-box">
+                <div class="vision-box card">
                     <h2>{{ 'story.vision.title' | translate }}</h2>
                     <p>
                         {{ 'story.vision.description' | translate }}
@@ -39,10 +34,8 @@
         </div>
     </section>
 
-    <app-section-separator type="line"></app-section-separator>
-
     <!-- Our Values Section -->
-    <section class="section section-light values-section">
+    <section class="section values-section">
         <div class="container">
             <h2 class="section-title text-center" data-aos="fade-up">{{ 'story.values.title' | translate }}</h2>
             <p class="section-description text-center" data-aos="fade-up" data-aos-delay="100">
@@ -50,7 +43,7 @@
             </p>
 
             <div class="values-grid">
-                <div *ngFor="let value of values; let i = index" class="value-card" [attr.data-aos]="'fade-up'"
+                <div *ngFor="let value of values; let i = index" class="card value-card" [attr.data-aos]="'fade-up'"
                     [attr.data-aos-delay]="100 * i">
                     <div class="value-icon">
                         <i class="fas {{value.icon}}"></i>
@@ -62,22 +55,19 @@
         </div>
     </section>
 
-    <app-section-separator type="line"></app-section-separator>
-
     <!-- CTA Section -->
-    <section class="section section-dark cta-section">
+    <section class="section cta-section">
         <div class="container">
             <div class="cta-container text-center" data-aos="fade-up">
                 <h2>{{ 'story.cta.title' | translate }}</h2>
                 <p>{{ 'story.cta.subtitle' | translate }}</p>
                 <div class="cta-buttons">
-                    <a routerLink="/contact" class="btn btn-primary">{{ 'story.cta.contact' | translate }}</a>
-                    <a routerLink="/services/single-page-website" class="btn btn-outline">{{ 'story.cta.services' |
+                    <a routerLink="/contact" class="btn btn-light">{{ 'story.cta.contact' | translate }}</a>
+                    <a routerLink="/services" class="btn btn-light-outline">{{ 'story.cta.services'
+                        |
                         translate }}</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <app-section-separator type="line"></app-section-separator>
 </main>

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,7 +9,6 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     RouterModule,
-    SectionSeparatorComponent,
     TranslateModule
   ],
   templateUrl: './story.component.html',
