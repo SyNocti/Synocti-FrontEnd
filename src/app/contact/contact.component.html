@@ -5,7 +5,7 @@
         <div class="container">
             <div class="contact-container">
                 <!-- Contact Information -->
-                <div class="contact-info" data-aos="fade-up">
+                <div class="contact-info card" data-aos="fade-up">
                     <h2>{{ 'contact.info.title' | translate }}</h2>
                     <p>
                         {{ 'contact.info.subtitle' | translate }}
@@ -42,15 +42,16 @@
                     </div>
 
                     <div class="social-links">
-                        <app-social-icon link="#" icon="fab fa-linkedin"></app-social-icon>
-                        <app-social-icon link="#" icon="fab fa-facebook-f"></app-social-icon>
-                        <app-social-icon link="#" icon="fab fa-twitter"></app-social-icon>
-                        <app-social-icon link="#" icon="fab fa-instagram"></app-social-icon>
+                        <app-social-icon link="https://www.linkedin.com/company/synocti/"
+                            icon="fab fa-linkedin"></app-social-icon>
+                        <app-social-icon link="https://github.com/SyNocti" icon="fab fa-github"></app-social-icon>
+                        <app-social-icon link="https://www.instagram.com/synocti"
+                            icon="fab fa-instagram"></app-social-icon>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-form-container card" data-aos="fade-up" data-aos-delay="200">
                     <h2>{{ 'contact.form.title' | translate }}</h2>
 
                     <!-- Success Message -->
@@ -69,11 +70,11 @@
                                     class="required">*</span></label>
                             <input type="text" id="fullName" formControlName="fullName"
                                 [placeholder]="'contact.form.fullName.placeholder' | translate"
-                                [ngClass]="{'invalid': submitted && f['fullName'].errors}">
-                            <div class="error-message" *ngIf="submitted && f['fullName'].errors">
-                                <span *ngIf="f['fullName'].errors['required']">{{ 'contact.form.fullName.required' |
+                                [ngClass]="{'invalid': f['fullName'].invalid && f['fullName'].touched}">
+                            <div class="error-message" *ngIf="f['fullName'].invalid && f['fullName'].touched">
+                                <span *ngIf="f['fullName'].errors?.['required']">{{ 'contact.form.fullName.required' |
                                     translate }}</span>
-                                <span *ngIf="f['fullName'].errors['minlength']">{{ 'contact.form.fullName.minlength' |
+                                <span *ngIf="f['fullName'].errors?.['minlength']">{{ 'contact.form.fullName.minlength' |
                                     translate }}</span>
                             </div>
                         </div>
@@ -83,11 +84,12 @@
                                     class="required">*</span></label>
                             <input type="email" id="email" formControlName="email"
                                 [placeholder]="'contact.form.email.placeholder' | translate"
-                                [ngClass]="{'invalid': submitted && f['email'].errors}">
-                            <div class="error-message" *ngIf="submitted && f['email'].errors">
-                                <span *ngIf="f['email'].errors['required']">{{ 'contact.form.email.required' | translate
+                                [ngClass]="{'invalid': f['email'].invalid && f['email'].touched}">
+                            <div class="error-message" *ngIf="f['email'].invalid && f['email'].touched">
+                                <span *ngIf="f['email'].errors?.['required']">{{ 'contact.form.email.required' |
+                                    translate
                                     }}</span>
-                                <span *ngIf="f['email'].errors['email']">{{ 'contact.form.email.invalid' | translate
+                                <span *ngIf="f['email'].errors?.['email']">{{ 'contact.form.email.invalid' | translate
                                     }}</span>
                             </div>
                         </div>
@@ -96,9 +98,10 @@
                             <label for="phone">{{ 'contact.form.phone.label' | translate }}</label>
                             <input type="tel" id="phone" formControlName="phone"
                                 [placeholder]="'contact.form.phone.placeholder' | translate"
-                                [ngClass]="{'invalid': submitted && f['phone'].errors}">
-                            <div class="error-message" *ngIf="submitted && f['phone'].errors?.['pattern']">
-                                {{ 'contact.form.phone.invalid' | translate }}
+                                [ngClass]="{'invalid': f['phone'].invalid && f['phone'].touched}">
+                            <div class="error-message" *ngIf="f['phone'].invalid && f['phone'].touched">
+                                <span *ngIf="f['phone'].errors?.['pattern']">{{ 'contact.form.phone.invalid' | translate
+                                    }}</span>
                             </div>
                         </div>
 
@@ -123,16 +126,17 @@
                                     class="required">*</span></label>
                             <textarea id="message" formControlName="message" rows="6"
                                 [placeholder]="'contact.form.message.placeholder' | translate"
-                                [ngClass]="{'invalid': submitted && f['message'].errors}"></textarea>
-                            <div class="error-message" *ngIf="submitted && f['message'].errors">
-                                <span *ngIf="f['message'].errors['required']">{{ 'contact.form.message.required' |
+                                [ngClass]="{'invalid': f['message'].invalid && f['message'].touched}"></textarea>
+                            <div class="error-message" *ngIf="f['message'].invalid && f['message'].touched">
+                                <span *ngIf="f['message'].errors?.['required']">{{ 'contact.form.message.required' |
                                     translate }}</span>
-                                <span *ngIf="f['message'].errors['minlength']">{{ 'contact.form.message.minlength' |
+                                <span *ngIf="f['message'].errors?.['minlength']">{{ 'contact.form.message.minlength' |
                                     translate }}</span>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block" [disabled]="loading">
+                        <button type="submit" class="btn btn-primary btn-block"
+                            [disabled]="loading || contactForm.invalid">
                             <span *ngIf="!loading">{{ 'contact.form.submit' | translate }}</span>
                             <span *ngIf="loading"><i class="fas fa-spinner fa-spin"></i> {{ 'contact.form.sending' |
                                 translate }}</span>
@@ -142,5 +146,4 @@
             </div>
         </div>
     </section>
-    <app-section-separator type="line"></app-section-separator>
 </main>

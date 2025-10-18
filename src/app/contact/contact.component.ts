@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { FormsService } from '../services/forms.service';
 import { SocialIconComponent } from '../shared/social-icon/social-icon.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -13,7 +12,6 @@ import { ContactForm } from '../models/contactForm';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    SectionSeparatorComponent,
     SocialIconComponent,
     TranslateModule
   ],
@@ -43,7 +41,7 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.fb.group({
       fullName: ['', [Validators.required, Validators.minLength(2)]],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.pattern(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/)]],
+      phone: ['', [Validators.pattern(/^\+?[\d\s\-\(\)]+$/)]],
       contactMethod: ['email'],
       subject: [''],
       message: ['', [Validators.required, Validators.minLength(10)]]
@@ -62,6 +60,10 @@ export class ContactComponent implements OnInit {
     this.error = false;
 
     if (this.contactForm.invalid) {
+      // Mark all fields as touched to show validation errors
+      Object.keys(this.contactForm.controls).forEach(key => {
+        this.contactForm.get(key)?.markAsTouched();
+      });
       return;
     }
 

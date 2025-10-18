@@ -8,14 +8,9 @@
     padding: 2rem 0;
 }
 
-/* Contact Information Styles */
+/* Contact Information - extends .card from utilities */
 .contact-info {
-    background-color: var(--surface-color);
-    border-radius: 10px;
     padding: 2.5rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
     height: fit-content;
 }
 
@@ -27,7 +22,7 @@
 
 .contact-info p {
     margin-bottom: 2rem;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 .info-item {
@@ -41,9 +36,7 @@
     height: 50px;
     min-width: 50px;
     min-height: 50px;
-    /* Add this to prevent squishing */
-    background-color: var(--primary-light);
-    color: white;
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +44,6 @@
     margin-right: 1rem;
     font-size: 1.25rem;
     flex-shrink: 0;
-    /* Prevent icon from shrinking */
 }
 
 .info-item .details h3 {
@@ -61,9 +53,10 @@
 }
 
 .info-item .details p,
-.info-item .details a {
+.info-item .details a,
+.info-item .details span {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -78,16 +71,11 @@
     margin-top: 2.5rem;
 }
 
-/* Form Styles */
+/* Form Container - extends .card from utilities */
 .contact-form-container {
-    background-color: var(--surface-color);
-    border-radius: 10px;
     padding: 2.5rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
-    /* Ensure padding is included in width */
     max-width: 100%;
-    /* Limit maximum width */
 }
 
 .contact-form-container h2 {
@@ -118,21 +106,24 @@ select,
 textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-color);
     border-radius: 8px;
-    background-color: var(--background-alt);
+    background-color: var(--background-color);
     color: var(--text-color);
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
     box-sizing: border-box;
-    /* Important - include padding in width */
     max-width: 100%;
-    /* Prevent overflow */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: var(--text-secondary);
+    color: var(--text-color);
     opacity: 0.7;
 }
 
@@ -141,7 +132,7 @@ select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(57, 41, 130, 0.1);
+    box-shadow: 0 0 0 3px rgba(42, 127, 255, 0.1);
 }
 
 input.invalid,
@@ -155,45 +146,23 @@ textarea.invalid {
     margin-top: 0.5rem;
 }
 
-.btn {
-    display: inline-block;
-    font-weight: 500;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.btn-primary:active {
-    transform: translateY(0);
-}
-
+/* Button uses utility classes, just add block style */
 .btn-block {
     display: block;
     width: 100%;
 }
 
-.btn:disabled {
-    opacity: 0.7;
+.btn-block:disabled {
+    opacity: 0.5;
     cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.btn-block:disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: var(--primary-color) !important;
 }
 
 /* Alerts */
@@ -222,10 +191,6 @@ textarea.invalid {
     border: 1px solid rgba(231, 76, 60, 0.2);
 }
 
-h2 {
-    font-size: 1.75rem;
-}
-
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .contact-container {
@@ -236,7 +201,6 @@ h2 {
     .contact-form-container {
         padding: 2rem;
         width: 100%;
-        /* Ensure full width */
         box-sizing: border-box;
     }
 }
@@ -246,13 +210,6 @@ h2 {
         grid-template-columns: 1fr;
         width: 100%;
     }
-
-    /* Fix container padding on mobile */
-    .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        box-sizing: border-box;
-    }
 }
 
 @media (max-width: 576px) {
@@ -261,7 +218,6 @@ h2 {
     .contact-form-container {
         padding: 1.5rem;
         overflow: hidden;
-        /* Prevent content from overflowing */
     }
 
     .info-item .icon {
@@ -269,24 +225,19 @@ h2 {
         height: 40px;
         min-width: 40px;
         min-height: 40px;
-        /* Maintain square shape */
         font-size: 1rem;
     }
 
     .info-item {
         flex-wrap: nowrap;
-        /* Prevent wrapping */
         width: 100%;
     }
 
     .info-item .details {
         width: calc(100% - 55px);
-        /* Account for icon width and margin */
         overflow-wrap: break-word;
-        /* Handle long text */
     }
 
-    /* Ensure form elements respect container width */
     .form-group,
     input,
     select,
