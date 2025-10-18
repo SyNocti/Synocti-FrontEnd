@@ -13,22 +13,28 @@ export interface Service {
 export class OfferedServiceDataService {
   private services: Service[] = [
     {
-      id: 'single-page',
-      titleKey: 'services.servicesList.singlePage.title',
-      descriptionKey: 'services.servicesList.singlePage.description',
-      featuresKey: 'services.servicesList.singlePage.features'
+      id: 'web',
+      titleKey: 'services.servicesList.web.title',
+      descriptionKey: 'services.servicesList.web.description',
+      featuresKey: 'services.servicesList.web.features'
     },
     {
-      id: 'multi-page',
-      titleKey: 'services.servicesList.multiPage.title',
-      descriptionKey: 'services.servicesList.multiPage.description',
-      featuresKey: 'services.servicesList.multiPage.features'
+      id: 'mobile',
+      titleKey: 'services.servicesList.mobile.title',
+      descriptionKey: 'services.servicesList.mobile.description',
+      featuresKey: 'services.servicesList.mobile.features'
     },
     {
-      id: 'dynamic-website',
-      titleKey: 'services.servicesList.dynamicSite.title',
-      descriptionKey: 'services.servicesList.dynamicSite.description',
-      featuresKey: 'services.servicesList.dynamicSite.features'
+      id: 'desktop',
+      titleKey: 'services.servicesList.desktop.title',
+      descriptionKey: 'services.servicesList.desktop.description',
+      featuresKey: 'services.servicesList.desktop.features'
+    },
+    {
+      id: 'hosting',
+      titleKey: 'services.servicesList.hosting.title',
+      descriptionKey: 'services.servicesList.hosting.description',
+      featuresKey: 'services.servicesList.hosting.features'
     }
   ];
 

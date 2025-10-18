@@ -108,70 +108,83 @@
     },
     "services": {
         "intro": {
-            "title": "Web Development Services",
-            "description": "We offer a range of web development services designed to help businesses of all sizes establish a strong online presence. From simple static websites to complex dynamic web applications, we have the expertise to bring your vision to life."
-        },
-        "pricing": {
-            "perMonth": "per month",
-            "oneTimeSetup": "One-time setup starting from"
+            "title": "Our Development Services",
+            "description": "We offer a comprehensive range of development solutions designed to help businesses and individuals establish a strong digital presence. From web to mobile, desktop applications, and hosting, we have the expertise to bring your vision to life."
         },
         "servicesList": {
-            "singlePage": {
-                "title": "Single Page Website",
-                "description": "A sleek, fast-loading one-page website that delivers your message clearly and effectively.",
+            "web": {
+                "title": "Web Development",
+                "description": "Modern, high-performance websites tailored to your needs, from simple landing pages to complex web applications.",
                 "features": [
-                    "Optimized for fast loading and smooth scrolling",
-                    "Clean, modern layout tailored to your brand",
-                    "Responsive design for all devices",
-                    "Strategic call-to-action placements"
+                    "Responsive and adaptive websites",
+                    "Dynamic web applications",
+                    "Content management systems",
+                    "E-commerce and online platforms",
+                    "Built-in SEO optimization"
                 ]
             },
-            "multiPage": {
-                "title": "Multi Page Website",
-                "description": "Professional websites with multiple pages for structured, detailed content and navigation.",
+            "mobile": {
+                "title": "Mobile Development",
+                "description": "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences.",
                 "features": [
-                    "Custom page structure",
-                    "Navigation menu designed for usability",
-                    "SEO-friendly URLs and content structure",
-                    "Content layout tailored to each page's goal"
+                    "Native iOS and Android apps",
+                    "Cross-platform development",
+                    "Intuitive user interface",
+                    "API and service integration",
+                    "Ongoing support and maintenance"
                 ]
             },
-            "dynamicSite": {
-                "title": "Dynamic Website",
-                "description": "Websites with editable content and advanced features like user interaction, forms, or data displays.",
+            "desktop": {
+                "title": "Desktop Development",
+                "description": "Powerful desktop applications for Windows, macOS, and Linux tailored to your specific business processes.",
                 "features": [
-                    "Admin panel to manage text, images and sections",
-                    "Real-time content updates without developer help",
-                    "Custom forms or product listings with database storage",
-                    "Role-based user access control"
+                    "Cross-platform applications",
+                    "Native user interface",
+                    "Optimized performance",
+                    "Full system integration",
+                    "Updates and technical support"
                 ]
             },
-            "clientPortal": {
-                "title": "Client Portal",
-                "description": "Secure, custom-built portal that allows clients or staff to manage data and easily request our help."
+            "hosting": {
+                "title": "Hosting & Maintenance",
+                "description": "Reliable hosting services and ongoing maintenance to ensure your applications always run optimally.",
+                "features": [
+                    "Secure and fast hosting",
+                    "Daily automatic backups",
+                    "24/7 monitoring",
+                    "Security updates",
+                    "Priority technical support"
+                ]
             }
         },
-        "portal": {
-            "title": "Client Portal",
-            "description": "Every client gets access to our secure client portal. It's your go-to place for support, updates, and (if your website is dynamic) content management tools to keep your site up-to-date without technical hassle.",
-            "features": {
-                "title": "Key Portal Features",
-                "support": {
-                    "title": "Support Ticket System",
-                    "description": "Easily send questions, request bug fixes or report issues to our responsive team."
+        "process": {
+            "title": "Our Work Process",
+            "subtitle": "A structured approach to ensure exceptional results",
+            "steps": {
+                "discovery": {
+                    "title": "Discovery",
+                    "description": "We analyze your needs, goals, and constraints to define the project scope."
                 },
-                "notifications": {
-                    "title": "Project Notifications",
-                    "description": "Receive updates and important messages regarding your project status or website changes."
+                "planning": {
+                    "title": "Planning",
+                    "description": "We create a detailed roadmap with milestones, timelines, and deliverables."
                 },
-                "content": {
-                    "title": "Content Editor (Dynamic Sites Only)",
-                    "description": "If your website includes dynamic content, you'll get tools to manage your products, services, team, or other website data easily through our admin interface."
+                "design": {
+                    "title": "Design",
+                    "description": "We design the interface and user experience aligned with your vision."
+                },
+                "development": {
+                    "title": "Development",
+                    "description": "We build your solution with clean, tested, and performant code."
+                },
+                "testing": {
+                    "title": "Testing",
+                    "description": "We conduct rigorous testing to ensure quality and reliability."
+                },
+                "launch": {
+                    "title": "Launch",
+                    "description": "We deploy your solution and provide ongoing support."
                 }
-            },
-            "video": {
-                "alt": "Client Portal Preview",
-                "caption": "See how our portal makes managing your website easier"
             }
         },
         "cta": {

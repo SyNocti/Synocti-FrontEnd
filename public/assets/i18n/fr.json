@@ -108,70 +108,83 @@
     },
     "services": {
         "intro": {
-            "title": "Services de développement web",
-            "description": "Nous proposons une gamme de services de développement web conçus pour aider les entreprises de toutes tailles à établir une forte présence en ligne. Des sites web statiques simples aux applications web dynamiques complexes, nous avons l'expertise pour donner vie à votre vision."
-        },
-        "pricing": {
-            "perMonth": "par mois",
-            "oneTimeSetup": "Installation unique à partir de"
+            "title": "Nos Services de Développement",
+            "description": "Nous offrons une gamme complète de solutions de développement conçues pour aider les entreprises et les particuliers à établir une présence numérique forte. Du web au mobile, en passant par les applications de bureau et l'hébergement, nous avons l'expertise pour donner vie à votre vision."
         },
         "servicesList": {
-            "singlePage": {
-                "title": "Site web une page",
-                "description": "Un site élégant et rapide sur une seule page qui communique votre message avec clarté et impact.",
+            "web": {
+                "title": "Développement Web",
+                "description": "Des sites web modernes et performants adaptés à vos besoins, du simple site vitrine aux applications web complexes.",
                 "features": [
-                    "Chargement rapide avec défilement fluide",
-                    "Design moderne adapté à votre image",
-                    "Conception réactive pensée pour tous les appareils",
-                    "Appels à l'action stratégiquement placés"
+                    "Sites web réactifs et adaptatifs",
+                    "Applications web dynamiques",
+                    "Systèmes de gestion de contenu",
+                    "E-commerce et plateformes en ligne",
+                    "Optimisation SEO intégrée"
                 ]
             },
-            "multiPage": {
-                "title": "Site web multi-pages",
-                "description": "Des sites professionnels à plusieurs pages pour un contenu structuré et une navigation fluide.",
+            "mobile": {
+                "title": "Développement Mobile",
+                "description": "Applications mobiles natives et multiplateformes pour iOS et Android qui offrent une expérience utilisateur exceptionnelle.",
                 "features": [
-                    "Structure de pages personnalisée",
-                    "Menu de navigation ergonomique",
-                    "Structure SEO optimisée pour chaque page",
-                    "Mise en page adaptée à l’objectif de chaque section"
+                    "Applications iOS et Android natives",
+                    "Développement multiplateforme",
+                    "Interface utilisateur intuitive",
+                    "Intégration avec APIs et services",
+                    "Support et maintenance continue"
                 ]
             },
-            "dynamicSite": {
-                "title": "Site web dynamique",
-                "description": "Des sites avec du contenu modifiable et des fonctionnalités avancées comme des formulaires ou des interactions utilisateurs.",
+            "desktop": {
+                "title": "Développement Desktop",
+                "description": "Applications de bureau puissantes pour Windows, macOS et Linux adaptées à vos processus métier spécifiques.",
                 "features": [
-                    "Panneau d’administration pour modifier textes, images et sections",
-                    "Mises à jour en temps réel sans développeur",
-                    "Formulaires ou fiches produits reliés à une base de données",
-                    "Gestion des utilisateurs avec accès selon les rôles"
+                    "Applications multiplateformes",
+                    "Interface utilisateur native",
+                    "Performance optimale",
+                    "Intégration système complète",
+                    "Mises à jour et support technique"
                 ]
             },
-            "clientPortal": {
-                "title": "Portail client",
-                "description": "Un portail sécurisé et personnalisé pour gérer les données et facilement demander notre aide."
+            "hosting": {
+                "title": "Hébergement et Maintenance",
+                "description": "Services d'hébergement fiables et maintenance continue pour garantir que vos applications fonctionnent toujours de manière optimale.",
+                "features": [
+                    "Hébergement sécurisé et performant",
+                    "Sauvegardes automatiques quotidiennes",
+                    "Surveillance 24/7",
+                    "Mises à jour de sécurité",
+                    "Support technique prioritaire"
+                ]
             }
         },
-        "portal": {
-            "title": "Portail client",
-            "description": "Chaque client a accès à notre portail sécurisé. C’est votre point central pour le support, les mises à jour, et (si vous avez un site web dynamique) des outils pour gérer facilement le contenu de votre site sans connaissances techniques.",
-            "features": {
-                "title": "Fonctionnalités clés du portail",
-                "support": {
-                    "title": "Système de billets de support",
-                    "description": "Envoyez vos questions, signalez des bugs ou demandez de l’aide à notre équipe réactive."
+        "process": {
+            "title": "Notre Processus de Travail",
+            "subtitle": "Une approche structurée pour garantir des résultats exceptionnels",
+            "steps": {
+                "discovery": {
+                    "title": "Découverte",
+                    "description": "Nous analysons vos besoins, objectifs et contraintes pour définir la portée du projet."
                 },
-                "notifications": {
-                    "title": "Notifications de projet",
-                    "description": "Recevez des mises à jour et des messages importants sur l’état de votre projet ou les changements sur votre site."
+                "planning": {
+                    "title": "Planification",
+                    "description": "Nous créons une feuille de route détaillée avec les étapes, les délais et les livrables."
                 },
-                "content": {
-                    "title": "Éditeur de contenu (sites dynamiques uniquement)",
-                    "description": "Si votre site est dynamique, vous pouvez facilement gérer vos produits, services, équipe, ou autres données via notre interface d’administration."
+                "design": {
+                    "title": "Conception",
+                    "description": "Nous concevons l'interface et l'expérience utilisateur en accord avec votre vision."
+                },
+                "development": {
+                    "title": "Développement",
+                    "description": "Nous construisons votre solution avec un code propre, testé et performant."
+                },
+                "testing": {
+                    "title": "Tests",
+                    "description": "Nous effectuons des tests rigoureux pour garantir qualité et fiabilité."
+                },
+                "launch": {
+                    "title": "Lancement",
+                    "description": "Nous déployons votre solution et fournissons un support continu."
                 }
-            },
-            "video": {
-                "alt": "Aperçu du Portail Client",
-                "caption": "Découvrez comment notre portail facilite la gestion de votre site web"
             }
         },
         "cta": {

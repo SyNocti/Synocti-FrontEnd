@@ -25,8 +25,8 @@
 /* Service Cards */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin: 3rem 0;
 }
 
@@ -63,126 +63,83 @@
     font-weight: 500;
 }
 
-/* Client Portal Section */
-.portal-section {
+/* Work Process Section */
+.process-section {
     padding: 5rem 0;
 }
 
-.portal-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+.section-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
 }
 
-.portal-text h2 {
+.section-header h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-color);
 }
 
-.portal-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    color: var(--text-secondary);
-}
-
-.portal-text h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-}
-
-.portal-features {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.portal-features li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.portal-features li i {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-top: 0.25rem;
-}
-
-.portal-features h4 {
+.section-header p {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
     color: var(--text-color);
 }
 
-.portal-features p {
-    margin-bottom: 0;
-    font-size: 1rem;
-}
-
-.portal-video {
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
     position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
 }
 
-.video-container {
+.process-step {
+    text-align: center;
+    padding: 2rem;
+    background: var(--background-color-30);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
 }
 
-.video-container img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
-    object-fit: cover;
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.37);
 }
 
-.video-container:hover img {
-    transform: scale(1.05);
-}
-
-.play-button {
+.step-number {
     position: absolute;
-    top: 50%;
+    top: -15px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
-    background-color: var(--primary-color);
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(42, 127, 255, 0.3);
+}
+
+.step-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 2rem 0 1.5rem;
+}
+
+.process-step h3 {
     font-size: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-.video-container:hover .play-button {
-    transform: translate(-50%, -50%) scale(1.1);
-    background-color: var(--primary-dark);
-}
-
-.video-caption {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.95rem;
+.process-step p {
     color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* CTA Section */
@@ -218,27 +175,20 @@
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-    .portal-content {
-        grid-template-columns: 1fr;
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
-    }
-
-    .portal-video {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .video-container {
-        max-width: 100%;
-        margin: 0;
     }
 }
 
 @media (max-width: 768px) {
 
     .services-intro h2,
-    .portal-text h2,
+    .section-header h2,
     .cta-container h2 {
         font-size: 2rem;
     }
@@ -247,92 +197,32 @@
         grid-template-columns: 1fr;
     }
 
-    .portal-features li i {
-        font-size: 1.2rem;
+    .process-steps {
+        grid-template-columns: 1fr;
     }
 
-    .price {
-        font-size: 3rem;
-    }
-
-    .portal-section {
+    .process-section {
         padding: 3rem 0;
-        overflow: hidden;
-    }
-
-    .portal-video {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .video-container {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 8px;
     }
 }
 
 @media (max-width: 576px) {
-    .service-content {
-        padding: 1.5rem;
-    }
 
-    .portal-text h2 {
+    .services-intro h2,
+    .section-header h2 {
         font-size: 1.8rem;
     }
 
-    .portal-text h3 {
-        font-size: 1.4rem;
-    }
-
-    .play-button {
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
-    }
-
-    .price-header {
-        padding: 2rem 1rem;
-    }
-
-    .price {
+    .step-icon {
         font-size: 2.5rem;
+        margin: 1.5rem 0 1rem;
     }
 
-    .setup-price {
-        font-size: 0.9rem;
+    .process-step h3 {
+        font-size: 1.3rem;
     }
 
-    .portal-section {
-        padding: 2rem 0;
-        overflow: hidden;
+    .process-step {
+        padding: 1.5rem;
     }
-
-    .portal-video {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .video-container {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 6px;
-        margin: 0;
-    }
-
-    .video-container img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-}
-
-/* Remove old service-image and service-icon styles */
-.service-image,
-.service-icon {
-    display: none;
 }
