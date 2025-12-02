@@ -7,6 +7,7 @@ import { HomeDataService } from '../services/home-data.service';
 import { Project } from '../models/project';
 import { ApiService } from '../services/api.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-home',
@@ -25,16 +26,17 @@ export class HomeComponent implements OnInit {
   serviceCards: ServiceCard[] = [];
   portfolioItems: Project[] = [];
 
-  constructor(private homeDataService: HomeDataService, private apiService: ApiService) { }
+  constructor(private homeDataService: HomeDataService, private apiService: ApiService, private languageService: LanguageService) { }
 
   async ngOnInit() {
     this.serviceCards = this.homeDataService.getServiceCards();
 
-    const result = await this.apiService.getProjects();
+    const language = this.languageService.getCurrentLanguage();
+    const result = await this.apiService.getProjects(language);
     if (result.success && result.data) {
       this.portfolioItems = result.data;
     } else {
       console.error('Error getting projects:', result.error);
-    };
+    }
   }
 }

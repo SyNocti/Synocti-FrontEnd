@@ -15,10 +15,10 @@ export class ApiService {
 
   // ===== Projects API Calls =====
   
-  async getProjects(): Promise<{ success: boolean; data?: Project[]; error?: any }> {
+  async getProjects(language: string): Promise<{ success: boolean; data?: Project[]; error?: any }> {
     try {
       const response = await firstValueFrom(
-        this.http.get<Project[]>(`${domain}api/Projects/GetAllWebsite`)
+        this.http.get<Project[]>(`${domain}api/Projects/GetAllWebsite/${language}`)
       );
       return { success: true, data: response };
     } catch (error) {

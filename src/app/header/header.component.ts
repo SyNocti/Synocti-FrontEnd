@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -17,16 +18,8 @@ export class HeaderComponent implements OnInit {
   isScrolled = false;
   language: string = 'fr';
 
-  constructor(public translator: TranslateService) {
-    const langCookie = localStorage.getItem('lang');
-    const browserLang = translator.getBrowserLang();
-    if (langCookie && ['en', 'fr'].includes(langCookie)) {
-      this.language = langCookie;
-    } else if (browserLang && ['en', 'fr'].includes(browserLang)) {
-      this.language = browserLang;
-    } else {
-      this.language = 'fr';
-    }
+  constructor(public translator: TranslateService, private languageService: LanguageService) {
+    this.language = this.languageService.getCurrentLanguage();
     translator.setDefaultLang(this.language);
     translator.use(this.language)
   }

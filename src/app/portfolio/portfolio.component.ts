@@ -7,6 +7,7 @@ import { Project } from '../models/project';
 import { PortfolioItemComponent } from '../cards/portfolio-item/portfolio-item.component';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -23,10 +24,11 @@ import { TranslateModule } from '@ngx-translate/core';
 export class PortfolioComponent implements OnInit {
   projects: Project[] = [];
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private languageService: LanguageService) { }
 
   async ngOnInit() {
-    const result = await this.apiService.getProjects();
+    const language = this.languageService.getCurrentLanguage();
+    const result = await this.apiService.getProjects(language);
     if (result.success && result.data) {
       this.projects = result.data;
     } else {
