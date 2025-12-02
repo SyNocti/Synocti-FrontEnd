@@ -39,18 +39,18 @@
 .text-large {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 .text-normal {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 .text-small {
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 /* Buttons */

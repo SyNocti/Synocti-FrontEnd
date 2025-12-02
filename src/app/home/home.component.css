@@ -183,6 +183,10 @@ section {
     margin-bottom: 1rem;
 }
 
+.process-step p{
+    color: var(--text-color);
+}
+
 /* CTA Section */
 .cta-section {
     background-color: var(--primary-color);
