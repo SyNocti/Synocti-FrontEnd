@@ -10,8 +10,8 @@
     },
     "home": {
         "hero": {
-            "title": "We Build High-Performance Custom Websites for Businesses and Individuals",
-            "subtitle": "Transforming digital ideas into exceptional web experiences with cutting-edge technology and pixel-perfect design.",
+            "title": "We Build Powerful Digital Solutions for Businesses and Individuals",
+            "subtitle": "From custom software and applications to modern websites and fully managed hosting, we deliver scalable and dependable technology built around your goals.",
             "contact": "Contact Us",
             "seeOurWork": "See Our Work"
         },
@@ -22,7 +22,7 @@
         "about": {
             "title": "Why Choose Us",
             "subtitle": "We combine technical expertise with creative excellence",
-            "description": "At Synocti, we're passionate about creating websites that not only look stunning but also drive real business results. Our team of experts brings together the perfect balance of technical knowledge and creative vision.",
+            "description": "At Synocti, we are dedicated to building digital solutions that are reliable, scalable and tailored to real-world needs. Our team combines deep technical expertise with thoughtful design to create software, applications, websites and hosting environments that truly support the success of our clients.",
             "features": {
                 "performance": "Fast Performance",
                 "responsive": "Responsive Design",
@@ -35,27 +35,6 @@
             "subtitle": "Browse through our recent projects",
             "seeMore": "See More Projects"
         },
-        "testimonials": {
-            "title": "What Our Clients Say",
-            "subtitle": "Real feedback from the businesses and individuals we’ve helped succeed",
-            "items": {
-                "first": {
-                    "quote": "WebDev Co. transformed our online presence. Our new website has dramatically increased leads and customer engagement.",
-                    "authorName": "John Smith",
-                    "authorTitle": "CEO, Example Company"
-                },
-                "second": {
-                    "quote": "I was impressed by how quickly and efficiently the team delivered our complex e-commerce platform. The attention to detail was exceptional.",
-                    "authorName": "Sarah Johnson",
-                    "authorTitle": "Marketing Director, Shop Brands"
-                },
-                "third": {
-                    "quote": "The website not only looks fantastic but performs incredibly well. The SEO work has put us on the first page of Google.",
-                    "authorName": "Michael Chen",
-                    "authorTitle": "Founder, Tech Solutions"
-                }
-            }
-        },
         "process": {
             "title": "Our Process",
             "subtitle": "A proven approach to delivering outstanding results",
@@ -66,15 +45,15 @@
                 },
                 "design": {
                     "title": "Design",
-                    "description": "We design a layout that matches your vision and goals."
+                    "description": "We outline the structure and look of your solution based on your goals."
                 },
                 "development": {
                     "title": "Development",
-                    "description": "We build your website with clean, efficient code."
+                    "description": "We build your solution with clean, reliable and scalable code."
                 },
                 "launch": {
                     "title": "Launch",
-                    "description": "We deploy your site and provide ongoing support."
+                    "description": "We deploy your product and ensure everything works smoothly."
                 }
             }
         },
@@ -151,7 +130,7 @@
                 "description": "Reliable hosting services and ongoing maintenance to ensure your applications always run optimally.",
                 "features": [
                     "Secure and fast hosting",
-                    "Daily automatic backups",
+                    "Frequent automatic backups",
                     "24/7 monitoring",
                     "Security updates",
                     "Priority technical support"
@@ -175,19 +154,19 @@
         "origin": {
             "title": "How It All Started",
             "text": [
-                "We're two computer science students who decided to take initiative. While still working toward our degrees, we found it difficult to gain hands-on experience in the tech industry. So, instead of waiting for an opportunity, we created one.",
-                "In early 2025, we launched our web development business to sharpen our skills, build real-world projects, and help others bring their ideas to life. We're passionate about clean, functional design and enjoy solving problems through code. We believe that even as students, we have something valuable to offer.",
-                "Our goal is to grow alongside our clients, delivering quality work while expanding our knowledge and expertise. Whether it's a personal portfolio or a fully dynamic web platform, we’re committed to learning, improving, and making a difference with every project we take on."
+                "We began as two computer science students who refused to wait for the perfect opportunity. Instead of following the traditional path and hoping for experience to come to us, we decided to create our own.",
+                "In early 2025, we launched our development business with a clear mission: to build real, impactful digital solutions while continuously expanding our expertise. Our background gives us a strong technical foundation, and our drive pushes us to deliver modern, efficient and well-crafted work.",
+                "We approach every project with confidence, curiosity and a commitment to quality. From software and applications to websites and hosting, we focus on developing solutions that create value and help our clients succeed."
             ],
             "imageAlt": "Our Founders"
         },
         "mission": {
             "title": "Our Mission",
-            "description": "To empower both businesses and individuals with smart, user-friendly digital solutions that help them grow, communicate better, and succeed online. We build websites that are easy to manage, purposeful, and made to truly serve the needs of our clients."
+            "description": "To create dependable, high-quality digital solutions that make technology simpler, more accessible and more impactful for our clients. We focus on clear communication, efficient execution and results that bring real value to every project we deliver."
         },
         "vision": {
             "title": "Our Vision",
-            "description": "To become a trusted digital partner for people and organizations of all sizes, recognized for combining thoughtful design, solid technology, and reliable support to bring their online goals to life."
+            "description": "To build a long-lasting reputation as a team that blends innovation with professionalism, offering solutions that evolve with our clients’ needs. We strive to become a trusted partner known for consistency, integrity and a genuine commitment to growth."
         },
         "values": {
             "title": "Our Values",
@@ -219,7 +198,7 @@
     "team": {
         "intro": {
             "title": "Our Talented Team",
-            "description": "While we may be small, our combined experience and passion allow us to deliver exceptional results. Our close-knit team means you get direct access to decision-makers and experts throughout your project."
+            "description": "We bring strong technical expertise and creative problem-solving together to deliver outstanding results. With a lean, focused group, you have direct access to the people driving every decision and shaping every solution."
         },
         "members": {
             "hugo": {

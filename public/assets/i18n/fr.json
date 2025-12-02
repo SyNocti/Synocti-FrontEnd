@@ -10,8 +10,8 @@
     },
     "home": {
         "hero": {
-            "title": "Nous créons des sites web performants sur mesure pour entreprises et particuliers",
-            "subtitle": "Transformer vos idées en expériences web exceptionnelles avec une technologie de pointe et un design parfait.",
+            "title": "Nous concevons des solutions numériques performantes pour entreprises et particuliers",
+            "subtitle": "Du logiciel sur mesure aux applications, sites web et hébergement entièrement géré, nous offrons une technologie fiable et évolutive conçue selon vos objectifs.",
             "contact": "Contactez-nous",
             "seeOurWork": "Voir nos réalisations"
         },
@@ -22,7 +22,7 @@
         "about": {
             "title": "Pourquoi nous choisir",
             "subtitle": "Nous combinons expertise technique et excellence créative",
-            "description": "Chez Synocti, nous sommes passionnés par la création de sites web non seulement magnifiques mais qui génèrent aussi des résultats commerciaux concrets. Notre équipe d'experts réunit l'équilibre parfait entre connaissance technique et vision créative.",
+            "description": "Chez Synocti, nous sommes dédiés à créer des solutions numériques fiables, évolutives et adaptées aux besoins réels. Notre équipe combine une expertise technique approfondie et un design réfléchi pour développer des logiciels, des applications, des sites web et des environnements d'hébergement qui soutiennent véritablement la réussite de nos clients.",
             "features": {
                 "performance": "Performances rapides",
                 "responsive": "Design réactif",
@@ -35,27 +35,6 @@
             "subtitle": "Découvrez nos projets récents",
             "seeMore": "Voir plus de projets"
         },
-        "testimonials": {
-            "title": "Ce que disent nos clients",
-            "subtitle": "Des retours authentiques de ceux que nous avons aidés à réussir",
-            "items": {
-                "first": {
-                    "quote": "WebDev Co. a transformé notre présence en ligne. Notre nouveau site web a considérablement augmenté nos prospects et l'engagement des clients.",
-                    "authorName": "John Smith",
-                    "authorTitle": "PDG, Exemple Entreprise"
-                },
-                "second": {
-                    "quote": "J'ai été impressionné par la rapidité et l'efficacité avec lesquelles l'équipe a livré notre plateforme e-commerce complexe. L'attention aux détails était exceptionnelle.",
-                    "authorName": "Sarah Johnson",
-                    "authorTitle": "Directrice Marketing, Shop Brands"
-                },
-                "third": {
-                    "quote": "Le site web est non seulement fantastique visuellement mais fonctionne incroyablement bien. Le travail de référencement nous a placés en première page de Google.",
-                    "authorName": "Michael Chen",
-                    "authorTitle": "Fondateur, Tech Solutions"
-                }
-            }
-        },
         "process": {
             "title": "Notre processus",
             "subtitle": "Une approche éprouvée pour livrer des résultats exceptionnels",
@@ -66,15 +45,15 @@
                 },
                 "design": {
                     "title": "Conception",
-                    "description": "Nous concevons une mise en page qui reflète votre vision et vos objectifs."
+                    "description": "Nous définissons la structure et l'apparence de votre solution selon vos objectifs."
                 },
                 "development": {
                     "title": "Développement",
-                    "description": "Nous construisons votre site web avec un code propre et efficace."
+                    "description": "Nous développons votre solution avec un code propre, fiable et évolutif."
                 },
                 "launch": {
                     "title": "Lancement",
-                    "description": "Nous déployons votre site et fournissons un support continu."
+                    "description": "Nous déployons votre produit et veillons à son bon fonctionnement."
                 }
             }
         },
@@ -151,7 +130,7 @@
                 "description": "Services d'hébergement fiables et maintenance continue pour garantir que vos applications fonctionnent toujours de manière optimale.",
                 "features": [
                     "Hébergement sécurisé et performant",
-                    "Sauvegardes automatiques quotidiennes",
+                    "Sauvegardes automatiques fréquentes",
                     "Surveillance 24/7",
                     "Mises à jour de sécurité",
                     "Support technique prioritaire"
@@ -175,19 +154,19 @@
         "origin": {
             "title": "Comment Tout a Commencé",
             "text": [
-                "Nous sommes deux étudiants en informatique qui ont décidé de prendre les devants. Alors que nous poursuivons encore nos études, il nous était difficile d'acquérir de l'expérience concrète dans l'industrie technologique. Plutôt que d'attendre une opportunité, nous avons choisi de la créer nous-mêmes.",
-                "Début 2025, nous avons lancé notre entreprise de développement web pour perfectionner nos compétences, réaliser des projets concrets et aider les autres à concrétiser leurs idées. Nous sommes passionnés par les designs propres et fonctionnels, et nous aimons résoudre des problèmes à travers le code. Même en tant qu'étudiants, nous croyons avoir quelque chose de précieux à offrir.",
-                "Notre objectif est d’évoluer en même temps que nos clients, en livrant un travail de qualité tout en élargissant nos connaissances et notre expertise. Qu’il s’agisse d’un portfolio personnel ou d’une plateforme web dynamique, nous nous engageons à apprendre, à nous améliorer et à faire une réelle différence avec chaque projet."
+                "Nous avons commencé comme deux étudiants en informatique qui ont refusé d’attendre la bonne opportunité. Au lieu de suivre le parcours traditionnel et d’espérer acquérir de l’expérience, nous avons choisi de la créer nous-mêmes.",
+                "Début 2025, nous avons lancé notre entreprise de développement avec une mission claire: concevoir des solutions numériques concrètes et efficaces tout en élargissant continuellement notre expertise. Notre formation nous offre une base technique solide et notre ambition nous pousse à produire un travail moderne, performant et soigné.",
+                "Nous abordons chaque projet avec confiance, curiosité et une vraie exigence de qualité. Qu’il s’agisse de logiciels, d’applications, de sites web ou d’hébergement, nous créons des solutions qui apportent de la valeur et contribuent à la réussite de nos clients."
             ],
             "imageAlt": "Nos Fondateurs"
         },
         "mission": {
             "title": "Notre mission",
-            "description": "Donner aux entreprises et aux particuliers les moyens de réussir grâce à des solutions numériques intelligentes et faciles à utiliser, qui favorisent leur croissance, améliorent leur communication et leur permettent de réussir en ligne. Nous créons des sites web simples à gérer, efficaces et réellement adaptés aux besoins de nos clients."
+            "description": "Créer des solutions numériques fiables et de haute qualité qui rendent la technologie plus simple, plus accessible et plus utile pour nos clients. Nous privilégions une communication claire, une exécution efficace et des résultats qui apportent une véritable valeur à chaque projet."
         },
         "vision": {
             "title": "Notre vision",
-            "description": "Devenir un partenaire numérique de confiance pour les personnes et les organisations de toutes tailles, reconnu pour allier un design réfléchi, une technologie fiable et un accompagnement solide afin de concrétiser leurs objectifs en ligne."
+            "description": "Bâtir une réputation durable en alliant innovation et professionnalisme, avec des solutions qui évoluent selon les besoins de nos clients. Nous visons à devenir un partenaire de confiance reconnu pour sa constance, son intégrité et son engagement réel envers la croissance."
         },
         "values": {
             "title": "Nos valeurs",
@@ -219,7 +198,7 @@
     "team": {
         "intro": {
             "title": "Notre Équipe Talentueuse",
-            "description": "Bien que notre équipe soit petite, notre expérience collective et notre passion nous permettent de livrer des résultats exceptionnels. Notre équipe soudée signifie que vous avez un accès direct aux décideurs et aux experts tout au long de votre projet."
+            "description": "Nous réunissons une solide expertise technique et une capacité créative à résoudre les problèmes pour fournir des résultats exceptionnels. Avec un groupe concentré et efficace, vous avez un accès direct aux personnes qui prennent les décisions et conçoivent chaque solution."
         },
         "members": {
             "hugo": {
