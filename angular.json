@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular_template": {
+    "synocti-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular_template",
+            "outputPath": "dist/synocti-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular_template:build:production"
+              "buildTarget": "synocti-frontend:build:production"
             },
             "development": {
-              "buildTarget": "angular_template:build:development"
+              "buildTarget": "synocti-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
