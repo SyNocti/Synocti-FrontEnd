@@ -52,19 +52,22 @@ export class OfferedServiceDataService {
   private technologies: Technology[] = [
     { name: 'Angular', logo: 'assets/images/technologies/angular.svg', category: 'frontend' },
     { name: 'React', logo: 'assets/images/technologies/react.svg', category: 'frontend' },
-    { name: 'Vue.js', logo: 'assets/images/technologies/vue.svg', category: 'frontend' },
     { name: 'Node.js', logo: 'assets/images/technologies/nodejs.svg', category: 'backend' },
+    { name: 'ASP.NET', logo: 'assets/images/technologies/dot-net.svg', category: 'backend' },
+    { name: 'C#', logo: 'assets/images/technologies/c-sharp.svg', category: 'language' },
     { name: 'TypeScript', logo: 'assets/images/technologies/typescript.svg', category: 'language' },
+    { name: 'JavaScript', logo: 'assets/images/technologies/javascript.svg', category: 'language' },
     { name: 'Python', logo: 'assets/images/technologies/python.svg', category: 'language' },
-    { name: 'Java', logo: 'assets/images/technologies/java.svg', category: 'language' },
-    { name: 'MongoDB', logo: 'assets/images/technologies/mongodb.svg', category: 'database' },
+    { name: 'Kotlin', logo: 'assets/images/technologies/kotlin.svg', category: 'language' },
     { name: 'PostgreSQL', logo: 'assets/images/technologies/postgresql.svg', category: 'database' },
-    { name: 'Docker', logo: 'assets/images/technologies/docker.svg', category: 'devops' },
+    { name: 'Microsoft SQL Server', logo: 'assets/images/technologies/mssql.svg', category: 'database' },
     { name: 'AWS', logo: 'assets/images/technologies/aws.svg', category: 'cloud' },
+    { name: 'Firebase', logo: 'assets/images/technologies/firebase.svg', category: 'cloud' },
+    { name: 'Azure', logo: 'assets/images/technologies/azure.svg', category: 'cloud' },
+    { name: 'Docker', logo: 'assets/images/technologies/docker.svg', category: 'tool' },
     { name: 'Git', logo: 'assets/images/technologies/git.svg', category: 'tool' },
+    { name: 'Cloudflare', logo: 'assets/images/technologies/cloudflare.svg', category: 'tool' },
     { name: 'Flutter', logo: 'assets/images/technologies/flutter.svg', category: 'mobile' },
-    { name: 'React Native', logo: 'assets/images/technologies/react-native.svg', category: 'mobile' },
-    { name: 'Electron', logo: 'assets/images/technologies/electron.svg', category: 'desktop' }
   ];
 
   constructor() { }
