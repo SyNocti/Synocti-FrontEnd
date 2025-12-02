@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { ProjectsService } from '../services/projects.service';
+import { ApiService } from '../services/api.service';
 import { Project } from '../models/project';
 import { PortfolioItemComponent } from '../cards/portfolio-item/portfolio-item.component';
 import { SectionSeparatorComponent } from '../shared/section-separator/section-separator.component';
@@ -23,11 +23,11 @@ import { TranslateModule } from '@ngx-translate/core';
 export class PortfolioComponent implements OnInit {
   projects: Project[] = [];
 
-  constructor(private projectsService: ProjectsService) { }
+  constructor(private apiService: ApiService) { }
 
   async ngOnInit() {
-    const result = await this.projectsService.getProjects();
-    if (result.success) {
+    const result = await this.apiService.getProjects();
+    if (result.success && result.data) {
       this.projects = result.data;
     } else {
       console.error('Error getting projects:', result.error);

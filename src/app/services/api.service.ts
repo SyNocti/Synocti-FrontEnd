@@ -1,21 +1,24 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ContactForm } from '../models/contactForm';
 import { firstValueFrom } from 'rxjs';
+import { ContactForm } from '../models/contactForm';
+import { Project } from '../models/project';
 
 const domain = 'https://localhost:7257/';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FormsService {
+export class ApiService {
 
-  constructor(public http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  async sendContactForm(contactForm: ContactForm): Promise<any> {
+  // ===== Projects API Calls =====
+  
+  async getProjects(): Promise<{ success: boolean; data?: Project[]; error?: any }> {
     try {
       const response = await firstValueFrom(
-        this.http.post(`${domain}api/OurCompany/Forms/PostContactForm`, contactForm)
+        this.http.get<Project[]>(`${domain}api/Projects/GetAllWebsite`)
       );
       return { success: true, data: response };
     } catch (error) {
@@ -23,10 +26,12 @@ export class FormsService {
     }
   }
 
-  async sendQuoteForm(formData: FormData): Promise<any> {
+  // ===== Forms API Calls =====
+
+  async sendContactForm(contactForm: ContactForm): Promise<{ success: boolean; data?: any; error?: any }> {
     try {
       const response = await firstValueFrom(
-        this.http.post(`${domain}api/OurCompany/Forms/PostQuoteForm`, formData)
+        this.http.post(`${domain}api/Forms/PostContactForm`, contactForm)
       );
       return { success: true, data: response };
     } catch (error) {

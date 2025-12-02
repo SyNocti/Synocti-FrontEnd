@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FormsService } from '../services/forms.service';
+import { ApiService } from '../services/api.service';
 import { SocialIconComponent } from '../shared/social-icon/social-icon.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ContactForm } from '../models/contactForm';
@@ -33,7 +33,7 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    public formsService: FormsService,
+    private apiService: ApiService,
     private translateService: TranslateService
   ) { }
 
@@ -81,7 +81,7 @@ export class ContactComponent implements OnInit {
     );
 
     //Api call to send the form data
-    const result = await this.formsService.sendContactForm(contactFormData);
+    const result = await this.apiService.sendContactForm(contactFormData);
     if (result.success) {
       this.success = true;
       this.loading = false;

@@ -5,7 +5,7 @@ import { ServiceCardComponent, ServiceCard } from '../cards/service-card/service
 import { PortfolioItemComponent } from '../cards/portfolio-item/portfolio-item.component';
 import { HomeDataService } from '../services/home-data.service';
 import { Project } from '../models/project';
-import { ProjectsService } from '../services/projects.service';
+import { ApiService } from '../services/api.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -25,13 +25,13 @@ export class HomeComponent implements OnInit {
   serviceCards: ServiceCard[] = [];
   portfolioItems: Project[] = [];
 
-  constructor(private homeDataService: HomeDataService, private projectsService: ProjectsService) { }
+  constructor(private homeDataService: HomeDataService, private apiService: ApiService) { }
 
   async ngOnInit() {
     this.serviceCards = this.homeDataService.getServiceCards();
 
-    const result = await this.projectsService.getProjects();
-    if (result.success) {
+    const result = await this.apiService.getProjects();
+    if (result.success && result.data) {
       this.portfolioItems = result.data;
     } else {
       console.error('Error getting projects:', result.error);
