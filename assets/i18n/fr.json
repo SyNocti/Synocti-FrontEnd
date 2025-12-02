@@ -6,13 +6,13 @@
         "aboutUs": "À propos",
         "ourStory": "Notre histoire",
         "meetTheTeam": "Notre équipe",
-        "contact": "Contact",
-        "getQuote": "Demander un devis"
+        "contact": "Contact"
     },
     "home": {
         "hero": {
-            "title": "Nous créons des sites web performants sur mesure pour entreprises et particuliers",
-            "subtitle": "Transformer vos idées en expériences web exceptionnelles avec une technologie de pointe et un design parfait.",
+            "title": "Nous concevons des solutions numériques performantes pour entreprises et particuliers",
+            "subtitle": "Du logiciel sur mesure aux applications, sites web et hébergement entièrement géré, nous offrons une technologie fiable et évolutive conçue selon vos objectifs.",
+            "contact": "Contactez-nous",
             "seeOurWork": "Voir nos réalisations"
         },
         "services": {
@@ -22,7 +22,7 @@
         "about": {
             "title": "Pourquoi nous choisir",
             "subtitle": "Nous combinons expertise technique et excellence créative",
-            "description": "Chez Synocti, nous sommes passionnés par la création de sites web non seulement magnifiques mais qui génèrent aussi des résultats commerciaux concrets. Notre équipe d'experts réunit l'équilibre parfait entre connaissance technique et vision créative.",
+            "description": "Chez Synocti, nous sommes dédiés à créer des solutions numériques fiables, évolutives et adaptées aux besoins réels. Notre équipe combine une expertise technique approfondie et un design réfléchi pour développer des logiciels, des applications, des sites web et des environnements d'hébergement qui soutiennent véritablement la réussite de nos clients.",
             "features": {
                 "performance": "Performances rapides",
                 "responsive": "Design réactif",
@@ -35,27 +35,6 @@
             "subtitle": "Découvrez nos projets récents",
             "seeMore": "Voir plus de projets"
         },
-        "testimonials": {
-            "title": "Ce que disent nos clients",
-            "subtitle": "Des retours authentiques de ceux que nous avons aidés à réussir",
-            "items": {
-                "first": {
-                    "quote": "WebDev Co. a transformé notre présence en ligne. Notre nouveau site web a considérablement augmenté nos prospects et l'engagement des clients.",
-                    "authorName": "John Smith",
-                    "authorTitle": "PDG, Exemple Entreprise"
-                },
-                "second": {
-                    "quote": "J'ai été impressionné par la rapidité et l'efficacité avec lesquelles l'équipe a livré notre plateforme e-commerce complexe. L'attention aux détails était exceptionnelle.",
-                    "authorName": "Sarah Johnson",
-                    "authorTitle": "Directrice Marketing, Shop Brands"
-                },
-                "third": {
-                    "quote": "Le site web est non seulement fantastique visuellement mais fonctionne incroyablement bien. Le travail de référencement nous a placés en première page de Google.",
-                    "authorName": "Michael Chen",
-                    "authorTitle": "Fondateur, Tech Solutions"
-                }
-            }
-        },
         "process": {
             "title": "Notre processus",
             "subtitle": "Une approche éprouvée pour livrer des résultats exceptionnels",
@@ -66,15 +45,15 @@
                 },
                 "design": {
                     "title": "Conception",
-                    "description": "Nous concevons une mise en page qui reflète votre vision et vos objectifs."
+                    "description": "Nous définissons la structure et l'apparence de votre solution selon vos objectifs."
                 },
                 "development": {
                     "title": "Développement",
-                    "description": "Nous construisons votre site web avec un code propre et efficace."
+                    "description": "Nous développons votre solution avec un code propre, fiable et évolutif."
                 },
                 "launch": {
                     "title": "Lancement",
-                    "description": "Nous déployons votre site et fournissons un support continu."
+                    "description": "Nous déployons votre produit et veillons à son bon fonctionnement."
                 }
             }
         },
@@ -89,6 +68,7 @@
     },
     "footer": {
         "tagline": "Créer des expériences digitales qui transforment les entreprises et les particuliers",
+        "services": "Nos services",
         "company": {
             "title": "Entreprise",
             "story": "Notre histoire",
@@ -97,8 +77,7 @@
             "contact": "Contact"
         },
         "contact": {
-            "title": "Contactez-nous",
-            "address": "278 Rue Roy, Longueuil"
+            "title": "Contactez-nous"
         },
         "copyright": "© {{year}} Synocti. Tous droits réservés.",
         "legal": {
@@ -108,122 +87,59 @@
         }
     },
     "services": {
-        "hero": {
-            "title": "Nos services",
-            "subtitle": "Solutions web professionnelles adaptées à vos besoins"
-        },
         "intro": {
-            "title": "Services de développement web",
-            "description": "Nous proposons une gamme de services de développement web conçus pour aider les entreprises de toutes tailles à établir une forte présence en ligne. Des sites web statiques simples aux applications web dynamiques complexes, nous avons l'expertise pour donner vie à votre vision."
-        },
-        "pricing": {
-            "perMonth": "par mois",
-            "oneTimeSetup": "Installation unique à partir de"
+            "title": "Nos Services de Développement",
+            "description": "Nous offrons une gamme complète de solutions de développement conçues pour aider les entreprises et les particuliers à établir une présence numérique forte. Du web au mobile, en passant par les applications de bureau et l'hébergement, nous avons l'expertise pour donner vie à votre vision."
         },
         "servicesList": {
-            "singlePage": {
-                "title": "Site web une page",
-                "description": "Un site élégant et rapide sur une seule page qui communique votre message avec clarté et impact.",
+            "web": {
+                "title": "Développement Web",
+                "description": "Des sites web modernes et performants adaptés à vos besoins, du simple site vitrine aux applications web complexes.",
                 "features": [
-                    "Chargement rapide avec défilement fluide",
-                    "Design moderne adapté à votre image",
-                    "Conception réactive pensée pour tous les appareils",
-                    "Appels à l'action stratégiquement placés"
+                    "Sites web réactifs et adaptatifs",
+                    "Applications web dynamiques",
+                    "Systèmes de gestion de contenu",
+                    "E-commerce et plateformes en ligne",
+                    "Optimisation SEO intégrée"
                 ]
             },
-            "multiPage": {
-                "title": "Site web multi-pages",
-                "description": "Des sites professionnels à plusieurs pages pour un contenu structuré et une navigation fluide.",
+            "mobile": {
+                "title": "Développement Mobile",
+                "description": "Applications mobiles natives et multiplateformes pour iOS et Android qui offrent une expérience utilisateur exceptionnelle.",
                 "features": [
-                    "Structure de pages personnalisée",
-                    "Menu de navigation ergonomique",
-                    "Structure SEO optimisée pour chaque page",
-                    "Mise en page adaptée à l’objectif de chaque section"
+                    "Applications iOS et Android natives",
+                    "Développement multiplateforme",
+                    "Interface utilisateur intuitive",
+                    "Intégration avec APIs et services",
+                    "Support et maintenance continue"
                 ]
             },
-            "dynamicSite": {
-                "title": "Site web dynamique",
-                "description": "Des sites avec du contenu modifiable et des fonctionnalités avancées comme des formulaires ou des interactions utilisateurs.",
+            "desktop": {
+                "title": "Développement Desktop",
+                "description": "Applications de bureau puissantes pour Windows, macOS et Linux adaptées à vos processus métier spécifiques.",
                 "features": [
-                    "Panneau d’administration pour modifier textes, images et sections",
-                    "Mises à jour en temps réel sans développeur",
-                    "Formulaires ou fiches produits reliés à une base de données",
-                    "Gestion des utilisateurs avec accès selon les rôles"
+                    "Applications multiplateformes",
+                    "Interface utilisateur native",
+                    "Performance optimale",
+                    "Intégration système complète",
+                    "Mises à jour et support technique"
                 ]
             },
-            "clientPortal": {
-                "title": "Portail client",
-                "description": "Un portail sécurisé et personnalisé pour gérer les données et facilement demander notre aide."
+            "hosting": {
+                "title": "Hébergement et Maintenance",
+                "description": "Services d'hébergement fiables et maintenance continue pour garantir que vos applications fonctionnent toujours de manière optimale.",
+                "features": [
+                    "Hébergement sécurisé et performant",
+                    "Sauvegardes automatiques fréquentes",
+                    "Surveillance 24/7",
+                    "Mises à jour de sécurité",
+                    "Support technique prioritaire"
+                ]
             }
         },
-        "comparison": {
-            "title": "Comparaison des Services",
-            "subtitle": "Comparez nos options de développement web pour trouver celle qui convient le mieux aux besoins de votre entreprise",
-            "headers": {
-                "feature": "Fonctionnalité",
-                "singlePage": "Page Unique",
-                "multiPage": "Multi-Pages",
-                "dynamic": "Site Dynamique"
-            },
-            "notSure": "Vous ne savez pas quel service vous convient ?",
-            "contact": "Contactez-nous pour une consultation",
-            "features": {
-                "clientPortal": {
-                    "name": "Accès au portail client",
-                    "tooltip": "Accès à notre portail de support et de gestion de contenu"
-                },
-                "responsiveDesign": {
-                    "name": "Design réactif",
-                    "tooltip": "S'adapte à toutes les tailles d'écran et appareils"
-                },
-                "seoOptimization": {
-                    "name": "Optimisation SEO",
-                    "tooltip": "Optimisation de base pour les moteurs de recherche incluse"
-                },
-                "domainSetup": {
-                    "name": "Hébergement et configuration de domaine",
-                    "tooltip": "Nous vous aidons à configurer votre domaine et votre hébergement"
-                },
-                "multiplePages": {
-                    "name": "Plusieurs pages",
-                    "tooltip": "Pages séparées pour différentes sections de contenu"
-                },
-                "enhancedUX": {
-                    "name": "Expérience utilisateur améliorée",
-                    "tooltip": "Navigation et interaction utilisateur améliorées"
-                },
-                "contentManagement": {
-                    "name": "Système de gestion de contenu",
-                    "tooltip": "Modifier le contenu du site sans connaissance en codage"
-                },
-                "customForms": {
-                    "name": "Formulaires personnalisés",
-                    "tooltip": "Formulaires personnalisés pour la collecte de données"
-                }
-            }
-        },
-        "portal": {
-            "title": "Portail client",
-            "description": "Chaque client a accès à notre portail sécurisé. C’est votre point central pour le support, les mises à jour, et (si vous avez un site web dynamique) des outils pour gérer facilement le contenu de votre site sans connaissances techniques.",
-            "features": {
-                "title": "Fonctionnalités clés du portail",
-                "support": {
-                    "title": "Système de billets de support",
-                    "description": "Envoyez vos questions, signalez des bugs ou demandez de l’aide à notre équipe réactive."
-                },
-                "notifications": {
-                    "title": "Notifications de projet",
-                    "description": "Recevez des mises à jour et des messages importants sur l’état de votre projet ou les changements sur votre site."
-                },
-                "content": {
-                    "title": "Éditeur de contenu (sites dynamiques uniquement)",
-                    "description": "Si votre site est dynamique, vous pouvez facilement gérer vos produits, services, équipe, ou autres données via notre interface d’administration."
-                }
-            },
-            "video": {
-                "alt": "Aperçu du Portail Client",
-                "caption": "Découvrez comment notre portail facilite la gestion de votre site web"
-            }
+        "technologies": {
+            "title": "Technologies que nous utilisons",
+            "subtitle": "Des outils modernes et éprouvés pour créer des solutions performantes"
         },
         "cta": {
             "title": "Prêt à commencer ?",
@@ -232,33 +148,25 @@
         }
     },
     "portfolio": {
-        "hero": {
-            "title": "Notre portfolio",
-            "subtitle": "Présentation de nos meilleurs projets"
-        },
         "visitWebsite": "Visiter le site"
     },
     "story": {
-        "hero": {
-            "title": "Notre Histoire",
-            "subtitle": "Un parcours de passion, d'innovation et d'excellence numérique"
-        },
         "origin": {
             "title": "Comment Tout a Commencé",
             "text": [
-                "Nous sommes deux étudiants en informatique qui ont décidé de prendre les devants. Alors que nous poursuivons encore nos études, il nous était difficile d'acquérir de l'expérience concrète dans l'industrie technologique. Plutôt que d'attendre une opportunité, nous avons choisi de la créer nous-mêmes.",
-                "Début 2025, nous avons lancé notre entreprise de développement web pour perfectionner nos compétences, réaliser des projets concrets et aider les autres à concrétiser leurs idées. Nous sommes passionnés par les designs propres et fonctionnels, et nous aimons résoudre des problèmes à travers le code. Même en tant qu'étudiants, nous croyons avoir quelque chose de précieux à offrir.",
-                "Notre objectif est d’évoluer en même temps que nos clients, en livrant un travail de qualité tout en élargissant nos connaissances et notre expertise. Qu’il s’agisse d’un portfolio personnel ou d’une plateforme web dynamique, nous nous engageons à apprendre, à nous améliorer et à faire une réelle différence avec chaque projet."
+                "Nous avons commencé comme deux étudiants en informatique qui ont refusé d’attendre la bonne opportunité. Au lieu de suivre le parcours traditionnel et d’espérer acquérir de l’expérience, nous avons choisi de la créer nous-mêmes.",
+                "Début 2025, nous avons lancé notre entreprise de développement avec une mission claire: concevoir des solutions numériques concrètes et efficaces tout en élargissant continuellement notre expertise. Notre formation nous offre une base technique solide et notre ambition nous pousse à produire un travail moderne, performant et soigné.",
+                "Nous abordons chaque projet avec confiance, curiosité et une vraie exigence de qualité. Qu’il s’agisse de logiciels, d’applications, de sites web ou d’hébergement, nous créons des solutions qui apportent de la valeur et contribuent à la réussite de nos clients."
             ],
             "imageAlt": "Nos Fondateurs"
         },
         "mission": {
             "title": "Notre mission",
-            "description": "Donner aux entreprises et aux particuliers les moyens de réussir grâce à des solutions numériques intelligentes et faciles à utiliser, qui favorisent leur croissance, améliorent leur communication et leur permettent de réussir en ligne. Nous créons des sites web simples à gérer, efficaces et réellement adaptés aux besoins de nos clients."
+            "description": "Créer des solutions numériques fiables et de haute qualité qui rendent la technologie plus simple, plus accessible et plus utile pour nos clients. Nous privilégions une communication claire, une exécution efficace et des résultats qui apportent une véritable valeur à chaque projet."
         },
         "vision": {
             "title": "Notre vision",
-            "description": "Devenir un partenaire numérique de confiance pour les personnes et les organisations de toutes tailles, reconnu pour allier un design réfléchi, une technologie fiable et un accompagnement solide afin de concrétiser leurs objectifs en ligne."
+            "description": "Bâtir une réputation durable en alliant innovation et professionnalisme, avec des solutions qui évoluent selon les besoins de nos clients. Nous visons à devenir un partenaire de confiance reconnu pour sa constance, son intégrité et son engagement réel envers la croissance."
         },
         "values": {
             "title": "Nos valeurs",
@@ -288,32 +196,22 @@
         }
     },
     "team": {
-        "hero": {
-            "title": "Rencontrez Notre Équipe",
-            "subtitle": "Petite en taille, grande en talent et dévouement"
-        },
         "intro": {
             "title": "Notre Équipe Talentueuse",
-            "description": "Bien que notre équipe soit petite, notre expérience collective et notre passion nous permettent de livrer des résultats exceptionnels. Notre équipe soudée signifie que vous avez un accès direct aux décideurs et aux experts tout au long de votre projet."
+            "description": "Nous réunissons une solide expertise technique et une capacité créative à résoudre les problèmes pour fournir des résultats exceptionnels. Avec un groupe concentré et efficace, vous avez un accès direct aux personnes qui prennent les décisions et conçoivent chaque solution."
         },
         "members": {
             "hugo": {
                 "name": "Hugo Levacher",
-                "role": "Co-Fondateur & Développeur",
-                "bio": "Passionné par la création de solutions web efficaces et innovantes, Hugo allie compétences techniques solides et vision fraîche pour construire des sites modernes et conviviaux."
+                "role": "Co-Fondateur & Développeur"
             },
             "henri": {
                 "name": "Henri Saumure",
-                "role": "Co-Fondateur & Développeur",
-                "bio": "Déterminé à concrétiser les idées grâce à un code propre et évolutif, Henri apporte créativité et esprit de résolution à chaque projet de développement web."
+                "role": "Co-Fondateur & Développeur"
             }
         }
     },
     "contact": {
-        "hero": {
-            "title": "Contactez-nous",
-            "subtitle": "Vous avez une question ou un projet en tête ? Nous serions ravis de vous entendre."
-        },
         "info": {
             "title": "Informations de contact",
             "subtitle": "Contactez-nous en utilisant l'une des méthodes suivantes et nous vous répondrons dans les plus brefs délais.",
@@ -322,10 +220,6 @@
             },
             "phone": {
                 "label": "Téléphone"
-            },
-            "address": {
-                "label": "Adresse",
-                "value": "278 Rue Roy, Longueuil"
             },
             "hours": {
                 "label": "Heures d'ouverture",
@@ -377,125 +271,7 @@
             "title": "Nous trouver"
         }
     },
-    "quote": {
-        "hero": {
-            "title": "Demander un devis",
-            "subtitle": "Parlez-nous de votre projet et obtenez une estimation gratuite"
-        },
-        "howItWorks": {
-            "title": "Comment ça marche",
-            "description": "Obtenir un devis pour votre projet est simple. Remplissez le formulaire avec les détails de vos besoins, et notre équipe l'examinera pour vous proposer une offre personnalisée.",
-            "steps": {
-                "step1": {
-                    "title": "Soumettez votre demande",
-                    "description": "Remplissez le formulaire avec les détails de votre projet"
-                },
-                "step2": {
-                    "title": "Analyse du projet",
-                    "description": "Notre équipe examine vos besoins"
-                },
-                "step3": {
-                    "title": "Recevez votre proposition",
-                    "description": "Obtenez un devis personnalisé sous 48 heures"
-                },
-                "step4": {
-                    "title": "Lancement du projet",
-                    "description": "Discutez des détails et démarrez votre projet"
-                }
-            }
-        },
-        "form": {
-            "title": "Demander un devis gratuit",
-            "success": "Merci ! Votre demande de devis a été reçue. Nous vous répondrons sous 48 heures.",
-            "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
-            "fullName": {
-                "label": "Nom complet",
-                "placeholder": "Jean Dupont",
-                "required": "Veuillez entrer votre nom",
-                "minlength": "Le nom doit comporter au moins 2 caractères"
-            },
-            "email": {
-                "label": "Adresse e-mail",
-                "placeholder": "jeandupont@exemple.com",
-                "required": "Veuillez entrer votre email",
-                "invalid": "Veuillez entrer une adresse email valide"
-            },
-            "company": {
-                "label": "Entreprise",
-                "placeholder": "Votre Entreprise (optionnel)"
-            },
-            "phone": {
-                "label": "Numéro de téléphone",
-                "placeholder": "(555) 123-4567",
-                "invalid": "Veuillez entrer un numéro de téléphone valide"
-            },
-            "projectType": {
-                "label": "Type de projet",
-                "required": "Veuillez sélectionner un type de projet"
-            },
-            "budgetRange": {
-                "label": "Fourchette de budget",
-                "placeholder": "Sélectionner une fourchette de budget",
-                "required": "Veuillez sélectionner une fourchette de budget"
-            },
-            "description": {
-                "label": "Description du projet",
-                "placeholder": "Décrivez votre projet, vos objectifs et toutes exigences spécifiques...",
-                "required": "Veuillez décrire votre projet",
-                "minlength": "La description doit comporter au moins 30 caractères"
-            },
-            "contactMethod": {
-                "label": "Méthode de contact préférée"
-            },
-            "file": {
-                "label": "Pièce jointe (optionnel)",
-                "chooseFile": "Choisir un fichier",
-                "hint": "Taille max : 5Mo. Formats autorisés : PDF, DOC, DOCX, JPG, PNG",
-                "sizeError": "La taille du fichier ne doit pas dépasser 5Mo",
-                "typeError": "Seuls les documents PDF, Word et les images (JPEG, PNG) sont autorisés"
-            },
-            "submit": "Envoyer la demande de devis",
-            "submitting": "Envoi en cours..."
-        },
-        "projectTypes": {
-            "other": "Autre"
-        },
-        "budgetRanges": {
-            "lessThan500": "Moins de 500$",
-            "500To1k": "500$ - 1 000$",
-            "1kTo2k": "1 000$ - 2 000$",
-            "2kPlus": "Plus de 2 000$"
-        },
-        "contactMethods": {
-            "email": "Email",
-            "phone": "Téléphone",
-            "videoConference": "Visioconférence"
-        },
-        "faqs": {
-            "title": "Questions fréquemment posées",
-            "timeline": {
-                "title": "Combien de temps faut-il pour réaliser un projet ?",
-                "content": "Les délais varient selon la complexité. Généralement, un site web simple prend 2-4 semaines, tandis que des applications plus complexes peuvent prendre jusqu'à 2 mois."
-            },
-            "maintenance": {
-                "title": "Offrez-vous une maintenance après la réalisation du projet ?",
-                "content": "Oui, la maintenance de base est incluse dans le tarif mensuel afin de garantir que votre projet reste sécurisé et à jour. Cependant, les modifications ou ajustements supplémentaires sont facturés séparément."
-            },
-            "information": {
-                "title": "Quelles informations sont nécessaires pour un devis précis ?",
-                "content": "Plus vous pouvez fournir de détails sur les objectifs, les fonctionnalités requises, les préférences de design et le calendrier, plus notre devis sera précis."
-            },
-            "payments": {
-                "title": "Comment fonctionnent les paiements ?",
-                "content": "Nous demandons généralement un acompte de 30 % pour commencer le travail, le solde restant étant payé à la fin du projet ou par étapes pour les projets plus importants."
-            }
-        }
-    },
     "notFound": {
-        "hero": {
-            "title": "404",
-            "subtitle": "Page Non Trouvée"
-        },
         "content": {
             "title": "Oups ! Nous ne pouvons pas trouver cette page",
             "message": "La page que vous recherchez a peut-être été supprimée, son nom a été modifié, ou elle est temporairement indisponible."

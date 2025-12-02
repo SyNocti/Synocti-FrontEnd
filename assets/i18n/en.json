@@ -6,13 +6,13 @@
         "aboutUs": "About Us",
         "ourStory": "Our Story",
         "meetTheTeam": "Meet the Team",
-        "contact": "Contact",
-        "getQuote": "Get a Quote"
+        "contact": "Contact"
     },
     "home": {
         "hero": {
-            "title": "We Build High-Performance Custom Websites for Businesses and Individuals",
-            "subtitle": "Transforming digital ideas into exceptional web experiences with cutting-edge technology and pixel-perfect design.",
+            "title": "We Build Powerful Digital Solutions for Businesses and Individuals",
+            "subtitle": "From custom software and applications to modern websites and fully managed hosting, we deliver scalable and dependable technology built around your goals.",
+            "contact": "Contact Us",
             "seeOurWork": "See Our Work"
         },
         "services": {
@@ -22,7 +22,7 @@
         "about": {
             "title": "Why Choose Us",
             "subtitle": "We combine technical expertise with creative excellence",
-            "description": "At Synocti, we're passionate about creating websites that not only look stunning but also drive real business results. Our team of experts brings together the perfect balance of technical knowledge and creative vision.",
+            "description": "At Synocti, we are dedicated to building digital solutions that are reliable, scalable and tailored to real-world needs. Our team combines deep technical expertise with thoughtful design to create software, applications, websites and hosting environments that truly support the success of our clients.",
             "features": {
                 "performance": "Fast Performance",
                 "responsive": "Responsive Design",
@@ -35,27 +35,6 @@
             "subtitle": "Browse through our recent projects",
             "seeMore": "See More Projects"
         },
-        "testimonials": {
-            "title": "What Our Clients Say",
-            "subtitle": "Real feedback from the businesses and individuals we’ve helped succeed",
-            "items": {
-                "first": {
-                    "quote": "WebDev Co. transformed our online presence. Our new website has dramatically increased leads and customer engagement.",
-                    "authorName": "John Smith",
-                    "authorTitle": "CEO, Example Company"
-                },
-                "second": {
-                    "quote": "I was impressed by how quickly and efficiently the team delivered our complex e-commerce platform. The attention to detail was exceptional.",
-                    "authorName": "Sarah Johnson",
-                    "authorTitle": "Marketing Director, Shop Brands"
-                },
-                "third": {
-                    "quote": "The website not only looks fantastic but performs incredibly well. The SEO work has put us on the first page of Google.",
-                    "authorName": "Michael Chen",
-                    "authorTitle": "Founder, Tech Solutions"
-                }
-            }
-        },
         "process": {
             "title": "Our Process",
             "subtitle": "A proven approach to delivering outstanding results",
@@ -66,15 +45,15 @@
                 },
                 "design": {
                     "title": "Design",
-                    "description": "We design a layout that matches your vision and goals."
+                    "description": "We outline the structure and look of your solution based on your goals."
                 },
                 "development": {
                     "title": "Development",
-                    "description": "We build your website with clean, efficient code."
+                    "description": "We build your solution with clean, reliable and scalable code."
                 },
                 "launch": {
                     "title": "Launch",
-                    "description": "We deploy your site and provide ongoing support."
+                    "description": "We deploy your product and ensure everything works smoothly."
                 }
             }
         },
@@ -89,6 +68,7 @@
     },
     "footer": {
         "tagline": "Crafting digital experiences that transform businesses and individuals",
+        "services": "Our Services",
         "company": {
             "title": "Company",
             "story": "Our Story",
@@ -97,8 +77,7 @@
             "contact": "Contact"
         },
         "contact": {
-            "title": "Contact Us",
-            "address": "278 Roy Street, Longueuil"
+            "title": "Contact Us"
         },
         "copyright": "© {{year}} Synocti. All rights reserved.",
         "legal": {
@@ -108,122 +87,59 @@
         }
     },
     "services": {
-        "hero": {
-            "title": "Our Services",
-            "subtitle": "Professional web solutions tailored to your needs"
-        },
         "intro": {
-            "title": "Web Development Services",
-            "description": "We offer a range of web development services designed to help businesses of all sizes establish a strong online presence. From simple static websites to complex dynamic web applications, we have the expertise to bring your vision to life."
-        },
-        "pricing": {
-            "perMonth": "per month",
-            "oneTimeSetup": "One-time setup starting from"
+            "title": "Our Development Services",
+            "description": "We offer a comprehensive range of development solutions designed to help businesses and individuals establish a strong digital presence. From web to mobile, desktop applications, and hosting, we have the expertise to bring your vision to life."
         },
         "servicesList": {
-            "singlePage": {
-                "title": "Single Page Website",
-                "description": "A sleek, fast-loading one-page website that delivers your message clearly and effectively.",
+            "web": {
+                "title": "Web Development",
+                "description": "Modern, high-performance websites tailored to your needs, from simple landing pages to complex web applications.",
                 "features": [
-                    "Optimized for fast loading and smooth scrolling",
-                    "Clean, modern layout tailored to your brand",
-                    "Responsive design for all devices",
-                    "Strategic call-to-action placements"
+                    "Responsive and adaptive websites",
+                    "Dynamic web applications",
+                    "Content management systems",
+                    "E-commerce and online platforms",
+                    "Built-in SEO optimization"
                 ]
             },
-            "multiPage": {
-                "title": "Multi Page Website",
-                "description": "Professional websites with multiple pages for structured, detailed content and navigation.",
+            "mobile": {
+                "title": "Mobile Development",
+                "description": "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences.",
                 "features": [
-                    "Custom page structure",
-                    "Navigation menu designed for usability",
-                    "SEO-friendly URLs and content structure",
-                    "Content layout tailored to each page's goal"
+                    "Native iOS and Android apps",
+                    "Cross-platform development",
+                    "Intuitive user interface",
+                    "API and service integration",
+                    "Ongoing support and maintenance"
                 ]
             },
-            "dynamicSite": {
-                "title": "Dynamic Website",
-                "description": "Websites with editable content and advanced features like user interaction, forms, or data displays.",
+            "desktop": {
+                "title": "Desktop Development",
+                "description": "Powerful desktop applications for Windows, macOS, and Linux tailored to your specific business processes.",
                 "features": [
-                    "Admin panel to manage text, images and sections",
-                    "Real-time content updates without developer help",
-                    "Custom forms or product listings with database storage",
-                    "Role-based user access control"
+                    "Cross-platform applications",
+                    "Native user interface",
+                    "Optimized performance",
+                    "Full system integration",
+                    "Updates and technical support"
                 ]
             },
-            "clientPortal": {
-                "title": "Client Portal",
-                "description": "Secure, custom-built portal that allows clients or staff to manage data and easily request our help."
+            "hosting": {
+                "title": "Hosting & Maintenance",
+                "description": "Reliable hosting services and ongoing maintenance to ensure your applications always run optimally.",
+                "features": [
+                    "Secure and fast hosting",
+                    "Frequent automatic backups",
+                    "24/7 monitoring",
+                    "Security updates",
+                    "Priority technical support"
+                ]
             }
         },
-        "comparison": {
-            "title": "Service Comparison",
-            "subtitle": "Compare our web development options to find the one that best fits your business needs",
-            "headers": {
-                "feature": "Feature",
-                "singlePage": "Single Page",
-                "multiPage": "Multi-Page",
-                "dynamic": "Dynamic Site"
-            },
-            "notSure": "Not sure which service is right for you?",
-            "contact": "Contact us for a consultation",
-            "features": {
-                "clientPortal": {
-                    "name": "Client Portal Access",
-                    "tooltip": "Access to our support and content management portal"
-                },
-                "responsiveDesign": {
-                    "name": "Responsive Design",
-                    "tooltip": "Adapts to all screen sizes and devices"
-                },
-                "seoOptimization": {
-                    "name": "SEO Optimization",
-                    "tooltip": "Basic search engine optimization included"
-                },
-                "domainSetup": {
-                    "name": "Hosting & Domain Setup",
-                    "tooltip": "We help you set up your domain and hosting"
-                },
-                "multiplePages": {
-                    "name": "Multiple Pages",
-                    "tooltip": "Separate pages for different content sections"
-                },
-                "enhancedUX": {
-                    "name": "Enhanced User Experience",
-                    "tooltip": "Improved navigation and user interaction"
-                },
-                "contentManagement": {
-                    "name": "Content Management System",
-                    "tooltip": "Edit website content without coding knowledge"
-                },
-                "customForms": {
-                    "name": "Custom Forms",
-                    "tooltip": "Integrated forms for user input and data collection"
-                }
-            }
-        },
-        "portal": {
-            "title": "Client Portal",
-            "description": "Every client gets access to our secure client portal. It's your go-to place for support, updates, and (if your website is dynamic) content management tools to keep your site up-to-date without technical hassle.",
-            "features": {
-                "title": "Key Portal Features",
-                "support": {
-                    "title": "Support Ticket System",
-                    "description": "Easily send questions, request bug fixes or report issues to our responsive team."
-                },
-                "notifications": {
-                    "title": "Project Notifications",
-                    "description": "Receive updates and important messages regarding your project status or website changes."
-                },
-                "content": {
-                    "title": "Content Editor (Dynamic Sites Only)",
-                    "description": "If your website includes dynamic content, you'll get tools to manage your products, services, team, or other website data easily through our admin interface."
-                }
-            },
-            "video": {
-                "alt": "Client Portal Preview",
-                "caption": "See how our portal makes managing your website easier"
-            }
+        "technologies": {
+            "title": "Technologies We Use",
+            "subtitle": "Modern and proven tools to build high-performance solutions"
         },
         "cta": {
             "title": "Ready to Get Started?",
@@ -232,33 +148,25 @@
         }
     },
     "portfolio": {
-        "hero": {
-            "title": "Our Portfolio",
-            "subtitle": "Showcasing our best work"
-        },
         "visitWebsite": "Visit Website"
     },
     "story": {
-        "hero": {
-            "title": "Our Story",
-            "subtitle": "A journey of passion, innovation, and digital excellence"
-        },
         "origin": {
             "title": "How It All Started",
             "text": [
-                "We're two computer science students who decided to take initiative. While still working toward our degrees, we found it difficult to gain hands-on experience in the tech industry. So, instead of waiting for an opportunity, we created one.",
-                "In early 2025, we launched our web development business to sharpen our skills, build real-world projects, and help others bring their ideas to life. We're passionate about clean, functional design and enjoy solving problems through code. We believe that even as students, we have something valuable to offer.",
-                "Our goal is to grow alongside our clients, delivering quality work while expanding our knowledge and expertise. Whether it's a personal portfolio or a fully dynamic web platform, we’re committed to learning, improving, and making a difference with every project we take on."
+                "We began as two computer science students who refused to wait for the perfect opportunity. Instead of following the traditional path and hoping for experience to come to us, we decided to create our own.",
+                "In early 2025, we launched our development business with a clear mission: to build real, impactful digital solutions while continuously expanding our expertise. Our background gives us a strong technical foundation, and our drive pushes us to deliver modern, efficient and well-crafted work.",
+                "We approach every project with confidence, curiosity and a commitment to quality. From software and applications to websites and hosting, we focus on developing solutions that create value and help our clients succeed."
             ],
             "imageAlt": "Our Founders"
         },
         "mission": {
             "title": "Our Mission",
-            "description": "To empower both businesses and individuals with smart, user-friendly digital solutions that help them grow, communicate better, and succeed online. We build websites that are easy to manage, purposeful, and made to truly serve the needs of our clients."
+            "description": "To create dependable, high-quality digital solutions that make technology simpler, more accessible and more impactful for our clients. We focus on clear communication, efficient execution and results that bring real value to every project we deliver."
         },
         "vision": {
             "title": "Our Vision",
-            "description": "To become a trusted digital partner for people and organizations of all sizes, recognized for combining thoughtful design, solid technology, and reliable support to bring their online goals to life."
+            "description": "To build a long-lasting reputation as a team that blends innovation with professionalism, offering solutions that evolve with our clients’ needs. We strive to become a trusted partner known for consistency, integrity and a genuine commitment to growth."
         },
         "values": {
             "title": "Our Values",
@@ -288,32 +196,22 @@
         }
     },
     "team": {
-        "hero": {
-            "title": "Meet Our Team",
-            "subtitle": "Small in size, big on talent and dedication"
-        },
         "intro": {
             "title": "Our Talented Team",
-            "description": "While we may be small, our combined experience and passion allow us to deliver exceptional results. Our close-knit team means you get direct access to decision-makers and experts throughout your project."
+            "description": "We bring strong technical expertise and creative problem-solving together to deliver outstanding results. With a lean, focused group, you have direct access to the people driving every decision and shaping every solution."
         },
         "members": {
             "hugo": {
                 "name": "Hugo Levacher",
-                "role": "Co-Founder & Developer",
-                "bio": "Passionate about crafting efficient and innovative web solutions, Hugo combines strong technical skills with a fresh perspective to build modern, user-friendly websites."
+                "role": "Co-Founder & Developer"
             },
             "henri": {
                 "name": "Henri Saumure",
-                "role": "Co-Founder & Developer",
-                "bio": "Dedicated to turning ideas into reality through clean and scalable code, Henri brings creativity and problem-solving skills to every web development project."
+                "role": "Co-Founder & Developer"
             }
         }
     },
     "contact": {
-        "hero": {
-            "title": "Get In Touch",
-            "subtitle": "Have a question or project in mind? We'd love to hear from you."
-        },
         "info": {
             "title": "Contact Information",
             "subtitle": "Reach out to us using any of the following methods and we'll get back to you as soon as possible.",
@@ -322,10 +220,6 @@
             },
             "phone": {
                 "label": "Phone"
-            },
-            "address": {
-                "label": "Address",
-                "value": "278 Roy Street, Longueuil"
             },
             "hours": {
                 "label": "Business Hours",
@@ -377,125 +271,7 @@
             "title": "Find Us"
         }
     },
-    "quote": {
-        "hero": {
-            "title": "Request a Quote",
-            "subtitle": "Tell us about your project and get a free estimate"
-        },
-        "howItWorks": {
-            "title": "How It Works",
-            "description": "Getting a quote for your project is simple. Fill out the form with details about your project requirements, and our team will review it and get back to you with a tailored proposal.",
-            "steps": {
-                "step1": {
-                    "title": "Submit Your Request",
-                    "description": "Fill out the form with your project details"
-                },
-                "step2": {
-                    "title": "Project Analysis",
-                    "description": "Our team reviews your requirements"
-                },
-                "step3": {
-                    "title": "Get Your Proposal",
-                    "description": "Receive a tailored quote within 48 hours"
-                },
-                "step4": {
-                    "title": "Project Kickoff",
-                    "description": "Discuss details and start your project"
-                }
-            }
-        },
-        "form": {
-            "title": "Request a Free Quote",
-            "success": "Thank you! Your quote request has been received. We'll get back to you within 48 hours.",
-            "error": "Something went wrong. Please try again later.",
-            "fullName": {
-                "label": "Full Name",
-                "placeholder": "John Doe",
-                "required": "Please enter your name",
-                "minlength": "Name must be at least 2 characters"
-            },
-            "email": {
-                "label": "Email Address",
-                "placeholder": "johndoe@example.com",
-                "required": "Please enter your email",
-                "invalid": "Please enter a valid email address"
-            },
-            "company": {
-                "label": "Company",
-                "placeholder": "Your Company (optional)"
-            },
-            "phone": {
-                "label": "Phone Number",
-                "placeholder": "(555) 123-4567",
-                "invalid": "Please enter a valid phone number"
-            },
-            "projectType": {
-                "label": "Project Type",
-                "required": "Please select a project type"
-            },
-            "budgetRange": {
-                "label": "Budget Range",
-                "placeholder": "Select budget range",
-                "required": "Please select a budget range"
-            },
-            "description": {
-                "label": "Project Description",
-                "placeholder": "Please describe your project, goals, and any specific requirements...",
-                "required": "Please describe your project",
-                "minlength": "Description must be at least 30 characters"
-            },
-            "contactMethod": {
-                "label": "Preferred Contact Method"
-            },
-            "file": {
-                "label": "Attachment (optional)",
-                "chooseFile": "Choose a file",
-                "hint": "Max size: 5MB. Allowed formats: PDF, DOC, DOCX, JPG, PNG",
-                "sizeError": "File size should not exceed 5MB",
-                "typeError": "Only PDF, Word documents, and images (JPEG, PNG) are allowed"
-            },
-            "submit": "Submit Quote Request",
-            "submitting": "Submitting..."
-        },
-        "projectTypes": {
-            "other": "Other"
-        },
-        "budgetRanges": {
-            "lessThan500": "Less than $500",
-            "500To1k": "$500 - $1,000",
-            "1kTo2k": "$1,000 - $2,000",
-            "2kPlus": "More than $2,000"
-        },
-        "contactMethods": {
-            "email": "Email",
-            "phone": "Phone",
-            "videoConference": "Video Conference"
-        },
-        "faqs": {
-            "title": "Frequently Asked Questions",
-            "timeline": {
-                "title": "How long does it take to complete a project?",
-                "content": "Project timelines vary based on complexity. Typically, a simple website takes 2-3 weeks, while more complex applications can take as long as 2 months"
-            },
-            "maintenance": {
-                "title": "Do you offer maintenance after project completion?",
-                "content": "Yes, basic maintenance is included in the monthly fee to ensure your project remains secure and up-to-date. However, additional edits or changes are billed separately."
-            },
-            "information": {
-                "title": "What information do you need for an accurate quote?",
-                "content": "The more details you can provide about your project goals, functionality requirements, design preferences, and timeline, the more accurate our quote will be."
-            },
-            "payments": {
-                "title": "How do payments work?",
-                "content": "We typically require a 30% deposit to begin work, with the remaining balance paid at the end of the project or in milestones for larger projects."
-            }
-        }
-    },
     "notFound": {
-        "hero": {
-            "title": "404",
-            "subtitle": "Page Not Found"
-        },
         "content": {
             "title": "Oops! We can't find that page",
             "message": "The page you're looking for might have been removed, had its name changed, or is temporarily unavailable."
