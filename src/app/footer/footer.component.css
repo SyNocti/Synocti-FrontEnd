@@ -115,6 +115,13 @@
     color: var(--primary-color);
 }
 
+.company-name{
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .footer-container {
         grid-template-columns: 1fr;
