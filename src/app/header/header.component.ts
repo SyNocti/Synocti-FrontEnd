@@ -93,9 +93,8 @@ export class HeaderComponent implements OnInit {
 
   changeLanguage(lang: string) {
     this.language = lang;
-    this.translator.setDefaultLang(this.language);
-    this.translator.use(this.language)
+    this.translator.use(lang);
+    this.languageService.setLanguage(lang);
     this.activeDropdown = null;
-    localStorage.setItem('lang', this.language);
   }
 }
