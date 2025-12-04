@@ -20,7 +20,7 @@ export class TeamComponent {
     {
       nameKey: 'team.members.hugo.name',
       roleKey: 'team.members.hugo.role',
-      image: 'assets/images/hugo.png',
+      image: 'assets/images/hugo.jpg',
       socials: [
         { link: 'https://www.linkedin.com/in/hugolevacher/', icon: 'fab fa-linkedin' },
         { link: 'https://github.com/hugolevacher', icon: 'fab fa-github' },

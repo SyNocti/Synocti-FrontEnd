@@ -218,6 +218,10 @@
 }
 
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -247,5 +251,14 @@
 
   .mission-section {
     padding: 3rem 0;
+  }
+
+  .story-content {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .cta-section {
+    margin-top: 2.5rem;
   }
 }
