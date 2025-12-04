@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LegalDataService, LegalDocumentType, LegalDocument } from '../services/legal-data.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -8,10 +8,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   selector: 'app-legal',
   standalone: true,
   imports: [
-    CommonModule,
     RouterModule,
     TranslateModule
-  ],
+],
   templateUrl: './legal.component.html',
   styleUrl: './legal.component.css'
 })

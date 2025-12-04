@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -7,7 +7,7 @@ import { LanguageService } from '../services/language.service';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

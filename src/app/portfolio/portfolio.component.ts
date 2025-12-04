@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -14,11 +14,10 @@ import { LanguageService } from '../services/language.service';
   selector: 'app-portfolio',
   standalone: true,
   imports: [
-    CommonModule,
     RouterModule,
     PortfolioItemComponent,
     TranslateModule
-  ],
+],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })

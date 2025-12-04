@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -13,7 +13,7 @@ export interface ServiceCard {
 @Component({
   selector: 'app-service-card',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './service-card.component.html',
   styleUrl: './service-card.component.css'
 })

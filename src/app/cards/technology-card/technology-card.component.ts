@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-technology-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './technology-card.component.html',
   styleUrl: './technology-card.component.css'
 })

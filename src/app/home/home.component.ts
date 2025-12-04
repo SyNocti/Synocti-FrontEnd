@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { ServiceCardComponent, ServiceCard } from '../cards/service-card/service-card.component';
@@ -16,11 +16,10 @@ import { LanguageService } from '../services/language.service';
   standalone: true,
   imports: [
     RouterModule,
-    CommonModule,
     ServiceCardComponent,
     PortfolioItemComponent,
     TranslateModule
-  ],
+],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

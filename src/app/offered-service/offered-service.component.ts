@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { OfferedServiceDataService, Service, Technology } from '../services/offered-service-data.service';
 import { PricingCardComponent } from '../cards/pricing-card/pricing-card.component';
@@ -11,13 +11,12 @@ import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
   selector: 'app-offered-service',
   standalone: true,
   imports: [
-    CommonModule,
     RouterModule,
     PricingCardComponent,
     TechnologyCardComponent,
     TranslateModule,
     NgxMarqueeComponent
-  ],
+],
   templateUrl: './offered-service.component.html',
   styleUrl: './offered-service.component.css'
 })

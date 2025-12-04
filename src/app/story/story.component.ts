@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -7,10 +7,9 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-story',
   standalone: true,
   imports: [
-    CommonModule,
     RouterModule,
     TranslateModule
-  ],
+],
   templateUrl: './story.component.html',
   styleUrl: './story.component.css'
 })

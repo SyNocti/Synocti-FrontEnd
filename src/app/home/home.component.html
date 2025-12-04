@@ -23,30 +23,36 @@
       <p data-aos="fade-up" data-aos-delay="100">{{ 'home.services.subtitle' | translate }}</p>
     </div>
     <div class="grid grid-3">
-      <app-service-card *ngFor="let service of serviceCards; let i = index" [service]="service"
-        [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="150 * (i + 1)">
-      </app-service-card>
+      @for (service of serviceCards; track service; let i = $index) {
+        <app-service-card [service]="service"
+          [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="150 * (i + 1)">
+        </app-service-card>
+      }
     </div>
   </div>
 </section>
 
 <!-- Portfolio Section -->
-<section class="section" *ngIf="portfolioItems.length > 0">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <h2>{{ 'home.portfolio.title' | translate }}</h2>
-      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.portfolio.subtitle' | translate }}</p>
+@if (portfolioItems.length > 0) {
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>{{ 'home.portfolio.title' | translate }}</h2>
+        <p data-aos="fade-up" data-aos-delay="100">{{ 'home.portfolio.subtitle' | translate }}</p>
+      </div>
+      <div class="grid grid-2 mb-3">
+        @for (project of portfolioItems; track project; let i = $index) {
+          <app-portfolio-item [project]="project"
+            [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="200 * (i + 1)">
+          </app-portfolio-item>
+        }
+      </div>
+      <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+        <a routerLink="/portfolio" class="btn btn-outline">{{ 'home.portfolio.seeMore' | translate }}</a>
+      </div>
     </div>
-    <div class="grid grid-2 mb-3">
-      <app-portfolio-item *ngFor="let project of portfolioItems; let i = index" [project]="project"
-        [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="200 * (i + 1)">
-      </app-portfolio-item>
-    </div>
-    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-      <a routerLink="/portfolio" class="btn btn-outline">{{ 'home.portfolio.seeMore' | translate }}</a>
-    </div>
-  </div>
-</section>
+  </section>
+}
 
 <!-- About Section -->
 <section class="section">
