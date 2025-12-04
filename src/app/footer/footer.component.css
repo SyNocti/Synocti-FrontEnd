@@ -150,4 +150,8 @@
         gap: 0.75rem;
         align-items: center;
     }
+
+    .company-name {
+        justify-content: center;
+    }
 }
