@@ -5,7 +5,7 @@ import { OfferedServiceDataService, Service, Technology } from '../services/offe
 import { PricingCardComponent } from '../cards/pricing-card/pricing-card.component';
 import { TechnologyCardComponent } from '../cards/technology-card/technology-card.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
+import { NgxMarqueeComponent, OmMarqueeItemDirective  } from '@omnedia/ngx-marquee';
 
 @Component({
   selector: 'app-offered-service',
@@ -15,7 +15,8 @@ import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
     PricingCardComponent,
     TechnologyCardComponent,
     TranslateModule,
-    NgxMarqueeComponent
+    NgxMarqueeComponent,
+    OmMarqueeItemDirective
 ],
   templateUrl: './offered-service.component.html',
   styleUrl: './offered-service.component.css'

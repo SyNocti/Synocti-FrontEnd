@@ -35,11 +35,11 @@
     <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
       <om-marquee [animationDuration]="'30s'" [pauseOnHover]="true" [marqueeGap]="'0rem'"
         styleClass="custom-marquee">
-        @for (tech of technologies; track tech) {
-          <div #OmMarqueeContent>
+        @for (tech of technologies; track $index) {
+          <ng-template [omMarqueeItem]="tech">
             <app-technology-card [name]="tech.name" [logo]="tech.logo" [category]="tech.category">
             </app-technology-card>
-          </div>
+          </ng-template>
         }
       </om-marquee>
     </div>
