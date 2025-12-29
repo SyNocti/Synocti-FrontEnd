@@ -1,5 +1,6 @@
 <div class="portfolio-item">
-  <div class="portfolio-image" [style.background-image]="'url(assets/images/' + project.id + '.PNG)'">
+  <div class="portfolio-image"
+    [style.background-image]="project.picturePath ? 'url(' + getImageUrl(project.picturePath) + ')' : 'none'">
   </div>
   <div class="portfolio-overlay">
     <h3>{{project.title}}</h3>

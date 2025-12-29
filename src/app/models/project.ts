@@ -4,7 +4,7 @@ export class Project {
         public title: string,
         public type: string,
         public description: string,
-        public pictureId: number,
+        public picturePath: string | null,
         public link: string,
         public annee: number,
         public client: string

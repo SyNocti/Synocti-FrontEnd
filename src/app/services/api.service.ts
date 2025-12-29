@@ -4,7 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import { ContactForm } from '../models/contactForm';
 import { Project } from '../models/project';
 
-const domain = 'https://localhost:7257/';
+const domain = 'http://localhost:3000/';
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +14,11 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   // ===== Projects API Calls =====
-  
+
   async getProjects(language: string): Promise<{ success: boolean; data?: Project[]; error?: any }> {
     try {
       const response = await firstValueFrom(
-        this.http.get<Project[]>(`${domain}api/Projects/GetAllWebsite/${language}`)
+        this.http.get<Project[]>(`${domain}api/projects/website/${language}`)
       );
       return { success: true, data: response };
     } catch (error) {
@@ -31,11 +31,18 @@ export class ApiService {
   async sendContactForm(contactForm: ContactForm): Promise<{ success: boolean; data?: any; error?: any }> {
     try {
       const response = await firstValueFrom(
-        this.http.post(`${domain}api/Forms/PostContactForm`, contactForm)
+        this.http.post(`${domain}api/contact-forms/submit`, contactForm)
       );
       return { success: true, data: response };
     } catch (error) {
       return { success: false, error };
     }
+  }
+
+  // ===== Media API Calls =====
+
+  getImageUrl(picturePath: string | null): string | null {
+    if (!picturePath) return null;
+    return `${domain}${picturePath}`;
   }
 }
