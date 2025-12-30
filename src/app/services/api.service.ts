@@ -4,7 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import { ContactForm } from '../models/contactForm';
 import { Project } from '../models/project';
 
-const domain = 'http://localhost:3000/';
+const domain = 'https://admin.synocti.ca/';
 
 @Injectable({
   providedIn: 'root'
