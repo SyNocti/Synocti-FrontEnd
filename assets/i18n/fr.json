@@ -524,22 +524,5 @@
                 ]
             }
         }
-    },
-    "tempProjectData": {
-        "choculaterie": {
-            "title": "Choculaterie",
-            "type": "Site web dynamique",
-            "description": "Une plateforme communautaire où les utilisateurs peuvent partager des schémas Minecraft, suivre des créateurs et interagir via des likes et des profils."
-        },
-        "hugoPortfolio": {
-            "title": "Portfolio Personnel",
-            "type": "Site web une page",
-            "description": "Un portfolio clair et monopage conçu pour présenter les compétences, projets et coordonnées de Hugo avec un défilement fluide et des éléments visuels modernes."
-        },
-        "henriPortfolio": {
-            "title": "Portfolio Personnel",
-            "type": "Site web une page",
-            "description": "Un site portfolio réactif conçu pour mettre en valeur le travail, le parcours et la formation de Henri avec un design minimaliste et une mise en page intuitive."
-        }
     }
 }

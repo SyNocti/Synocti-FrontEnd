@@ -524,22 +524,5 @@
                 ]
             }
         }
-    },
-    "tempProjectData": {
-        "choculaterie": {
-            "title": "Choculaterie",
-            "type": "Dynamic Website",
-            "description": "A community-driven site where users can share Minecraft schematics, follow creators, and engage through likes and profiles."
-        },
-        "hugoPortfolio": {
-            "title": "Personnal Portfolio",
-            "type": "Single Page Website",
-            "description": "A clean, single-page portfolio designed to showcase Hugo's skills, projects, and contact details with smooth scrolling and modern visual elements."
-        },
-        "henriPortfolio": {
-            "title": "Personnal Portfolio",
-            "type": "Single Page Website",
-            "description": "A responsive portfolio site built to highlight the Henri's work, background, and education with a minimalist design and intuitive layout."
-        }
     }
 }
